@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<h1>I also included a blog because fuck Medium.</h1>
+
+<!-- <div class="newest-post">
+	<h2>{{ post.content }}</h2>
+	<span>Post date</span>
+	<p>Post abbreiviated content</p>
+</div>
+<div class="older-post">
+	<h2>Post title</h2>
+	<span>Post date</span>
+	<p>Post abbreiviated content</p>
+</div> -->
+
+{% for post in site.posts limit: 1 %}
+
+<div>
+	<div>
+		HUGE
+		<h2>{{ post.content | truncatewords: 30 }}</h2>
+		<h4>{{ post.date | date_to_long_string }}</h4>
+		<p>
+			<a href="{{ post.url }}">Read Post</a>
+		</p>
+	</div>
+</div>
+
+{% endfor %}
+
+{% for post in site.posts limit: 10 %}
+
+<div>
+	<div>
+		<h2>{{ post.content | truncatewords: 30 }}</h2>
+		<h4>{{ post.date | date_to_long_string }}</h4>
+		<p>
+			<a href="{{ post.url }}">Read Post</a>
+		</p>
+	</div>
+</div>
+
+{% endfor %}

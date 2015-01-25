@@ -13,17 +13,17 @@ Run "jekyll serve" to localhost:4000
 ## Filter Example
 post.title | truncatewords: 10 | capitalize
 
-## includes
+## Includes
 Holds liquid templates - i.e. header, footer, etc.
 
-## layouts
+## Layouts
 Holds master layout templates - i.e. default post, pic-heavy post, etc.
 
-## posts
+## Posts
 Holds .md files for posts
 
-## sass
+## Sass
 Holds all writtern SASS
 
-## site
+## Site
 Production files
