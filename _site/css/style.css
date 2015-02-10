@@ -20,7 +20,7 @@ body:after, .project-list:after, .project-list-all:after, .all-work:after, .proj
   padding: 0; }
 
 header {
-  background-color: #f0efed; }
+  background-color: #FFFFFF; }
 
 body {
   font-size: 100%;
@@ -1076,7 +1076,7 @@ a.project-description-live-link {
   margin-left: 1em;
   margin-right: 1em;
   position: relative;
-  color: #000;
+  color: #303d41;
   text-decoration: none; }
 
 .main-nav a:hover {
@@ -1132,6 +1132,28 @@ a.project-description-live-link {
   .leader-text > p {
     font-size: 1.125em; }
 
+.intro-line {
+  width: 60%;
+  line-height: 1.75em;
+  font-family: "aperculight";
+  font-size: 2em;
+  color: #303d41;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  opacity: 0; }
+
+canvas {
+  position: absolute;
+  top: 0;
+  z-index: 0; }
+
+#particles-js {
+  height: 100vh;
+  vertical-align: middle; }
+
 #landing, #intro, #work {
   height: 100vh; }
 
@@ -1145,7 +1167,7 @@ a.project-description-live-link {
 
 #work {
   padding-top: 3.5625em;
-  background-color: #f0efed;
+  background-color: #FFFFFF;
   height: 100vh; }
 
 #contact {
