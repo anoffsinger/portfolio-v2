@@ -1,5 +1,11 @@
 // Panel layout
 
+#particles-js{
+    height:100vh;
+    vertical-align: middle;
+    z-index: 1;
+}
+
 #landing, #intro, #work, {
     height: $panelHeight;
 }

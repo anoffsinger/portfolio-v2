@@ -1,7 +1,3 @@
-// body{
-// 	padding-top: 200px;
-// }
-
 .main-nav {
 	font-family: $bodyFont;
 	font-size: 18px;
@@ -9,6 +5,7 @@
 	top: 0;
 	padding: $medium;
 	color: $darkBlue;
+	z-index: 2;
 }
 
 .main-nav li {

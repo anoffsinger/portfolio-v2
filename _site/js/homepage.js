@@ -1,15 +1,26 @@
 $(document).ready(function() {
-
+    
     $('.intro-line').animate({
-        "bottom":"15px",
+        "top":"50%",
         "opacity":"1"
     },400);
 
-    $(".project-list-all").hide();
+    $('.menu').animate({
+        "opacity":"1"
+    },400);
+
+    $(".menu").click(function() {
+        $(".top-bar").toggleClass("top-bar-close");
+        $(".middle-bar").toggleClass("middle-bar-close");
+        $(".bottom-bar").toggleClass("bottom-bar-close");
+    });
+
+
+    // $(".project-list-all").hide();
 
     particlesJS('particles-js', {
         particles: {
-            color: '#FFB9A6',
+            color: '#FFD4CA',
             shape: 'circle',
             opacity: 1,
             size: 1,
@@ -18,7 +29,7 @@ $(document).ready(function() {
             line_linked: {
                 enable_auto: true,
                 distance: 500,
-                color: '#FFB9A6',
+                color: '#FFD4CA',
                 opacity: .5,
                 width: 1,
                 condensed_mode: {
@@ -60,12 +71,13 @@ $(document).ready(function() {
     // var $document = $(document);
     // var $flipper = $(".flip-container .flipper");
     //
-    // $(window).scroll(function() {
-    //     var scrollYpos = $document.scrollTop();
-    //     var direction = scrollYpos > 0? "180deg" : "0deg"; //questionmark is shorthand if
-    //
-    //     $flipper.css("-webkit-transform", "rotateY("+direction+")");
-    // });
+    $(window).scroll(function() {
+        // var scrollYpos = $document.scrollTop();
+        // var direction = scrollYpos > 0? "180deg" : "0deg"; //questionmark is shorthand if
+        //
+        // $flipper.css("-webkit-transform", "rotateY("+direction+")");
+        $("canvas").css({'opacity':( 400-$(window).scrollTop() )/100});
+    });
 
 // See More
     var $allProjects = $(".project-list-all");
