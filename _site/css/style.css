@@ -4,7 +4,7 @@ body:after, .project-list:after, .project-list-all:after, .all-work:after, .proj
   clear: both; }
 
 /* From http://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/ */
-#landing > h1 {
+.intro > h1, #landing > h1 {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -1134,25 +1134,6 @@ a.project-description-live-link {
     font-size: 1.125em; }
 
 .intro-line {
-  width: 60%;
-  line-height: 1.75em;
-  font-family: "aperculight";
-  font-size: 2em;
-  color: #303d41;
-  text-align: left;
-  position: absolute;
-  top: 45%;
-  transform: translateY(-50%);
-  opacity: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  z-index: 2; }
-
-.top-snow-line {
-  color: #303d41; }
-
-.snow-line {
   font-size: 1.2em;
   color: #C6C6C6;
   width: 60%;
@@ -1165,22 +1146,33 @@ a.project-description-live-link {
   right: 0;
   margin: 0 auto;
   z-index: 2; }
+  .intro-line > span {
+    color: #303d41; }
 
-#cvs {
-  height: 100%;
-  width: 100%; }
-
-.date {
+.intro-date {
   height: 30px;
   width: 60px;
   border: 1px solid #C6C6C6;
-  padding: 5px; }
-  .date > p {
+  padding: 5px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px; }
+  .intro-date > p {
     text-align: center;
     margin: 0 auto;
     color: #c6c6c6; }
 
-.menu {
+#menu {
+  border-right: 1px solid #C6C6C6; }
+
+.main-content {
+  position: relative;
+  height: 100vh; }
+
+.secondary-content {
+  background-color: red; }
+
+.menu-selector {
   display: block;
   width: 20px;
   cursor: pointer;
@@ -1218,6 +1210,12 @@ a.project-description-live-link {
 .bottom-bar-close {
   transform: rotate(45deg);
   background-color: #bababa; }
+
+#cvs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; }
 
 #particles-js {
   height: 100vh;

@@ -1,4 +1,18 @@
-.menu {
+#menu {
+	border-right: 1px solid #C6C6C6;
+}
+
+.main-content {
+	position: relative;
+	height: 100vh;
+}
+
+.secondary-content {
+	opacity: 0;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+.menu-selector {
 	display: block;
 	width: 20px;
 	cursor: pointer;

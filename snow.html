@@ -6,23 +6,53 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<div class="menu">
+		<a href="#menu" class="menu-link menu-selector push">
 			<div class="top-bar"></div>
 			<div class="middle-bar"></div>
 			<div class="bottom-bar"></div>
-		</div>
+		</a>
+		<nav id="menu">
+			<ul>
+				<h3>Home</h3>
+				<h3>Work</h3>
+				<h3>Blog</h3>
+				<h3>About</h3>
+				<h3>Contact</h3>
+			</ul>
+		</nav>
+		<div class="main-content push">
+			<header class="intro">
+				<h1>The Portfolio Of Adam Noffsinger</h1>
+				<h2>About me</h2>
+				<p class="intro-line">
+					<span>Hello! I&#39;m Noff.</span> I'm a Product Designer with Uber in San Francisco. I like to code stuff, write semi-helpful blog posts, and illustrate hot sauce on weekends.
+				</p>
+				<div class="intro-date">
+					<p>2015</p>
+				</div>
+			</header>
 
-		<header class="snow-header">
-			<!-- <h1>The Portfolio Of Adam Noffsinger</h1> -->
-			<p class="snow-line">
-				<span class="top-snow-line">Hello! I&#39;m Noff.</span> I'm a Product Designer with Uber in San Francisco. I like to code stuff, write semi-helpful blog posts, and illustrate hot sauce on weekends.
-			</p>
-			<div class="date">
-				<p>2015</p>
-			</div>
-		</header>
-		<canvas id="cvs">
-		</canvas>
+		</div>
+		<canvas id="cvs" class="push"></canvas>
 		<script language="javascript" type="text/javascript" src="js/snow.js"> </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/bigSlide.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.menu-link').bigSlide();
+				// $('.menu-selector').click(function(){
+				// 	$('.main-content').toggleClass('secondary-content');
+				// });
+				$('.menu-selector').click(function() {
+					$('.cat').animate({
+						opacity: 0.25,
+						left: "+=50",
+						height: "toggle"
+					}, 5000, function() {
+					// Animation complete.
+					});
+				});
+			});
+		</script>
 	</body>
 </html>
