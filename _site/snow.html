@@ -20,6 +20,7 @@
 				<h3>Contact</h3>
 			</ul>
 		</nav>
+		<div class="overlay"></div>
 		<div class="main-content push">
 			<header class="intro">
 				<h1>The Portfolio Of Adam Noffsinger</h1>
@@ -40,8 +41,24 @@
 		<script>
 			$(document).ready(function() {
 				$('.menu-link').bigSlide();
-				$('.menu-selector').click(function(){
-					$('.main-content').toggleClass('secondary-content');
+				// $('.menu-selector').click(function(){
+				// 	$('.main-content').toggleClass('secondary-content');
+				// });
+				$('.menu-selector').click(function() {
+					$('.cat').animate({
+						opacity: 0.25,
+						left: "+=50",
+						height: "toggle"
+					}, 5000, function() {
+					// Animation complete.
+					});
+				});
+				$(".menu-selector").click(function(){
+					if($('.overlay').css('opacity') == .3){
+						$('.overlay').animate({opacity: 0}, 1000);
+					} else{
+						$('.overlay').animate({opacity:.3}, 1000);
+					}
 				});
 			});
 		</script>
