@@ -1,14 +1,3 @@
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100%;
-	background-color: black;
-	opacity: 0;
-	z-index: 2;
-}
-
 .intro {
 	> h1 {
 		@extend %visually-hidden;
@@ -28,6 +17,7 @@
 	right: 0;
 	margin: 0 auto;
 	z-index: 2;
+	opacity: 0;
 
 	> span {
 		color: $darkBlue;
@@ -40,8 +30,8 @@
 	border: 1px solid #C6C6C6;
 	padding: 5px;
 	position: absolute;
-	bottom: 30px;
-	right: 30px;
+	bottom: $medium;
+	right: $medium;
 
 	> p {
 		text-align: center;

@@ -1133,16 +1133,6 @@ a.project-description-live-link {
   .leader-text > p {
     font-size: 1.125em; }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: black;
-  opacity: 0;
-  z-index: 2; }
-
 .intro-line {
   font-size: 1.2em;
   color: #C6C6C6;
@@ -1155,7 +1145,8 @@ a.project-description-live-link {
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index: 2; }
+  z-index: 2;
+  opacity: 0; }
   .intro-line > span {
     color: #303d41; }
 
@@ -1165,8 +1156,8 @@ a.project-description-live-link {
   border: 1px solid #C6C6C6;
   padding: 5px;
   position: absolute;
-  bottom: 30px;
-  right: 30px; }
+  bottom: 3.5625em;
+  right: 3.5625em; }
   .intro-date > p {
     text-align: center;
     margin: 0 auto;
@@ -1174,11 +1165,17 @@ a.project-description-live-link {
 
 #menu {
   border-right: 1px solid #C6C6C6;
-  z-index: 3; }
+  z-index: 3;
+  position: fixed;
+  left: -15.625em;
+  /*left or right and the width of your navigation panel*/
+  width: 15.625em;
+  /*should match the above value*/ }
 
 .main-content {
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  padding: 3.5625em; }
 
 .secondary-content {
   opacity: 0;
@@ -1189,9 +1186,8 @@ a.project-description-live-link {
   width: 20px;
   cursor: pointer;
   z-index: 3;
-  position: fixed;
-  left: 2.5em;
-  top: 2.5em; }
+  position: absolute;
+  opacity: 0; }
 
 .top-bar,
 .middle-bar,
@@ -1199,7 +1195,7 @@ a.project-description-live-link {
   display: block;
   width: 20px;
   height: 3px;
-  background-color: #C6C6C6;
+  background-color: #B8B8B8;
   margin-bottom: 4px;
   transition: transform 0.4s cubic-bezier(1, 0, 0, 1) 0, background-color 0.6s ease 0; }
 
@@ -1212,7 +1208,7 @@ a.project-description-live-link {
 
 .top-bar-close {
   transform: rotate(-45deg);
-  background-color: #bababa; }
+  background-color: #FFFFFF; }
 
 .middle-bar-close {
   opacity: 0;
@@ -1221,13 +1217,23 @@ a.project-description-live-link {
 
 .bottom-bar-close {
   transform: rotate(45deg);
-  background-color: #bababa; }
+  background-color: #FFFFFF; }
 
 #cvs {
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 3; }
 
 #particles-js {
   height: 100vh;

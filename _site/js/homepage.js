@@ -1,20 +1,4 @@
 $(document).ready(function() {
-    
-    $('.intro-line').animate({
-        "top":"50%",
-        "opacity":"1"
-    },400);
-
-    $('.menu').animate({
-        "opacity":"1"
-    },400);
-
-    $(".menu").click(function() {
-        $(".top-bar").toggleClass("top-bar-close");
-        $(".middle-bar").toggleClass("middle-bar-close");
-        $(".bottom-bar").toggleClass("bottom-bar-close");
-    });
-
 
     // $(".project-list-all").hide();
 
