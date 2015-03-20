@@ -4,6 +4,39 @@
 	position: fixed;
     left: -15.625em; /*left or right and the width of your navigation panel*/
     width: 15.625em; /*should match the above value*/
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-top: 3.56em;
+}
+
+#menu li {
+	font: $headerFontSize $headerFont;
+	color: $lightBlue;
+	text-transform: uppercase;
+	letter-spacing: .25em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #f8f8f8;
+	display: block;
+	padding-bottom: 1.2em;
+	padding-top: .3em;
+	vertical-align: middle;
+	position: relative;
+
+}
+
+.active {
+	padding-left: 1.5em;
+}
+
+.active:before {
+	content: '';
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	background-color: $salmon;
+	position: absolute;
+	top: 19%;
+	left: 0;
 }
 
 .main-content {
