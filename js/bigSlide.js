@@ -110,8 +110,30 @@
 
     }
 
+    $('a.menu-item').click(function (e) {
+        e.preventDefault();                   // prevent default anchor behavior
+        var goTo = this.getAttribute("href"); // store anchor href
+
+        view.toggleClose();
+        $(".top-bar").toggleClass("top-bar-close");
+		$(".middle-bar").toggleClass("middle-bar-close");
+		$(".bottom-bar").toggleClass("bottom-bar-close");
+        overlay.fadeTo(300, 0);
+
+        setTimeout(function(){
+             window.location = goTo;
+        },800);
+    });
+
     controller.init();
 
   };
 
 }(jQuery));
+
+// on click of check for class active
+// if class = active do nothing
+// else toggle nav menu closed
+
+//on click of menu icon a
+//check title

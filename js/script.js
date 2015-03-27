@@ -27,6 +27,12 @@ $(document).ready(function() {
 		$(".top-bar").toggleClass("top-bar-close");
 		$(".middle-bar").toggleClass("middle-bar-close");
 		$(".bottom-bar").toggleClass("bottom-bar-close");
+
+		// Get current url
+		// Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
+		var url = window.location.href;
+		console.log(url);
+		$('.menu-item a[href="'+url+'"]').toggleClass('menu-active');
 	});
 
 	$(".project-nav-download-bubble").hide().delay("1000").fadeToggle("1000", function() {
