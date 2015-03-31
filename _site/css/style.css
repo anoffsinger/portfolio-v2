@@ -1133,10 +1133,86 @@ a.project-description-live-link {
   .leader-text > p {
     font-size: 1.125em; }
 
+.button--size-s {
+  font-size: 14px; }
+
+.button--text-upper {
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.button--border-thick {
+  border: 3px solid; }
+
+.button-test {
+  float: left;
+  display: block;
+  margin: 1em;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  color: inherit;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "aperculight"; }
+
+.button--wayra {
+  overflow: hidden;
+  width: 200px;
+  -webkit-transition: border-color .7s, color .7s;
+  transition: border-color 0.3s, color 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  duration: 1;
+  z-index: 1000;
+  border: 2px solid #C6C6C6;
+  color: #C6C6C6;
+  text-align: center;
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
+.button--wayra::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background: #37474f;
+  z-index: -1;
+  -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transition: -webkit-transform .7s, opacity .7s, background-color .7s;
+  transition: transform .7s, opacity .7s, background-color .7s; }
+
+.button--wayra:hover {
+  color: #FFFFFF;
+  border-color: #303d41; }
+
+.button--wayra.button--inverted:hover {
+  color: #3f51b5;
+  border-color: #fff; }
+
+.button--wayra:hover::before {
+  opacity: 1;
+  background-color: #303d41;
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
+
 .intro-line {
   font-size: 1.2em;
   color: #C6C6C6;
-  width: 60%;
+  width: 50%;
   line-height: 1.75em;
   text-align: center;
   position: absolute;
@@ -1243,7 +1319,7 @@ a.project-description-live-link {
   display: block;
   width: 20px;
   height: 3px;
-  background-color: #B8B8B8;
+  background-color: #C6C6C6;
   margin-bottom: 4px;
   transition: transform 0.4s cubic-bezier(1, 0, 0, 1) 0, background-color 0.6s ease 0; }
 
