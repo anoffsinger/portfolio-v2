@@ -24,16 +24,21 @@
 	}
 }
 
-.intro-date {
-	height: 30px;
-	width: 60px;
-	border: 1px solid #C6C6C6;
-	padding: 5px;
+.intro-work-link {
+	height: 3em;
+	width: 9em;
+	border: 2px solid #C6C6C6;
+	line-height: 1.75em;
+	text-align: center;
 	position: absolute;
-	bottom: $medium;
-	right: $medium;
+	top: 65%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 8px;
 
-	> p {
+	> a {
 		text-align: center;
 		margin: 0 auto;
 		color: #c6c6c6;
