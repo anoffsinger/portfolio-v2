@@ -11,7 +11,6 @@
 
 #menu li {
 	font: $headerFontSize $headerFont;
-	color: $lightBlue;
 	text-transform: uppercase;
 	letter-spacing: .25em;
 	margin-bottom: 1em;
@@ -24,6 +23,19 @@
 
 }
 
+.menu-item {
+	color: $landingGrey;
+	-webkit-transition: color .1s ease;
+	transition: color .1s ease;
+	-webkit-transition: transform .1s ease;
+	transition: transform .1s ease;
+}
+
+.menu-item:hover {
+	color: $lightBlue;
+	transform: translateX(10px);
+}
+
 @keyframes circlePop {
     0%   {transform: scale(1);}
     25%  {transform: scale(1.3);}
@@ -31,8 +43,9 @@
     100% {transform: scale(1);}
 }
 
-.menu-active {
+a.menu-active {
 	padding-left: 1.5em;
+	color: $darkBlue;
 }
 
 .menu-active:before {
@@ -68,6 +81,15 @@
 	cursor: pointer;
 	z-index: 3;
 	position: absolute;
+	opacity: 0;
+}
+
+menu-selector-post {
+	display: block;
+	width: 20px;
+	cursor: pointer;
+	z-index: 3;
+	position: fixed;
 	opacity: 0;
 }
 

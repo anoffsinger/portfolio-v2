@@ -111,14 +111,17 @@
     }
 
     $('a.menu-item').click(function (e) {
-        e.preventDefault();                   // prevent default anchor behavior
-        var goTo = this.getAttribute("href"); // store anchor href
+        e.preventDefault();                   // prevent immediate switch to new page
+        var goTo = this.getAttribute("href"); // store anchor href so we can do something else first
 
-        view.toggleClose();
+
         $(".top-bar").toggleClass("top-bar-close");
 		$(".middle-bar").toggleClass("middle-bar-close");
 		$(".bottom-bar").toggleClass("bottom-bar-close");
-        overlay.fadeTo(300, 0);
+
+        view.toggleClose();
+
+        overlay.fadeTo(300, 0); // reverse the overlay opacity
 
         setTimeout(function(){
              window.location = goTo;

@@ -1,15 +1,24 @@
-{% include header.html %}
+<!-- this is the template for every single blog post, should include menu icon, sidenav, header, and footer -->
 
-<div>
-	<div>
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.date | date_to_long_string }}</p>
+{% include head.html %}
 
-		{{ content }}
-	</div>
-	<div>
-		{% include sidebar.html %}
-	</div>
-</div>
+		<header class="post-title">
+			<h1>{{ page.title }}</h1>
+
+		</header>
+
+{% include side-nav.html %}
+
+		<!-- <div class="overlay push"></div> -->
+		<div class="main-content push">
+			<a href="#menu" class="menu-link menu-selector-post">
+				<div class="top-bar"></div>
+				<div class="middle-bar"></div>
+				<div class="bottom-bar"></div>
+			</a>
+
+			<div class="post">
+
+{{ content }}
 
 {% include footer.html %}

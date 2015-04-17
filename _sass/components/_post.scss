@@ -1,0 +1,31 @@
+.post {
+	width: 100%;;
+	margin: 0 auto;
+}
+
+.post > p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: $blogPostBody;
+	margin: 0 auto $paragraphBottom auto;
+	width: 50%;
+	line-height: 1.50em;
+}
+
+.post > figure {
+	width: 100%;
+}
+
+.post > figure > img {
+	width: 100%;
+}
+
+.post-title {
+	width: 100%;
+	background-color: black;
+	height: 500px;
+
+	> h1 {
+		color: white;
+	}
+}

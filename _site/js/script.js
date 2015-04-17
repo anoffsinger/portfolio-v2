@@ -13,6 +13,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// Fade-in for homepage on load
 	$('.intro-line').animate({
         "top":"47%",
         "opacity":"1"
@@ -28,17 +29,16 @@ $(document).ready(function() {
 		$(".middle-bar").toggleClass("middle-bar-close");
 		$(".bottom-bar").toggleClass("bottom-bar-close");
 
-		// Get current url
-		// Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
-		var url = window.location.href;
-		console.log(url);
-		$('.menu-item a[href="'+url+'"]').toggleClass('menu-active');
+		var url = window.location.href; // Get current url
+		$('.menu-item a[href="'+url+'"]').toggleClass('menu-active'); // Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
 	});
 
+	// Download project documentation button
 	$(".project-nav-download-bubble").hide().delay("1000").fadeToggle("1000", function() {
         $(this).delay("3000").fadeToggle("1000");
     });
 
+	// Hide project nav on scroll to footer
     $(window).scroll(function() {
         var $nav = $(".project-nav");
         var $textLogo = $(".text-logo");
@@ -53,6 +53,10 @@ $(document).ready(function() {
             $(".project-nav, .text-logo").stop(true, true).animate({opacity: 1}, 100);
         }
     });
+
+	// $('.menu-hover').hover(function() {
+	//
+	// });
 
 	// Init
 	$('.menu-link').bigSlide();

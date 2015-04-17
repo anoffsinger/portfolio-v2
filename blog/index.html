@@ -1,19 +1,6 @@
 ---
-layout: default
+layout: overview
 ---
-
-<!-- <h1 class="post-message">I also included a blog because motha fuck Medium.</h1> -->
-
-<!-- <div class="newest-post">
-	<h2>{{ post.content }}</h2>
-	<span>Post date</span>
-	<p>Post abbreiviated content</p>
-</div>
-<div class="older-post">
-	<h2>Post title</h2>
-	<span>Post date</span>
-	<p>Post abbreiviated content</p>
-</div> -->
 
 {% for post in site.posts limit: 1 %}
 
@@ -23,7 +10,7 @@ layout: default
 		<div class="leader-text">
 			<!-- <h2>{{ post.title }}</h2> -->
 			<h2>{{ post.content | truncatewords: 100 }}</h2>
-			<h4>{{ post.date | date_to_long_string }}</h4>
+			<h4>{{ post.date }}</h4>
 			<p>
 				<a href="{{ post.url }}">Read Post</a>
 			</p>
@@ -38,7 +25,7 @@ layout: default
 <div>
 	<div>
 		<h2>{{ post.content | truncatewords: 30 }}</h2>
-		<h4>{{ post.date | date_to_long_string }}</h4>
+		<h4>{{ post.date }}</h4>
 		<p>
 			<a href="{{ post.url }}">Read Post</a>
 		</p>

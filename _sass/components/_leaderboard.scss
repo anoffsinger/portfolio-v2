@@ -1,20 +1,20 @@
-.post-message {
-	text-align: center;
-	margin-top: 5em;
-	margin-bottom: 2em;
-}
-
 .leaderboard {
 	@extend %clearfix;
 
 	height: auto;
 	width: 90%;
-	border-top: 1px solid #DCE2E2;
 	border-bottom: 1px solid #DCE2E2;
 	padding-top: 3em;
 	padding-bottom: 3em;
 	display: block;
 	margin: 0 auto;
+}
+
+.leaderboard-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: $headerAltFontSize;
 }
 
 .leader-img {
@@ -26,6 +26,9 @@
 .leader-text {
 	width: 47.5%;
 	float: right;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: $bodyFontSize;
 
 	> p {
 		font-size: 1.125em;

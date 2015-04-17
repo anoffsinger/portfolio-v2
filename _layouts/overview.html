@@ -1,0 +1,22 @@
+{% include head.html %}
+
+{% include side-nav.html %}
+
+		<div class="overlay push"></div>
+		<div class="main-content push">
+			<a href="#menu" class="menu-link menu-selector">
+				<div class="top-bar"></div>
+				<div class="middle-bar"></div>
+				<div class="bottom-bar"></div>
+			</a>
+
+
+<div class="leaderboard">
+	<h1 class="leaderboard-title">{{ page.title }}</h1>
+	<p>{{ page.date }}</p>
+
+	{{ content }}
+</div>
+
+
+{% include footer.html %}
