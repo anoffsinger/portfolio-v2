@@ -1,0 +1,105 @@
+.overview-primary {
+	@extend %clearfix;
+
+	height: auto;
+	width: 90%;
+	border-bottom: 1px solid #DCE2E2;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	display: block;
+	margin: 0 auto;
+}
+
+.new-post-excerpt > h2,
+.new-post-excerpt > span,
+.new-post-excerpt > p {
+	display: block;
+	width: 47.5%;
+	float: right;
+}
+
+.new-post-excerpt > h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 2em;
+	color: #5E5E5E;
+	letter-spacing: normal;
+	line-height: 1.2em;
+	margin: 0 auto .15em auto;
+}
+
+.new-post-excerpt > span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: .75em;
+	color: #999999;
+	margin: 0 auto 1.8em auto;
+	display: block;
+}
+
+.new-post-excerpt > p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	color: #5E5E5E;
+	margin-bottom: 1.5em
+}
+
+.leaderboard-title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: $headerAltFontSize;
+}
+
+.leader-img {
+	width: 47.5%;
+	float: left;
+	margin-right: 5%;
+}
+
+.leader-text {
+	width: 47.5%;
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: $bodyFontSize;
+
+	> p {
+		font-size: 1.125em;
+	}
+}
+
+.secondary-post > h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 2em;
+	color: #5E5E5E;
+	letter-spacing: normal;
+	line-height: 1.2em;
+	margin: 0 auto .15em auto;
+}
+
+.secondary-post > span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: .75em;
+	color: #999999;
+	margin: 0 auto 1.8em auto;
+	display: block;
+}
+
+.secondary-post > p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	color: #5E5E5E;
+	margin-bottom: 1.5em
+}
+
+.old-posts {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}

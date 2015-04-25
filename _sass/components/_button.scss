@@ -52,3 +52,17 @@
         margin-bottom: $large;
     }
 }
+
+.button-read-more {
+    display: block;
+    font-family: $bodyFont;
+    height: 2.5em;
+    padding: 10px;
+    border: 1px solid #5e5e5e;
+    font-family: $bodyFont;
+    /*     text-transform: uppercase; */
+    width: 6em;
+    color: #5e5e5e;
+    margin-top: 30px;
+    text-align: center;
+}

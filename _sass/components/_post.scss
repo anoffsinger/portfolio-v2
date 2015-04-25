@@ -17,13 +17,19 @@
 }
 
 .post > figure > img {
-	width: 100%;
+	position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
 }
 
 .post-title {
-	width: 100%;
+	position: relative;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+	top: calc(-68vh + 68%);
 	background-color: black;
 	height: 500px;
+	z-index: -1;
 
 	> h1 {
 		color: white;

@@ -1,5 +1,4 @@
 #menu {
-	border-right: 1px solid #C6C6C6;
 	z-index: 3;
 	position: fixed;
     left: -15.625em; /*left or right and the width of your navigation panel*/
@@ -80,7 +79,7 @@ a.menu-active {
 	width: 20px;
 	cursor: pointer;
 	z-index: 3;
-	position: absolute;
+	position: fixed;
 	opacity: 0;
 }
 

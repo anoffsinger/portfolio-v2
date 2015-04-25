@@ -2,34 +2,30 @@
 layout: overview
 ---
 
-{% for post in site.posts limit: 1 %}
+		{% for post in site.posts limit: 1 %}
 
-<div class="leaderboard">
-	<div>
-		<img src="../images/test-pic.png" alt="" class="leader-img">
-		<div class="leader-text">
-			<!-- <h2>{{ post.title }}</h2> -->
-			<h2>{{ post.content | truncatewords: 100 }}</h2>
-			<h4>{{ post.date }}</h4>
-			<p>
-				<a href="{{ post.url }}">Read Post</a>
-			</p>
+		<div class="overview-primary">
+			<img src="../images/test-pic.png" alt="" class="leader-img">
+
+			<div class="new-post-excerpt">
+				<h2>{{ post.title }}</h2>
+				<span>{{ post.date | date_to_long_string }}</span>
+				{{ post.content | truncatewords: 130 }}
+				<a class="button-read-more" href="{{ post.url }}">Read Post</a>
+			</div>
 		</div>
-	</div>
-</div>
 
-{% endfor %}
+		{% endfor %}
 
-{% for post in site.posts offset:1 limit: 10 %}
+		<div class="old-posts">
+			{% for post in site.posts offset:1 limit: 10 %}
 
-<div>
-	<div>
-		<h2>{{ post.content | truncatewords: 30 }}</h2>
-		<h4>{{ post.date }}</h4>
-		<p>
-			<a href="{{ post.url }}">Read Post</a>
-		</p>
-	</div>
-</div>
+			<div class="secondary-post">
+				<h2>{{ post.title }}</h2>
+				<span>{{ post.date | date_to_long_string }}</span>
+				{{ post.content | truncatewords: 50 }}
+				<a class="button-read-more" href="{{ post.url }}">Read Post</a>
+			</div>
 
-{% endfor %}
+			{% endfor %}
+		</div>
