@@ -42,10 +42,10 @@
 }
 
 .project-list-item {
-    position: relative;
-    width: 20.8125em;
+/*     position: relative;
+width: 20.8125em; */
     height: 20.8125em;
-    float: left;
+    /* float: left;
 
     @media (max-width: 65.625em) {
         width: 15.625em;
@@ -90,7 +90,7 @@
     p:last-of-type {
         font-size: $subtextSize;
         font-family: $subtextFont;
-    }
+    } */
 }
 
 .project-list-item-cue-app {

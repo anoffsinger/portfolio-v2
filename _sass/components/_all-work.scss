@@ -3,10 +3,8 @@
 .all-work {
     @extend %clearfix;
 
-    width: 64.4375em;
-    margin: 0 auto $large auto;
-
-    li {
+    /* margin: $medium 0 0 0; */
+    /* li {
         float: left;
 
         @media (max-width: 50em) {
@@ -25,7 +23,7 @@
     li:nth-of-type(4),
     li:nth-of-type(5)   {
         margin-right: $small;
-    }
+    } */
 
     @media (max-width: 65.625em) {
         max-width: 48.875em;
