@@ -2,6 +2,10 @@
 	> h1 {
 		@extend %visually-hidden;
 	}
+
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .intro-line {
@@ -9,12 +13,9 @@
 	color: $landingGrey;
 	line-height: 1.75em;
 	text-align: left;
-/* 	position: absolute; */
-/* 	top: 45%; */
-/* 	transform: translateY(-50%);
-left: 0;
-right: 0; */
+
 	z-index: 2;
+	margin-bottom: 2em;
 /* 	opacity: 0; */
 
 	> span {

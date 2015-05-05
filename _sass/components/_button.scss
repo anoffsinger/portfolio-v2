@@ -74,7 +74,7 @@
 	position: relative;
 	-webkit-backface-visibility: hidden;
 	font-family: $bodyFont;
-    background-color: $landingGrey;
+    background-color: #D8D8D8;
     color: $white;
 }
 
@@ -89,7 +89,7 @@
     -webkit-transition-timing-function: cubic-bezier(0.25, .1, 0.25, 1);
 	transition-timing-function: cubic-bezier(0.25, .1, 0.25, 1);
 	duration: 1;
-	z-index: 1000;
+	z-index: 999;
 	color: $white;
 	text-align: center;
 	/* position: absolute;

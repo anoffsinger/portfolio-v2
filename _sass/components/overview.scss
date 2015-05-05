@@ -2,30 +2,24 @@
 	@extend %clearfix;
 
 	height: auto;
-	width: 90%;
-	border-bottom: 1px solid #DCE2E2;
-	padding-top: 3em;
-	padding-bottom: 3em;
+	border-bottom: 1px solid #f4f4f4;
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto $large auto;
+	padding-bottom: $large;
 }
 
-.new-post-excerpt > h2,
-.new-post-excerpt > span,
-.new-post-excerpt > p {
-	display: block;
-	width: 47.5%;
-	float: right;
+.excerpt-img {
+	height: 354px;
+	margin-bottom: 0;
 }
 
 .new-post-excerpt > h2 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
+	font-family: $workTitleFont, sans-serif;
 	font-size: 2em;
 	color: #5E5E5E;
 	letter-spacing: normal;
 	line-height: 1.2em;
-	margin: 0 auto .15em auto;
+	margin-bottom: 22px;
 }
 
 .new-post-excerpt > span {
@@ -33,29 +27,21 @@
 	font-weight: 400;
 	font-size: .75em;
 	color: #999999;
-	margin: 0 auto 1.8em auto;
+	margin-bottom: 1.8em;
 	display: block;
 }
 
-.new-post-excerpt > p {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 100;
-	font-size: 1em;
-	color: #5E5E5E;
-	margin-bottom: 1.5em
-}
+.new-post-excerpt > div {
 
-.leaderboard-title {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
-	font-size: $headerAltFontSize;
-}
+	> p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 100;
+		font-size: 1em;
+		color: #999999;
+		margin-bottom: 1.5em;
+	}
 
-.leader-img {
-	width: 47.5%;
-	float: left;
-	margin-right: 5%;
+	margin-bottom: 32px;
 }
 
 .leader-text {
