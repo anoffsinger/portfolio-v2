@@ -1,7 +1,7 @@
 {% include head.html %}
 	{% include side-nav.html %}
 
-	<!-- <div class="overlay push"></div> -->
+	<div class="overlay push"></div>
 	<div class="content push">
 		<a href="#menu" class="menu-link menu-selector-post">
 			<div class="top-bar"></div>
@@ -9,8 +9,9 @@
 			<div class="bottom-bar"></div>
 		</a>
 
-		<header class="post-title">
+		<header class="post-header">
 			<h1>{{ page.title }}</h1>
+			<span>{{ post.date }}</span>
 		</header>
 
 		<div class="post">

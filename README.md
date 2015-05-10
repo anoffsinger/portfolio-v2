@@ -27,3 +27,5 @@ Holds all writtern SASS
 
 ## Site
 Production files
+
+- Reminder: any markdown file in the root will be turned into an HTML page in site.

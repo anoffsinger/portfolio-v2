@@ -1,6 +1,6 @@
 .post {
 	width: 100%;;
-	margin: 0 auto;
+	margin: 500px auto 0 auto;
 }
 
 .post > p {
@@ -22,16 +22,24 @@
     left: calc(-50vw + 50%);
 }
 
-.post-title {
-	position: relative;
+.post-header {
+	position: absolute;
     width: 100vw;
     left: calc(-50vw + 50%);
-	top: calc(-68vh + 68%);
-	background-color: black;
-	height: 500px;
+	top: 0;
+	background: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,.30)), url("http://localhost:4000/images/bridge.jpg") no-repeat center center;
+/* background-repeat: no-repeat; */
+	background-size: 100% auto;
+/* background-color: white; */
+	height: 31.25em;
 	z-index: -1;
+	padding-top: 350px;
 
 	> h1 {
 		color: white;
+		margin: 0 auto $paragraphBottom auto;
+		width: 40%;
+		text-align: left;
+		font-size: 36px;
 	}
 }

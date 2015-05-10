@@ -1,17 +1,30 @@
 ---
-layout: default
+layout: overview
+title: blog overview
 ---
 
-{% for post in site.posts limit: 10 %}
+		<h2 class="page-title">Blog</h2>
 
-<div>
-	<div>
-		<h2>{{ post.title }}</h2>
-		<h4>{{ post.date | date_to_long_string }}</h4>
-		<p>
-			<a href="{{ post.url }}">Read Post</a>
-		</p>
-	</div>
-</div>
+		{% for post in site.posts limit: 1 %}
+		<div class="post-preview">
+			<img src="../images/test-pic.png" alt="" class="post-preview-img one-half col">
 
-{% endfor %}
+			<div class="post-preview-content one-half col">
+				<h2>{{ post.title }}</h2>
+				<div>{{ post.content | truncatewords: 100 }}</div>
+				<a class="button-test button--wayra" href="{{ post.url }}">Read Post</a>
+			</div>
+		</div>
+		{% endfor %}
+
+		{% for post in site.posts offset:1 limit: 10 %}
+		<div class="post-preview">
+			<img src="../images/test-pic.png" alt="" class="post-preview-img one-half col">
+
+			<div class="post-preview-content one-half col">
+				<h2>{{ post.title }}</h2>
+				<div>{{ post.content | truncatewords: 100 }}</div>
+				<a class="button-test button--wayra" href="{{ post.url }}">Read Post</a>
+			</div>
+		</div>
+		{% endfor %}

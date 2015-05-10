@@ -1,0 +1,45 @@
+.post-preview {
+	@extend %clearfix;
+
+	height: auto;
+	border-bottom: 1px solid #f4f4f4;
+	display: block;
+	margin: 0 auto $large auto;
+	padding-bottom: $large;
+}
+
+.post-preview-img {
+	height: 354px;
+	margin-bottom: 0;
+}
+
+.post-preview-content > h2 {
+	font-family: $workTitleFont, sans-serif;
+	font-size: 2em;
+	color: #5E5E5E;
+	letter-spacing: normal;
+	line-height: 1.2em;
+	margin-bottom: 22px;
+}
+
+.post-preview-content > span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: .75em;
+	color: #999999;
+	margin-bottom: 1.8em;
+	display: block;
+}
+
+.post-preview-content > div {
+
+	> p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 100;
+		font-size: 1em;
+		color: #999999;
+		margin-bottom: 1.5em;
+	}
+
+	margin-bottom: 32px;
+}

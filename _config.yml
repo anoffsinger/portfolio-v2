@@ -1,7 +1,8 @@
-name: "noff blog"
-description: "nerd stuff"
+name: "Portfolio v2"
+description: "A slight facelift and Jekyll blog to boot."
 
-url: "http://localhost:4000/blog.html"
+# this should eventually be set to my domain
+url: "http://localhost:4000"
 
 paginate: 10
 

@@ -1,4 +1,4 @@
-body:after, .project-list:after, .project-list-all:after, .all-work:after, .project-image-small-container:after, .overview-primary:after {
+body:after, .project-list:after, .project-list-all:after, .all-work:after, .project-image-small-container:after, .post-preview:after {
   content: "";
   display: table;
   clear: both; }
@@ -1267,18 +1267,18 @@ a.project-description-live-link {
   -webkit-transition: all 600ms cubic-bezier(0, 0.69, 0.22, 0.99);
   transition: all 600ms cubic-bezier(0, 0.69, 0.22, 0.99); }
 
-.overview-primary {
+.post-preview {
   height: auto;
   border-bottom: 1px solid #f4f4f4;
   display: block;
   margin: 0 auto 4.25em auto;
   padding-bottom: 4.25em; }
 
-.excerpt-img {
+.post-preview-img {
   height: 354px;
   margin-bottom: 0; }
 
-.new-post-excerpt > h2 {
+.post-preview-content > h2 {
   font-family: "apercuregular", sans-serif;
   font-size: 2em;
   color: #5E5E5E;
@@ -1286,7 +1286,7 @@ a.project-description-live-link {
   line-height: 1.2em;
   margin-bottom: 22px; }
 
-.new-post-excerpt > span {
+.post-preview-content > span {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: .75em;
@@ -1294,53 +1294,14 @@ a.project-description-live-link {
   margin-bottom: 1.8em;
   display: block; }
 
-.new-post-excerpt > div {
+.post-preview-content > div {
   margin-bottom: 32px; }
-  .new-post-excerpt > div > p {
+  .post-preview-content > div > p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-size: 1em;
     color: #999999;
     margin-bottom: 1.5em; }
-
-.leader-text {
-  width: 47.5%;
-  float: right;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 1em; }
-  .leader-text > p {
-    font-size: 1.125em; }
-
-.secondary-post > h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  font-size: 2em;
-  color: #5E5E5E;
-  letter-spacing: normal;
-  line-height: 1.2em;
-  margin: 0 auto .15em auto; }
-
-.secondary-post > span {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: .75em;
-  color: #999999;
-  margin: 0 auto 1.8em auto;
-  display: block; }
-
-.secondary-post > p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
-  font-size: 1em;
-  color: #5E5E5E;
-  margin-bottom: 1.5em; }
-
-.old-posts {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 3em;
-  padding-bottom: 3em; }
 
 .intro {
   position: absolute;
@@ -1513,7 +1474,7 @@ menu-selector-post {
 
 .post {
   width: 100%;
-  margin: 0 auto; }
+  margin: 500px auto 0 auto; }
 
 .post > p {
   font-family: 'Open Sans', sans-serif;
@@ -1531,16 +1492,24 @@ menu-selector-post {
   width: 100vw;
   left: calc(-50vw + 50%); }
 
-.post-title {
-  position: relative;
+.post-header {
+  position: absolute;
   width: 100vw;
   left: calc(-50vw + 50%);
-  top: calc(-68vh + 68%);
-  background-color: black;
-  height: 500px;
-  z-index: -1; }
-  .post-title > h1 {
-    color: white; }
+  top: 0;
+  background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.3)), url("http://localhost:4000/images/bridge.jpg") no-repeat center center;
+  /* background-repeat: no-repeat; */
+  background-size: 100% auto;
+  /* background-color: white; */
+  height: 31.25em;
+  z-index: -1;
+  padding-top: 350px; }
+  .post-header > h1 {
+    color: white;
+    margin: 0 auto 2em auto;
+    width: 40%;
+    text-align: left;
+    font-size: 36px; }
 
 /*  SECTIONS  */
 .content {
