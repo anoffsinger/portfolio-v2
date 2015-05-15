@@ -884,6 +884,28 @@ a.project-description-live-link {
       width: 100%;
       height: auto; } }
 
+/*BLUR*/
+.workthing {
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease; }
+
+.workthing:hover {
+  -webkit-filter: blur(2px);
+  /* transform: scale(1.05) */ }
+
+li.work-item {
+  overflow: hidden;
+  height: 371.625px; }
+
+.workthing {
+  background-image: url("../images/cue-app-thumb.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain; }
+
 .project-image {
   display: block;
   vertical-align: middle;
@@ -1576,8 +1598,52 @@ menu-selector-post {
 
   .span_1_of_12, .span_2_of_12, .span_3_of_12, .one-third, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
     width: 100%; } }
-.work-item > img {
-  max-width: 100%; }
+.work-item > a {
+  display: block;
+  height: 100%; }
+
+.work-item > a:hover {
+  /* 	> div:nth-of-type(1) {
+  	transform: scale(1.01);
+  } */ }
+  .work-item > a:hover > div:nth-of-type(2) {
+    transform: translateY(-50px);
+    -webkit-transition: opacity .1s ease-in-out;
+    opacity: 1; }
+
+.work-item > div:nth-of-type(1) {
+  background-image: url("../images/cue-app-thumb.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  transition: all .1s ease; }
+
+.work-item:hover > div:nth-of-type(1) {
+  -webkit-filter: blur(3px); }
+
+a > div.testing {
+  -webkit-transition: all .1s ease;
+  height: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 14px 0 15px 0px;
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+  opacity: 0; }
+  a > div.testing > span {
+    color: white;
+    font-family: "apercuregular";
+    font-size: 14px; }
+  a > div.testing > span:nth-of-type(1) {
+    float: left; }
+  a > div.testing > span:nth-of-type(2) {
+    float: right; }
 
 .page-title {
   font-family: "apercuregular";
