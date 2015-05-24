@@ -5,26 +5,14 @@ title: blog overview
 
 		<h2 class="page-title">Blog</h2>
 
-		{% for post in site.posts limit: 1 %}
+		{% for post in site.posts limit: 10 %}
 		<div class="post-preview">
-			<img src="../images/test-pic.png" alt="" class="post-preview-img one-half col">
+			<img src="../images/test-pic.png" alt="" class="post-preview-img one-third">
 
-			<div class="post-preview-content one-half col">
+			<div class="post-preview-content two-thirds">
 				<h2>{{ post.title }}</h2>
-				<div>{{ post.content | truncatewords: 100 }}</div>
-				<a class="button-test button--wayra" href="{{ post.url }}">Read Post</a>
-			</div>
-		</div>
-		{% endfor %}
-
-		{% for post in site.posts offset:1 limit: 10 %}
-		<div class="post-preview">
-			<img src="../images/test-pic.png" alt="" class="post-preview-img one-half col">
-
-			<div class="post-preview-content one-half col">
-				<h2>{{ post.title }}</h2>
-				<div>{{ post.content | truncatewords: 100 }}</div>
-				<a class="button-test button--wayra" href="{{ post.url }}">Read Post</a>
+				<div>{{ post.content | truncatewords: 60 }}</div>
+				<a class="button-test button--wayra" href="{{ post.url }}">Read More</a>
 			</div>
 		</div>
 		{% endfor %}

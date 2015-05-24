@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	// Common Variables
 	menuSelector = $(".menu-selector");
+	postMenuSelector = $(".menu-selector-post");
 	overlay = $(".overlay");
 
 	// Overlay darken
@@ -13,11 +14,19 @@ $(document).ready(function() {
 		}
 	});
 
+	postMenuSelector.click(function() {
+		if (overlay.css('opacity') == 0) {
+			overlay.fadeTo(300, 0.5);
+		} else {
+			overlay.fadeTo(300, 0);
+		}
+	});
+
 	// Fade-in for homepage on load
-	$('.intro-line').animate({
-        "top":"47%",
-        "opacity":"1"
-    },600);
+	// $('.intro-line').animate({
+    //     "top":"47%",
+    //     "opacity":"1"
+    // },600);
 
     $('.menu-selector').animate({
         "opacity":"1"
@@ -39,20 +48,20 @@ $(document).ready(function() {
     });
 
 	// Hide project nav on scroll to footer
-    $(window).scroll(function() {
-        var $nav = $(".project-nav");
-        var $textLogo = $(".text-logo");
-        var $footer = $("#contact");
-
-        var posFooter = $footer.offset().top;  //find top of footer
-        var posNav = $nav.offset().top + 350;  //find top of nav, and compensate for body of nav (260)
-
-        if (posNav > posFooter){
-            $(".project-nav, .text-logo").stop(true, true).animate({opacity: 0}, 100);
-        } else {
-            $(".project-nav, .text-logo").stop(true, true).animate({opacity: 1}, 100);
-        }
-    });
+    // $(window).scroll(function() {
+    //     var $nav = $(".project-nav");
+    //     var $textLogo = $(".text-logo");
+    //     var $footer = $("#contact");
+	//
+    //     var posFooter = $footer.offset().top;  //find top of footer
+    //     var posNav = $nav.offset().top + 350;  //find top of nav, and compensate for body of nav (260)
+	//
+    //     if (posNav > posFooter){
+    //         $(".project-nav, .text-logo").stop(true, true).animate({opacity: 0}, 100);
+    //     } else {
+    //         $(".project-nav, .text-logo").stop(true, true).animate({opacity: 1}, 100);
+    //     }
+    // });
 
 	// $('.menu-hover').hover(function() {
 	//
@@ -60,4 +69,5 @@ $(document).ready(function() {
 
 	// Init
 	$('.menu-link').bigSlide();
+
 });

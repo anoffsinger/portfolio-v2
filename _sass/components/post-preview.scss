@@ -3,14 +3,32 @@
 
 	height: auto;
 	border-bottom: 1px solid #f4f4f4;
-	display: block;
+	display: flex;
+  	align-items: center;
 	margin: 0 auto $large auto;
 	padding-bottom: $large;
+
+	@media only screen and (max-width: 1140px) {
+		flex-direction: column !important;
+	}
+}
+
+.post-preview-content {
+
+	margin-left: 1.6%;
+
+	@media only screen and (max-width: 1140px) {
+		width: 100% !important;
+	}
 }
 
 .post-preview-img {
-	height: 354px;
-	margin-bottom: 0;
+	margin: 0;
+
+	@media only screen and (max-width: 1140px) {
+		width: 100% !important;
+		margin-bottom: 1.375em;
+	}
 }
 
 .post-preview-content > h2 {

@@ -1,65 +1,99 @@
-.work-item > a {
+.work {
+	@extend %clearfix;
 
-	display: block;
-	height: 100%;
-
+/*     @media (max-width: 65.625em) {
+    max-width: 48.875em;
 }
 
-.work-item > a:hover {
-
-	> div:nth-of-type(2) {
-		transform: translateY(-50px);
-		-webkit-transition: opacity .1s ease-in-out;
-		opacity: 1;
-	}
-
-/* 	> div:nth-of-type(1) {
-	transform: scale(1.01);
+@media (max-width: 50em) {
+    width: 100%;
+    height: auto;
 } */
 }
 
-.work-item > div:nth-of-type(1) {
-	background-image: url("../images/cue-app-thumb.png");
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-size: contain;
-	width: 100%;
-	height: 100%;
-	-webkit-transition: all .1s ease;
-	-moz-transition: all .1s ease;
-	-o-transition: all .1s ease;
-	-ms-transition: all .1s ease;
-	transition: all .1s ease;
-}
+.work-item {
+    overflow: hidden;
+	position: relative;
 
-.work-item:hover {
-
-	> div:nth-of-type(1) {
-		-webkit-filter: blur(3px);
+	> a {
+		display: block;
 	}
 }
 
-a > div.testing {
-	-webkit-transition: all .1s ease;
-	height: 50px;
-	border-top: 1px solid rgba(255, 255, 255, .50);
-	padding: 14px 0 15px 0px;
+.work-img {
+
+/* 	background-image: url("../images/cue-app-thumb.png");
+background-repeat: no-repeat;
+background-size: contain;
+ */
+	display: block;
+	width: 100%;
+
+	@include transition(all, .15s);
+}
+
+.work-desc {
 	width: 85%;
 	display: block;
-	margin: 0 auto;
-	opacity: 0;
+	position: absolute;
+	left: 0;
+  	right: 0;
+  	margin: 0 auto;
+
+	@include transition(all, .15s);
 
 	> span {
 		color: white;
 		font-family: $workTitleFont;
 		font-size: 14px;
+		position: absolute;
 	}
 
 	> span:nth-of-type(1) {
-		float: left;
+		left: 0;
+		top: 70px;
+		@include transition(all, .3s);
 	}
 
 	> span:nth-of-type(2) {
+		right: 0;
+		top: 70px;
+		@include transition(all, .5s);
+	}
+}
+
+.work-item:hover {
+
+	.work-desc {
+		transform: translateY(-50px);
+
+		> span:nth-of-type(1) {
+			transform: translateY(-54px);
+		}
+
+		> span:nth-of-type(2) {
+			transform: translateY(-54px);
+		}
+	}
+
+	.work-img {
+		-webkit-filter: blur(3px);
+		/* transform: scale(1.1); */
+	}
+
+	.work-desc:before {
+		content: "";
+		position: absolute;
+		height: 1px;
+		top: 0;
+		left: 0;
+		background-color: white;
+		-webkit-animation: grow .5s cubic-bezier(.71,.01,.25,.99) forwards;
 		float: right;
 	}
+}
+
+.animate {
+	transform: translateY(-100px);
+	-webkit-transition: translateY 2s ease 1s;
 }

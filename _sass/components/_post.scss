@@ -1,36 +1,16 @@
-.post {
-	width: 100%;;
-	margin: 500px auto 0 auto;
-}
-
-.post > p {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: $blogPostBody;
-	margin: 0 auto $paragraphBottom auto;
-	width: 50%;
-	line-height: 1.50em;
-}
-
-.post > figure {
-	width: 100%;
-}
-
-.post > figure > img {
+.post-header {
 	position: relative;
     width: 100vw;
-    left: calc(-50vw + 50%);
-}
+    left: calc(-50vw + 49.3%);
 
-.post-header {
-	position: absolute;
-    width: 100vw;
-    left: calc(-50vw + 50%);
-	top: 0;
-	background: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,.30)), url("http://localhost:4000/images/bridge.jpg") no-repeat center center;
-/* background-repeat: no-repeat; */
-	background-size: 100% auto;
-/* background-color: white; */
+	background: linear-gradient(
+		to bottom,
+		rgba(0,0,0,0),
+		rgba(0,0,0,.40)),
+
+		url("http://localhost:4000/images/bridge.jpg") no-repeat fixed;
+
+	background-size: contain;
 	height: 31.25em;
 	z-index: -1;
 	padding-top: 350px;
@@ -38,8 +18,35 @@
 	> h1 {
 		color: white;
 		margin: 0 auto $paragraphBottom auto;
-		width: 40%;
+		width: 45%;
 		text-align: left;
 		font-size: 36px;
 	}
+}
+
+.post-content {
+	width: 100%;;
+	margin: $large auto 0 auto;
+}
+
+.post-content > p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: $blogPostBody;
+	margin: 0 auto $paragraphBottom auto;
+	max-width: 60%;
+	line-height: 1.50em;
+
+	@media only screen and (max-width: 960px) {
+		max-width: 80% !important;
+	}
+}
+
+.post-content > figure {
+	width: 100%;
+}
+
+.post-content > figure > img {
+	position: relative;
+	width: 100%;
 }
