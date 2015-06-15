@@ -6,7 +6,16 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	
+	width: 49.2%;
+
+	@media (max-width: 1124px) {
+		width: 70%;
+	}
+
+	@media (max-width: 594px) {
+		width: 95%;
+	}
+
 }
 
 .intro-line {
