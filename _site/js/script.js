@@ -34,12 +34,16 @@ $(document).ready(function() {
 
 	// Menu icon animation
 	menuSelector.click(function() {
+
+
 		$(".top-bar").toggleClass("top-bar-close");
 		$(".middle-bar").toggleClass("middle-bar-close");
 		$(".bottom-bar").toggleClass("bottom-bar-close");
 
 		var url = window.location.href; // Get current url
-		$('.menu-item a[href="'+url+'"]').toggleClass('menu-active'); // Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
+		$('.menu-item a[href="'+url+'"]').toggleClass('menu-active');
+		$('.menu-item a[href="'+url+'"]').parent().toggleClass('hover');
+		// Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
 	});
 
 	// Download project documentation button

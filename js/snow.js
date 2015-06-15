@@ -1,3 +1,4 @@
+
 /************* SHIM ************************/
 window.requestAnimFrame = (function(){
 return  window.requestAnimationFrame       ||
@@ -10,11 +11,19 @@ return  window.requestAnimationFrame       ||
 		};
 })();
 /********************************************/
+
 var canvas = document.getElementById('cvs'),
+
+//sets drawing context - could be webgl or 2d and creates the context
 ctx = canvas.getContext('2d'),
+
+//draws the canvas size
 height = canvas.height = document.body.offsetHeight,
 width = canvas.width = document.body.offsetWidth,
+
 collection = [],
+
+//settings
 num_drops = 50, // number of drops
 gravity = .4, // gravity multiplier
 windforce = 0, // yea i'd just leave this
@@ -29,11 +38,17 @@ this.radius;
 this.distance;
 this.color;
 this.speed;
+//what's this...
 this.vx;
 this.vy;
 }
+
+
 Drop.prototype = {
 constructor: Drop,
+
+//this is a method of the constructor, right?
+//randomizing the x location?
 
 random_x: function() {
 	var n = width * (1 + gutter);
@@ -53,10 +68,10 @@ function draw_frame() {
 // check it out, just comment out the
 // ctx.clearRect(0, 0, width, height);
 // line and uncomment the three below:
-
-//ctx.globalCompositeOperation="darker";
-//ctx.fillStyle="rgba(0,0,0,0.5)";
-//ctx.fillRect(0,0,width,height);
+//
+// ctx.globalCompositeOperation="darker";
+// ctx.fillStyle="rgba(0,0,0,0.5)";
+// ctx.fillRect(0,0,width,height);
 ctx.clearRect(0, 0, width, height);
 
 // in a previous attempt I even go as far
