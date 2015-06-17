@@ -1,26 +1,18 @@
 $(document).ready(function() {
 
-	$.simpleWeather({
-    location: 'San Francisco, CA',
-    woeid: '',
-    unit: 'f',
-    success: function(weather) {
-      html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
 
-      $("#weather").html(html);
-    },
-    error: function(error) {
-      $("#weather").html('<p>'+error+'</p>');
-    }
-  });
+
 
 	// Common Variables
-	menuSelector = $(".menu-selector");
-	postMenuSelector = $(".menu-selector-post");
+	menuSelector = $(".header-menu");
+	postMenuSelector = $(".header-menu");
 	overlay = $(".overlay");
 
 	// Overlay darken
 	menuSelector.click(function() {
+
+		menuSelector.toggleClass("open");
+
 		if (overlay.css('opacity') == 0) {
 			overlay.fadeTo(300, 0.5);
 		} else {
@@ -42,7 +34,7 @@ $(document).ready(function() {
     //     "opacity":"1"
     // },600);
 
-    $('.menu-selector').animate({
+    $('.header-menu').animate({
         "opacity":"1"
     },600);
 
@@ -86,6 +78,43 @@ $(document).ready(function() {
 	// });
 
 	// Init
-	$('.menu-link').bigSlide();
+	$('.header-menu').bigSlide();
+
+// 	$.simpleWeather({
+// 	location: 'San Francisco, CA',
+// 	woeid: '',
+// 	unit: 'f',
+// 	success: function(weather) {
+// 	html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
+//
+// 	$("#weather").html(html);
+// 	},
+// 	error: function(error) {
+// 	$("#weather").html('<p>'+error+'</p>');
+// 	}
+// });
+
+	// Check all elements with a .target class against all images on a page
+	BackgroundCheck.init({
+	targets: '.bar'
+	});
+
+	// Specific images
+	BackgroundCheck.init({
+	targets: '.bar',
+	images: '.check-me'
+	});
+
+	// All targets
+	BackgroundCheck.refresh();
+
+	// Specific target
+	BackgroundCheck.refresh(target);
+
+	// Get current targets
+	// BackgroundCheck.get('targets');
+	//
+	// // Change targets
+	// BackgroundCheck.set('targets', '.header');
 
 });
