@@ -50,6 +50,8 @@ $(document).ready(function() {
 		$('.menu-item a[href="'+url+'"]').toggleClass('menu-active');
 		$('.menu-item a[href="'+url+'"]').parent().toggleClass('hover');
 		// Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
+
+		$('.menu-items').toggleClass('slide-in')
 	});
 
 	// Download project documentation button
