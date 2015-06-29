@@ -9,8 +9,8 @@
 		padding-top: 2.875em;
 		padding-bottom: 0;
 
-		> h2 {
-			margin-bottom: 12px;;
+ 		> h2 {
+			margin-bottom: 2.3em;
 		}
 	}
 }
@@ -33,6 +33,10 @@
 	right: 0;
 	background-color: #ececec;
 	-webkit-animation: grow 1s cubic-bezier(.71,.01,.25,.99) forwards;
+
+	@media (max-width: 400px) {
+		background-color: white;
+	}
 }
 
 @-webkit-keyframes grow {

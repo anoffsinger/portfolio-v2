@@ -1,6 +1,6 @@
 .work {
 	@extend %clearfix;
-
+	margin-bottom: $large;
 /*     @media (max-width: 65.625em) {
     max-width: 48.875em;
 }
@@ -9,6 +9,9 @@
     width: 100%;
     height: auto;
 } */
+
+
+
 }
 
 .work-item {

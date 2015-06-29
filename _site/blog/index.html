@@ -10,29 +10,28 @@
 
 
 		<nav id="menu">
-			<ul>
-				<li class="menu-item hover"><a href="http://localhost:4000/">Home</a></li>
-				<li class="menu-item hover"><a href="http://localhost:4000/work.html">Work</a></li>
-				<li class="menu-item hover"><a href="http://localhost:4000/blog/">Blog</a></li>
-				<li class="menu-item hover"><a href="#">About</a></li>
+			<ul class="menu-items">
+				<li class="menu-item"><a href="http://localhost:4000/">Home</a></li>
+				<li class="menu-item"><a href="http://localhost:4000/work.html">Work</a></li>
+				<li class="menu-item"><a href="http://localhost:4000/blog">Blog</a></li>
+				<li class="menu-item"><a href="#">About</a></li>
 			</ul>
+			<p class="menu-weather">San Francisco, CA / <span id="weather"></span></p>
 		</nav>
 
 
 		<div class="overlay push"></div>
 		<div class="content push">
 			<header class="header">
-                <a href="#menu" class="header-menu menu-selector">
-    				<div class="top-bar"></div>
-    				<div class="middle-bar"></div>
-    				<div class="bottom-bar"></div>
-    			</a>
-                <h2 class="header-title">Work</h2>
-            </header>
-
+				<a href="#menu" class="header-menu menu-selector">
+					<div class="top-bar"></div>
+					<div class="middle-bar"></div>
+					<div class="bottom-bar"></div>
+				</a>
 				<h2 class="header-title">Blog</h2>
+			</header>
 
-		
+				
 		<div class="post-preview">
 			<img src="../images/test-pic.png" alt="" class="post-preview-img one-third">
 
@@ -95,11 +94,11 @@
 		
 
 
-        <script language="javascript" type="text/javascript" src="../../../../js/snow.js"> </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="../../../../js/snow.js"> </script>
+        <script src="../../../../js/jquery.simpleWeather.min.js"></script>
         <script src="../../../../js/script.js"></script>
         <script src="../../../../js/bigSlide.js"></script>
-        <script src="../../../../js/background-check.min.js"></script>
     </body>
 </html>
 

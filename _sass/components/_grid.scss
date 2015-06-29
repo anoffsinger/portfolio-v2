@@ -4,7 +4,11 @@
 	position: relative;
 	width: 85%;
 	margin: 0 auto;
-	padding-top: 46px;
+	padding-top: 2.875em;
+
+	@media (max-width: 400px) {
+		margin-top: 3.8em;
+	}
 }
 
 .content-splash {
