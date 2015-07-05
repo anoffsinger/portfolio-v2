@@ -6,7 +6,7 @@
 	width: 100%;
 	background-color: black;
 	opacity: 0;
-	z-index: 1000;
+	z-index: 999;
 	pointer-events: none;
 
 	transition: transform .5s ease;

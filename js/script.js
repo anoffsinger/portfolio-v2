@@ -9,6 +9,7 @@ $(document).ready(function() {
 	content = $(".content")
 	headerItems = $(".header-items")
 	main = $(".main")
+	body = $("body")
 
 	// Overlay darken
 	menuSelector.click(function() {
@@ -20,6 +21,7 @@ $(document).ready(function() {
 		// content.toggleClass("open");
 		headerItems.toggleClass("open");
 		main.toggleClass("open");
+		body.toggleClass("no-scroll")
 
 
 		if (overlay.css('opacity') == 0) {
