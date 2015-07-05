@@ -3,9 +3,9 @@
 		@extend %visually-hidden;
 	}
 
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+/* 	position: absolute;
+top: 50%;
+transform: translateY(-50%); */
 	width: 49.2%;
 
 	@media (max-width: 1124px) {

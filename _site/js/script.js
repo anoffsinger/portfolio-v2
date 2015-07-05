@@ -1,46 +1,32 @@
 $(document).ready(function() {
 
-
-
-
 	// Common Variables
-	menuSelector = $(".header-menu");
-	postMenuSelector = $(".header-menu");
+	menuSelector = $(".menu-selector");
+	// postMenuSelector = $(".header-menu");
 	overlay = $(".overlay");
+	nav = $("nav")
+	canvas = $("canvas")
+	content = $(".content")
+	headerItems = $(".header-items")
+	main = $(".main")
 
 	// Overlay darken
 	menuSelector.click(function() {
 
-		menuSelector.toggleClass("open");
+		// menuSelector.toggleClass("open");
+		nav.toggleClass("open");
+		overlay.toggleClass("open");
+		canvas.toggleClass("open");
+		// content.toggleClass("open");
+		headerItems.toggleClass("open");
+		main.toggleClass("open");
+
 
 		if (overlay.css('opacity') == 0) {
 			overlay.fadeTo(300, 0.5);
 		} else {
 			overlay.fadeTo(300, 0);
 		}
-	});
-
-	postMenuSelector.click(function() {
-		if (overlay.css('opacity') == 0) {
-			overlay.fadeTo(300, 0.5);
-		} else {
-			overlay.fadeTo(300, 0);
-		}
-	});
-
-	// Fade-in for homepage on load
-	// $('.intro-line').animate({
-    //     "top":"47%",
-    //     "opacity":"1"
-    // },600);
-
-    $('.header-menu').animate({
-        "opacity":"1"
-    },600);
-
-	// Menu icon animation
-	menuSelector.click(function() {
-
 
 		$(".top-bar").toggleClass("top-bar-close");
 		$(".middle-bar").toggleClass("middle-bar-close");
@@ -53,6 +39,12 @@ $(document).ready(function() {
 
 		$('.menu-items').toggleClass('slide-in')
 	});
+
+	// Fade-in for homepage on load
+	// $('.intro-line').animate({
+    //     "top":"47%",
+    //     "opacity":"1"
+    // },600);
 
 	// Download project documentation button
 	$(".project-nav-download-bubble").hide().delay("1000").fadeToggle("1000", function() {
@@ -75,12 +67,8 @@ $(document).ready(function() {
     //     }
     // });
 
-	// $('.menu-hover').hover(function() {
-	//
-	// });
-
 	// Init
-	$('.header-menu').bigSlide();
+	// $('.header-menu').bigSlide();
 
 	$.simpleWeather({
 	location: 'San Francisco, CA',

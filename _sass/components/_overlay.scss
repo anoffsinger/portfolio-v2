@@ -8,4 +8,6 @@
 	opacity: 0;
 	z-index: 1000;
 	pointer-events: none;
+
+	transition: transform .5s ease;
 }

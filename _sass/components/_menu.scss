@@ -3,19 +3,25 @@
 	position: fixed;
     left: -15.625em; /*left or right and the width of your navigation panel*/
     width: 15.625em; /*should match the above value*/
-	padding-top: 3.56em;
+	/* padding-top: 3.56em; */
 	overflow: hidden;
+	height: 100vh;
+}
+
+.open {
+	-webkit-transform: translateX(250px);
+
 }
 
 .menu-selector {
 	display: block;
 	width: 20px;
 	cursor: pointer;
-	z-index: 1001;
-	position: fixed;
-	opacity: 0;
-	top: 2.9em;
-	left: 3%;
+	float: left;
+	/* position: fixed; */
+	opacity: 1;
+	/* top: 2.9em; */
+	/* left: 3%; */
 	-webkit-transition: transform 300ms ease;
 
 	@media (max-width: 400px) {
@@ -23,14 +29,14 @@
 	}
 }
 
-.menu-selector-post {
+/* .menu-selector-post {
 	display: block;
 	width: 20px;
 	cursor: pointer;
 	z-index: 3;
 	position: fixed;
 	opacity: 0;
-}
+} */
 
 .menu-item {
 	display: block;
@@ -123,12 +129,8 @@
 
 #weather {
 	> p {
-		display: inline;	
+		display: inline;
 	}
-}
-
-.open {
-	transform: translateX(250px);
 }
 
 .top-bar,
@@ -154,7 +156,7 @@
 
 .top-bar-close {
 	transform: rotate(-45deg);
-	background-color: $white;
+	background-color: $salmon;
 }
 
 .middle-bar-close {
@@ -165,5 +167,5 @@
 
 .bottom-bar-close {
 	transform: rotate(45deg);
-	background-color: $white;
+	background-color: $salmon;
 }

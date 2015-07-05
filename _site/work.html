@@ -32,88 +32,91 @@
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav id="menu">
-			<ul class="menu-items">
-				<li class="menu-item"><a href="http://localhost:4000/">Home</a></li>
-				<li class="menu-item"><a href="http://localhost:4000/work.html">Work</a></li>
-				<li class="menu-item"><a href="http://localhost:4000/blog">Blog</a></li>
-				<li class="menu-item"><a href="#">About</a></li>
-			</ul>
-			<p class="menu-weather">San Francisco, CA / <span id="weather"></span></p>
-		</nav>
+        <div class="site-wrapper">
+            <nav id="menu">
+    			<ul class="menu-items">
+    				<li class="menu-item"><a href="http://localhost:4000/">Home</a></li>
+    				<li class="menu-item"><a href="http://localhost:4000/work.html">Work</a></li>
+    				<li class="menu-item"><a href="http://localhost:4000/blog">Blog</a></li>
+    				<li class="menu-item"><a href="#">About</a></li>
+    			</ul>
+    			<p class="menu-weather">San Francisco, CA / <span id="weather"></span></p>
+    		</nav>
 
-        <div class="overlay push"></div>
+            <div class="overlay"></div>
 
-        <div class="content push">
-    		<header class="header">
-                <a href="#menu" class="header-menu menu-selector">
-    				<div class="top-bar"></div>
-    				<div class="middle-bar"></div>
-    				<div class="bottom-bar"></div>
-    			</a>
-                <h2 class="header-title">Work</h2>
-            </header>
+            <div class="content">
+        		<header class="header">
+                    <div class="header-items">
+                        <a href="#" class="header-menu menu-selector">
+            				<div class="top-bar"></div>
+            				<div class="middle-bar"></div>
+            				<div class="bottom-bar"></div>
+            			</a>
+                        <h2 class="header-title">Work</h2>
+                    </div>
+                </header>
 
-            <div>
-                <ol class="work column-grid">
-                    <li class="one-third col work-item">
-                        <a href="/projects/cue-app.html">
-                            <img src="../images/cue-app-thumb.png" class="work-img" alt="">
-                            <div class="work-desc">
-                                <span>Cue App</span>
-                                <span>UX, UI, Content</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="one-third col work-item">
-                        <a href="/projects/skoop.html">
-                            <img src="/images/skoop-thumbnail.png" class="work-img" alt="">
-                            <div class="work-desc">
-                                <span>Skoop Website</span>
-                                <span>UX, UI, Dev</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="one-third col work-item">
-                        <a href="/projects/spg.html">
-                            <img src="/images/spg-thumbnail.png" class="work-img" alt="">
-                            <div class="work-desc">
-                                <span>SPG App</span>
-                                <span>UX, UI, Motion</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="one-third col work-item">
-                        <a href="/projects/cue-web.html">
-                            <img src="/images/cue-web-thumb.png" class="work-img" alt="">
-                            <div class="work-desc">
-                                <span>Cue Splashpage</span>
-                                <span>UX, UI, Dev</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="one-third col work-item">
-                        <a href="/projects/dr-book.html">
-                            <img src="/images/dr-book-thumbnail.jpg" class="work-img" alt="">
-                            <div class="work-desc">
-                                <span>Dieter Rams Book</span>
-                                <span>Print</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="one-third col work-item">
-                        <a href="/projects/crafty-namer.html">
-                            <img src="../images/crafty-thumbnail.png" class="work-img" alt="">
-                            <div class="work-desc">
-                                <span>Crafty Namer Website</span>
-                                <span>UX, UI, Dev</span>
-                            </div>
-                        </a>
-                    </li>
-                </ol>
+                <div class="main">
+                    <ol class="work column-grid">
+                        <li class="one-third col work-item">
+                            <a href="/projects/cue-app.html">
+                                <img src="../images/cue-app-thumb.png" class="work-img" alt="">
+                                <div class="work-desc">
+                                    <span>Cue App</span>
+                                    <span>UX, UI, Content</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="one-third col work-item">
+                            <a href="/projects/skoop.html">
+                                <img src="/images/skoop-thumbnail.png" class="work-img" alt="">
+                                <div class="work-desc">
+                                    <span>Skoop Website</span>
+                                    <span>UX, UI, Dev</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="one-third col work-item">
+                            <a href="/projects/spg.html">
+                                <img src="/images/spg-thumbnail.png" class="work-img" alt="">
+                                <div class="work-desc">
+                                    <span>SPG App</span>
+                                    <span>UX, UI, Motion</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="one-third col work-item">
+                            <a href="/projects/cue-web.html">
+                                <img src="/images/cue-web-thumb.png" class="work-img" alt="">
+                                <div class="work-desc">
+                                    <span>Cue Splashpage</span>
+                                    <span>UX, UI, Dev</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="one-third col work-item">
+                            <a href="/projects/dr-book.html">
+                                <img src="/images/dr-book-thumbnail.jpg" class="work-img" alt="">
+                                <div class="work-desc">
+                                    <span>Dieter Rams Book</span>
+                                    <span>Print</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="one-third col work-item">
+                            <a href="/projects/crafty-namer.html">
+                                <img src="../images/crafty-thumbnail.png" class="work-img" alt="">
+                                <div class="work-desc">
+                                    <span>Crafty Namer Website</span>
+                                    <span>UX, UI, Dev</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/snow.js"> </script>
 		<script src="js/jquery.simpleWeather.min.js"></script>

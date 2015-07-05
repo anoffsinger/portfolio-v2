@@ -1,18 +1,25 @@
 .header {
 
-	@media (max-width: 400px) {
-		background-color: white;
-		position: fixed;
-		width: 85%;
-		z-index: 1000;
-		top: 0;
-		padding-top: 2.875em;
-		padding-bottom: 0;
+	background-color: white;
+	position: fixed;
+	width: 85%;
+	top: 0;
+	padding-top: 2.875em;
+	padding-bottom: 0;
+	width: 100%;
+	left: 0;
+	z-index: 2;
+	height: 112px;
 
- 		> h2 {
-			margin-bottom: 2.3em;
-		}
+	> h2 {
+		margin-bottom: 2.3em;
 	}
+}
+
+.header-items {
+	width: 85%;
+	margin: 0 auto;
+	transition: transform .5s ease;
 }
 
 .header-title {
@@ -21,11 +28,13 @@
 	color: $landingGrey;
 	text-align: right;
 	margin-bottom: $large;
-	padding-bottom: .9375em;
+	/* padding-bottom: 2px; */
 	position: relative;
+	float: right;
+	/* width: 95%; */
 }
 
-.header-title:before {
+/* .header-title:before {
 	content: "";
 	position: absolute;
 	height: 1px;
@@ -37,7 +46,7 @@
 	@media (max-width: 400px) {
 		background-color: white;
 	}
-}
+} */
 
 @-webkit-keyframes grow {
     from { width: 0%; }
