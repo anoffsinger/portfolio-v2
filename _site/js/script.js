@@ -10,8 +10,25 @@ $(document).ready(function() {
 	headerItems = $(".header-items")
 	main = $(".main")
 	body = $("body")
+	menuItem = $(".menu-item")
 
-	// Overlay darken
+	$(".testy").click(function (e) {
+    	e.preventDefault();                   // prevent default anchor behavior
+    	var goTo = this.getAttribute("href"); // store anchor href
+
+		nav.toggleClass("open");
+		overlay.toggleClass("open");
+		canvas.toggleClass("open");
+		// content.toggleClass("open");
+		headerItems.toggleClass("open");
+		main.toggleClass("open");
+		body.toggleClass("no-scroll")
+
+	    setTimeout(function(){
+	         window.location = goTo;
+	    },300);
+	});
+
 	menuSelector.click(function() {
 
 		// menuSelector.toggleClass("open");
@@ -25,7 +42,7 @@ $(document).ready(function() {
 
 
 		if (overlay.css('opacity') == 0) {
-			overlay.fadeTo(300, 0.5);
+			overlay.fadeTo(300, .85);
 		} else {
 			overlay.fadeTo(300, 0);
 		}
