@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+	$("li.work-item").each(function(i, el) {
+    var $this = $(this);
+    setTimeout(function() {
+            $this.addClass('work-item-loaded');
+        }, i*100); // milliseconds
+	});
+
+	// $("li.work-item").addClass("work-item-loaded");
+
+	$(window).load(function() {
+	// 	$('li').each(function(i) {
+	//       $(this).delay((i + 1) * 250).fadeIn(2000);
+	//    });
+
+	});
+
 	// Common Variables
 	menuSelector = $(".menu-selector");
 	// postMenuSelector = $(".header-menu");
@@ -11,6 +27,7 @@ $(document).ready(function() {
 	main = $(".main")
 	body = $("body")
 	menuItem = $(".menu-item")
+
 
 	$(".testy").click(function (e) {
     	e.preventDefault();                   // prevent default anchor behavior

@@ -1,6 +1,7 @@
 .work {
 	@extend %clearfix;
 	margin-bottom: $large;
+	margin-top: 20px;
 /*     @media (max-width: 65.625em) {
     max-width: 48.875em;
 }
@@ -17,10 +18,20 @@
 .work-item {
     overflow: hidden;
 	position: relative;
+	opacity: 0;
 
 	> a {
 		display: block;
 	}
+
+transition: all .15s ease-out;
+
+}
+
+.work-item-loaded {
+	transform: translateY(-20px);
+	opacity: 1;
+
 }
 
 .work-img {
