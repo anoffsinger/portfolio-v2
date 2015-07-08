@@ -1,6 +1,9 @@
 .post-preview {
 	@extend %clearfix;
 
+	opacity: 0;
+	transition: all .15s ease-out;
+
 	height: auto;
 	border-bottom: 1px solid #f4f4f4;
 	display: flex;

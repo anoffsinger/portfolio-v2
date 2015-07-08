@@ -3,7 +3,7 @@
 } */
 
 #menu {
-	z-index: 998;
+	z-index: 1050;
 	position: fixed;
     left: -15.625em; /*left or right and the width of your navigation panel*/
     width: 15.625em; /*should match the above value*/
@@ -12,6 +12,10 @@
 	height: 100vh;
 	background-color: #F8F8F8;
 	transition: transform .5s ease;
+
+/* 	-webkit-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
+-moz-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
+box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5); */
 }
 
 .open {
@@ -41,7 +45,6 @@ button:focus {
 	width: 100%;
 	font: 17px $bodyFont;
 	color: $landingGrey;
-	border-bottom: 1px solid #f8f8f8;
 	opacity: 0;
 	/* margin-left: 0.3125em; */
 
@@ -99,6 +102,10 @@ a:hover:after {
 	opacity: 1;
 	transform: translateX(15px) rotate(90deg);
 	/* transform-origin: center; */
+}
+
+a.menu-active:hover:after {
+	opacity: 0;
 }
 
 .slide-in {

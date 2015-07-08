@@ -1,7 +1,6 @@
 .work {
 	@extend %clearfix;
 	margin-bottom: $large;
-	margin-top: 20px;
 /*     @media (max-width: 65.625em) {
     max-width: 48.875em;
 }
@@ -24,7 +23,7 @@
 		display: block;
 	}
 
-transition: all .15s ease-out;
+	transition: all .15s ease-out;
 
 }
 

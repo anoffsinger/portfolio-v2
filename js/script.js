@@ -7,6 +7,12 @@ $(document).ready(function() {
         }, i*100); // milliseconds
 	});
 
+	$(".post-preview").each(function(i, el) {
+	var $this = $(this);
+	setTimeout(function() {
+			$this.addClass('work-item-loaded');
+		}, i*100); // milliseconds
+	});
 	// $("li.work-item").addClass("work-item-loaded");
 
 	$(window).load(function() {
@@ -34,11 +40,11 @@ $(document).ready(function() {
     	var goTo = this.getAttribute("href"); // store anchor href
 
 		nav.toggleClass("open");
-		overlay.toggleClass("open");
-		canvas.toggleClass("open");
-		// content.toggleClass("open");
-		headerItems.toggleClass("open");
-		main.toggleClass("open");
+		// overlay.toggleClass("open");
+		// canvas.toggleClass("open");
+		content.toggleClass("open");
+		// headerItems.toggleClass("open");
+		// main.toggleClass("open");
 		body.toggleClass("no-scroll")
 
 	    setTimeout(function(){
@@ -70,7 +76,6 @@ $(document).ready(function() {
 
 		var url = window.location.href; // Get current url
 		$('.menu-item a[href="'+url+'"]').toggleClass('menu-active');
-		$('.menu-item a[href="'+url+'"]').parent().toggleClass('hover');
 		// Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
 
 		$('.menu-items').toggleClass('slide-in')
