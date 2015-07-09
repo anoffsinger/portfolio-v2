@@ -82,12 +82,6 @@ $(document).ready(function() {
 		$('.menu-items').toggleClass('slide-in')
 	});
 
-	// Fade-in for homepage on load
-	// $('.intro-line').animate({
-    //     "top":"47%",
-    //     "opacity":"1"
-    // },600);
-
 	// Download project documentation button
 	$(".project-nav-download-bubble").hide().delay("1000").fadeToggle("1000", function() {
         $(this).delay("3000").fadeToggle("1000");
@@ -109,39 +103,36 @@ $(document).ready(function() {
     //     }
     // });
 
-	// Init
-	// $('.header-menu').bigSlide();
-
 	$.simpleWeather({
-	location: 'San Francisco, CA',
-	woeid: '',
-	unit: 'f',
-	success: function(weather) {
-	html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
+		location: 'San Francisco, CA',
+		woeid: '',
+		unit: 'f',
+		success: function(weather) {
+		html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
 
-	$("#weather").html(html);
-	},
-	error: function(error) {
-	$("#weather").html('<p>'+error+'</p>');
-	}
-});
+		$("#weather").html(html);
+		},
+		error: function(error) {
+		$("#weather").html('<p>'+error+'</p>');
+		}
+	});
 
 	// Check all elements with a .target class against all images on a page
-	BackgroundCheck.init({
-	targets: '.bar'
-	});
+	// BackgroundCheck.init({
+	// targets: '.bar'
+	// });
 
 	// Specific images
-	BackgroundCheck.init({
-	targets: '.bar',
-	images: '.check-me'
-	});
+	// BackgroundCheck.init({
+	// targets: '.bar',
+	// images: '.check-me'
+	// });
 
 	// All targets
-	BackgroundCheck.refresh();
+	// BackgroundCheck.refresh();
 
 	// Specific target
-	BackgroundCheck.refresh(target);
+	// BackgroundCheck.refresh(target);
 
 	// Get current targets
 	// BackgroundCheck.get('targets');
