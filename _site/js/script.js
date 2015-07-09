@@ -40,12 +40,12 @@ $(document).ready(function() {
     	var goTo = this.getAttribute("href"); // store anchor href
 
 		nav.toggleClass("open");
-		// overlay.toggleClass("open");
-		// canvas.toggleClass("open");
-		content.toggleClass("open");
-		// headerItems.toggleClass("open");
-		// main.toggleClass("open");
-		body.toggleClass("no-scroll")
+		overlay.toggleClass("open");
+		canvas.toggleClass("open");
+		// content.toggleClass("open");
+		headerItems.toggleClass("open");
+		main.toggleClass("open");
+		$(".intro").toggleClass("open");
 
 	    setTimeout(function(){
 	         window.location = goTo;
