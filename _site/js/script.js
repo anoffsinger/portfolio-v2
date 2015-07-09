@@ -25,7 +25,7 @@ $(document).ready(function() {
 	// Common Variables
 	menuSelector = $(".menu-selector");
 	// postMenuSelector = $(".header-menu");
-	overlay = $(".overlay");
+	overlay = $(".content-overlay");
 	nav = $("nav")
 	canvas = $("canvas")
 	content = $(".content")
@@ -35,7 +35,7 @@ $(document).ready(function() {
 	menuItem = $(".menu-item")
 
 
-	$(".testy").click(function (e) {
+	$(".menu-item > a").click(function (e) {
     	e.preventDefault();                   // prevent default anchor behavior
     	var goTo = this.getAttribute("href"); // store anchor href
 
@@ -61,7 +61,8 @@ $(document).ready(function() {
 		// content.toggleClass("open");
 		headerItems.toggleClass("open");
 		main.toggleClass("open");
-		body.toggleClass("no-scroll")
+		body.toggleClass("no-scroll");
+		$(".intro").toggleClass("open");
 
 
 		if (overlay.css('opacity') == 0) {
