@@ -2,6 +2,11 @@
 	overflow: hidden;
 } */
 
+.menu-active:hover {
+  transform: translateX(0px) !important;
+  color: $landingGrey !important;
+}
+
 #menu {
 	z-index: 1050;
 	position: fixed;
@@ -18,8 +23,17 @@
 box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5); */
 }
 
+.nav-open {
+	-webkit-transform: translateX(250px);
+}
+
 .open {
 	-webkit-transform: translateX(250px);
+	pointer-events: none;
+}
+
+.menu-selector-open {
+	pointer-events: auto;
 }
 
 .menu-overlay {

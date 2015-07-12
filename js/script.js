@@ -4,27 +4,18 @@ $(document).ready(function() {
     var $this = $(this);
     setTimeout(function() {
             $this.addClass('work-item-loaded');
-        }, i*100); // milliseconds
+        }, i*100);
 	});
 
 	$(".post-preview").each(function(i, el) {
 	var $this = $(this);
 	setTimeout(function() {
 			$this.addClass('work-item-loaded');
-		}, i*100); // milliseconds
-	});
-	// $("li.work-item").addClass("work-item-loaded");
-
-	$(window).load(function() {
-	// 	$('li').each(function(i) {
-	//       $(this).delay((i + 1) * 250).fadeIn(2000);
-	//    });
-
+		}, i*100);
 	});
 
 	// Common Variables
 	menuSelector = $(".menu-selector");
-	// postMenuSelector = $(".header-menu");
 	overlay = $(".content-overlay");
 	nav = $("nav")
 	canvas = $("canvas")
@@ -43,7 +34,7 @@ $(document).ready(function() {
 		overlay.toggleClass("open");
 		canvas.toggleClass("open");
 		// content.toggleClass("open");
-		headerItems.toggleClass("open");
+		headerItems.toggleClass("header-open");
 		main.toggleClass("open");
 		$(".intro").toggleClass("open");
 
@@ -55,7 +46,7 @@ $(document).ready(function() {
 	menuSelector.click(function() {
 
 		// menuSelector.toggleClass("open");
-		nav.toggleClass("open");
+		nav.toggleClass("nav-open");
 		overlay.toggleClass("open");
 		canvas.toggleClass("open");
 		// content.toggleClass("open");
@@ -63,6 +54,7 @@ $(document).ready(function() {
 		main.toggleClass("open");
 		body.toggleClass("no-scroll");
 		$(".intro").toggleClass("open");
+		menuSelector.toggleClass("menu-selector-open");
 
 
 		if (overlay.css('opacity') == 0) {
@@ -79,7 +71,7 @@ $(document).ready(function() {
 		$('.menu-item a[href="'+url+'"]').toggleClass('menu-active');
 		// Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
 
-		$('.menu-items').toggleClass('slide-in')
+		$('.menu-items').toggleClass('slide-in');
 	});
 
 	// Download project documentation button

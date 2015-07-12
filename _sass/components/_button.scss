@@ -113,7 +113,7 @@
 
 .button-main:hover::before {
 	opacity: 1;
-	background-color: $darkBlue;
+	background-color: $buttonColor;
 	-webkit-transform: rotate3d(0, 0, 1, 0deg);
 	transform: rotate3d(0, 0, 1, 0deg);
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
