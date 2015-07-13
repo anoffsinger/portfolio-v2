@@ -12,9 +12,6 @@
 					<div class="middle-bar"></div>
 					<div class="bottom-bar"></div>
 				</button>
-
-				<a class="header-back" href="http://localhost:4000/blog/">< Back to All Posts</a>
-
 			</div>
 		</header>
 
@@ -24,16 +21,12 @@
 			</div>
 		</header>
 
-
-
-		<div class="post-header">
-
 		</div>
 
 		<div class="post-content">
-			<h1>{{ page.title }}</h1>
-			<span>{{ page.date | date_to_long_string }}</span>
 
 			{{ content }}
+
+		{% include bar-nav.html %}
 
 	{% include post-footer.html %}

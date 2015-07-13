@@ -2,30 +2,37 @@
 
 .project-nav {
     position: fixed;
-    top: 50%;
+    bottom: 0;
     /* margin-top: -8.125em; */
     left: 0;
     z-index: 2;
     width: 100%;
+    background-color: $charcoal;
+    height: 44px;
 
-    @media (max-width: 50em) {
-        left: 50%;
-        margin-left: -7.125em;
-        top: auto;
-        bottom: 0;
+    > div {
+        width: 85%;
+        margin: 0 auto;
     }
+
+/*     @media (max-width: 50em) {
+    left: 50%;
+    margin-left: -7.125em;
+    top: auto;
+    bottom: 0;
+} */
 }
 
 .project-nav-next, .project-nav-back, .project-nav-all, .project-nav-home, .project-nav-download {
-    height: $medium;
-    width: $medium;
+    height: 44px;
+    width: 44px;
     display: block;
-    background-color: $landingGrey;
+    background-color: $charcoal;
 
-    @media (max-width: 50em) {
-        float: left;
-        background-color: $darkBlue;
-    }
+/*     @media (max-width: 50em) {
+    float: left;
+    background-color: $darkBlue;
+} */
 
     span {
         display: block;
@@ -38,14 +45,14 @@
 
         &:hover {
             @include transition(background-color, .3s);
-            background-color: $darkBlue;
+            background-color: $white;
 
             span {
-                color: $silver;
+                color: $charcoal;
 
-                @media (max-width: 50em) {
-                    color: $silver;
-                }
+/*                 @media (max-width: 50em) {
+    color: $silver;
+} */
             }
         }
     }
@@ -75,26 +82,28 @@
 }
 
 .project-nav-next {
-    padding-left: 1.125em;
-    padding-top: 1.125em;
-    float: right;
+/*     padding-left: 1.125em;
+padding-top: 1.125em; */
+    float: left;
 }
 
 .project-nav-back {
-    padding-left: .9375em;
-    padding-top: 1.125em;
+/*     padding-left: .9375em;
+padding-top: 1.125em; */
     float: left;
 }
 
 .project-nav-download {
-    padding-left: 16.5px;
-    padding-top: 16px;
-    position: relative;
+/*     padding-left: 16.5px;
+padding-top: 16px;
+position: relative; */
+    float: right;
 }
 
 .project-nav-all {
     padding-left: 1.0625em;
     padding-top: 1.125em;
+    float: right;
 }
 
 .project-nav-download-bubble {

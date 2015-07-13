@@ -27,8 +27,21 @@
 
 /* 		border-bottom: 1px solid rgb(236, 236, 236);
 width: 94%;
-padding-bottom: 3px; */
-	}
+padding-bottom: 3px;
+ */	}
+}
+
+.header-back {
+	font-family: $workTitleFont;
+	font-size: .875em;
+	color: $landingGrey;
+	margin-left: 100px;
+
+	transition: color .2s ease;
+}
+
+.header-back:hover {
+	color: $darkBlue;
 }
 
 .header-title {

@@ -16,63 +16,50 @@ If you like it, drop me a line at adam@noff.me.
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Dieter Rams Book</title>
-        <meta property="og:title" content="Adam Noffsinger"/>
-        <meta property="og:site_name" content="Adam Noffsinger"/>
-        <meta property="og:image" content="http://noff.me/images/opengraph.png"/>
-        <meta property="og:url" content="http://noff.me"/>
-        <meta property="og:description" content="Adam Noffsinger is a digital product designer and coder living in sunny Boulder, Colorado."/>
-        <meta name="description" content="Adam Noffsinger is a digital product designer and coder living in sunny Boulder, Colorado.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <nav id="menu">
-            <ul class="menu-items">
-				<li class="menu-item hover"><a href="http://localhost:4000/">Home</a></li>
-				<li class="menu-item hover"><a href="http://localhost:4000/work.html">Work</a></li>
-				<li class="menu-item hover"><a href="http://localhost:4000/blog">Blog</a></li>
-				<li class="menu-item hover"><a href="#">About</a></li>
-			</ul>
-			<p class="menu-current">San Francisco, CA / <span id="weather"></span></p>
-        </nav>
+        <div class="wrapper-site">
 
-        <div class="overlay push"></div>
+			<nav id="menu">
+    			<div class="menu-overlay"></div>
+    			<ul class="menu-items">
+    				<li class="menu-item"><a href="http://anoffsinger.github.io/portfolio_v2/index.html">Home</a></li>
+    				<li class="menu-item"><a href="http://anoffsinger.github.io/portfolio_v2/work.html">Work</a></li>
+    				<li class="menu-item"><a class="menu-active" href="http://anoffsinger.github.io/portfolio_v2/blog">Blog</a></li>
+    				<li class="menu-item"><a href="http://anoffsinger.github.io/portfolio_v2/about.html">About</a></li>
+    			</ul>
+    			<p class="menu-weather">San Francisco, CA / <span id="weather"></span></p>
+    		</nav>
 
-        <div class="content push"></div>
+        	<div class="content">
+        		<div class="content-overlay"></div>
 
-            <header class="header">
-                <a href="#menu" class="header-menu menu-selector">
-                    <div class="top-bar"></div>
-                    <div class="middle-bar"></div>
-                    <div class="bottom-bar"></div>
-                </a>
-                
-            </header>
+        		<header class="header header-menu">
+        			<div class="header-items">
+        				<button class="menu-selector">
+        					<div class="top-bar"></div>
+        					<div class="middle-bar"></div>
+        					<div class="bottom-bar"></div>
+        				</button>
+        			</div>
+        		</header>
 
-            <div class="project-nav">
-                <a class="project-nav-back" href="cue-web.html" title="Previous Project"><span class="icon-last"></span></a>
-                <a class="project-nav-next" href="crafty-namer.html" title="Next Project"><span class="icon-next"></span></a>
-            </div>
+        		<header class="header header-title">
+        			<div class="header-items">
+        				<h2>Test 6</h2>
+        			</div>
+        		</header>
 
-            <header>
-                <div class="project-description">
-                    <div class="project-title">
-                        <h1>Dieter Rams Book</h1>
-                        <p>design</p>
-                    </div>
+        		<div class="post-content">
 
-                    <p>Dieter Rams has been one of my design idols (and the idol of many other designers) for quite some time. When I was tasked with creating a book exemplifying design principals that influenced and inspired my work, I naturally went straight to Rams’ 10 Principals For Good Design.  </p>
+        			<p>Dieter Rams has been one of my design idols (and the idol of many other designers) for quite some time. When I was tasked with creating a book exemplifying design principals that influenced and inspired my work, I naturally went straight to Rams’ 10 Principals For Good Design.</p>
                     <p>While designing the book, I adhered to Dieter’s principals, maintaining an unobtrusive, minimalistic, and aesthetically pleasing design. I used a simple grid system for the book, based on the dimensions of the Braun T3 Pocket Radio - the product known for influencing the design of Apple’s iPod. </p>
                     <p>The products showcased in the book span Dieter’s work for both Braun and Vitsoe.</p>
-                </div>
-            </header>
 
-            <div>
+			    </div>
+
                 <div class="project-image project-image-dr-spread-1" role="img" aria-label="Book spread for Dieter Rams book.">
                     <span class="project-image-dr-spread-1-inner">
                     </span>
@@ -92,6 +79,16 @@ If you like it, drop me a line at adam@noff.me.
                     <span class="project-image-dr-spread-4-inner">
                     </span>
                 </div>
+
+            </div>
+            <div class="project-nav">
+                <div>
+                    <a class="project-nav-back" href="cue-web.html" title="Previous Project"><span class="icon-last"></span></a>
+                    <a class="project-nav-next" href="crafty-namer.html" title="Next Project"><span class="icon-next"></span></a>
+                    <a class="project-nav-all" href="crafty-namer.html" title="All Posts"><span class="icon-download"></span></a>
+                    <a class="project-nav-download" href="crafty-namer.html" title="Download Documentation"><span class="icon-menu"></span></a>
+                </div>
+
             </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

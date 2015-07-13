@@ -30,7 +30,7 @@ $(document).ready(function() {
     	e.preventDefault();                   // prevent default anchor behavior
     	var goTo = this.getAttribute("href"); // store anchor href
 
-		nav.toggleClass("open");
+		nav.toggleClass("nav-open");
 		overlay.toggleClass("open");
 		canvas.toggleClass("open");
 		// content.toggleClass("open");

@@ -1,16 +1,17 @@
 .post-header {
 	position: relative;
     width: 100vw;
-    left: calc(-50vw + 49.3%);
+    left: calc(-49.4vw + 49.3%);
 
 	background:
 
 		url("http://localhost:4000/images/bridge.jpg") no-repeat top fixed;
 
-	background-size: auto 500px;
-	height: 31.25em;
+	background-size: 100% auto;
+
+	height: 30vw;
 	z-index: -1;
-	padding-top: 350px;
+	/* padding-top: 350px; */
 
 	> h1 {
 		color: white;
@@ -47,7 +48,7 @@
 
 .post-content {
 	width: 100%;
-	margin: $large auto 0 auto;
+	margin: 100px auto 136px auto;
 	position: relative;
 
 	> h1 {
@@ -80,6 +81,7 @@
 		margin: 0 auto $paragraphBottom auto;
 		max-width: 60%;
 		line-height: 1.50em;
+		color: #999999;
 
 		@media only screen and (max-width: 960px) {
 			max-width: 80% !important;
