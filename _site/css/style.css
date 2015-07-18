@@ -490,7 +490,7 @@ h3 {
 
 .button-main:hover::before {
   opacity: 1;
-  background-color: #FFCA1C;
+  background-color: #3B3B3B;
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
   transform: rotate3d(0, 0, 1, 0deg);
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -675,7 +675,7 @@ a.project-description-live-link {
   left: 0;
   z-index: 2;
   width: 100%;
-  background-color: #454242;
+  background-color: #3B3B3B;
   height: 44px;
   /*     @media (max-width: 50em) {
       left: 50%;
@@ -691,7 +691,7 @@ a.project-description-live-link {
   height: 44px;
   width: 44px;
   display: block;
-  background-color: #454242;
+  background-color: #3B3B3B;
   /*     @media (max-width: 50em) {
       float: left;
       background-color: $darkBlue;
@@ -709,7 +709,7 @@ a.project-description-live-link {
   transition: background-color 0.3s ease;
   background-color: #FFFFFF; }
   .project-nav-next:hover span, .project-nav-back:hover span, .project-nav-all:hover span, .project-nav-home:hover span {
-    color: #454242;
+    color: #3B3B3B;
     /*                 @media (max-width: 50em) {
         color: $silver;
     } */ }
@@ -1246,7 +1246,7 @@ a.project-description-live-link {
   margin-bottom: 2em;
   /* 	opacity: 0; */ }
   .intro-line > span {
-    color: #303d41; }
+    color: #3B3B3B; }
 
 /* .no-scroll {
 	overflow: hidden;
@@ -1317,7 +1317,7 @@ button:focus {
   /* margin-left: 0.3125em; */
   -webkit-transition: all .2s ease; }
   .menu-item:hover {
-    background-color: #FFFFFF; }
+    background-color: #EFEFEF; }
   .menu-item > a {
     display: block;
     height: 4.5625em;
@@ -1325,7 +1325,7 @@ button:focus {
     padding-top: 1.7em;
     -webkit-transition: transform .2s ease; }
     .menu-item > a:hover {
-      color: #586b6d;
+      color: #3B3B3B;
       transform: translateX(12px); }
     .menu-item > a::before {
       content: '';
@@ -1333,8 +1333,8 @@ button:focus {
       right: -20px;
       top: 31px;
       border-radius: 50%;
-      width: 10px;
-      height: 10px;
+      width: 14px;
+      height: 14px;
       background-color: #F0825F; }
     .menu-item > a::after {
       content: '';
@@ -1342,11 +1342,11 @@ button:focus {
       position: absolute;
       right: 72px;
       top: 35px;
-      border-width: 0 5px 8.7px 5px;
-      border-color: transparent transparent #303d41 transparent;
       width: 0;
       height: 0;
       border-style: solid;
+      border-width: 0 7px 12.1px 7px;
+      border-color: transparent transparent #3B3B3B transparent;
       transition: transform .4s ease; }
 
 a:hover:after {

@@ -15,7 +15,7 @@
 	padding-top: 1.2em;
 	overflow: hidden !important;
 	height: 100vh;
-	background-color: #F8F8F8;
+	background-color: $lightGrey;
 	transition: transform .5s ease;
 
 /* 	-webkit-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
@@ -77,7 +77,7 @@ button:focus {
 	-webkit-transition: all .2s ease;
 
 	 &:hover {
-		background-color: $white;
+		background-color: $midGrey;
 	}
 
 	> a {
@@ -88,7 +88,7 @@ button:focus {
 		-webkit-transition: transform .2s ease;
 
 		&:hover {
-			color: $lightBlue;
+			color: $charcoal;
 			transform: translateX(12px);
 
 		}
@@ -99,8 +99,8 @@ button:focus {
 			right: -20px;
 			top: 31px;
 			border-radius: 50%;
-			width: 10px;
-			height: 10px;
+			width: 14px;
+			height: 14px;
 			background-color: $salmon;
 		}
 
@@ -112,12 +112,11 @@ button:focus {
 			right: 72px;
 			top: 35px;
 
-			border-width: 0 5px 8.7px 5px;
-			border-color: transparent transparent $darkBlue transparent;
-
-			width: 0;
-			height: 0;
-			border-style: solid;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 7px 12.1px 7px;
+            border-color: transparent transparent $charcoal transparent;
 
 			transition: transform .4s ease;
 		}
