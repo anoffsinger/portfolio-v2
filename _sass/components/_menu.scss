@@ -1,6 +1,6 @@
-/* .no-scroll {
-	overflow: hidden;
-} */
+.no-scroll {
+    overflow: hidden;
+}
 
 .menu-active:hover {
   transform: translateX(0px) !important;
@@ -29,7 +29,7 @@ box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5); */
 
 .open {
 	-webkit-transform: translateX(250px);
-	pointer-events: none;
+	/* pointer-events: none; */
 }
 
 .menu-selector-open {

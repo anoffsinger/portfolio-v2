@@ -9,6 +9,7 @@
     width: 100%;
     background-color: $charcoal;
     height: 44px;
+    transition: transform .5s ease;
 
     > div {
         width: 85%;

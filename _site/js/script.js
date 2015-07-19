@@ -1,5 +1,56 @@
 $(document).ready(function() {
 
+	// Common Variables
+	menuSelector = $(".menu-selector");
+	overlay = $(".content-overlay");
+	nav = $("nav")
+	canvas = $("canvas")
+	content = $(".content")
+	headerItems = $(".header-items")
+	main = $(".main")
+	body = $("body")
+	menuItem = $(".menu-item")
+
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = $('header').outerHeight();
+
+	$(window).scroll(function(event){
+	    didScroll = true;
+	});
+
+	setInterval(function() {
+	    if (didScroll) {
+	        hasScrolled();
+	        didScroll = false;
+	    }
+	}, 250);
+
+	function hasScrolled() {
+	    var st = $(this).scrollTop();
+
+	    // Make sure they scroll more than delta
+	    if(Math.abs(lastScrollTop - st) <= delta)
+	        return;
+
+	    // If they scrolled down and are past the navbar, add class .nav-up.
+	    // This is necessary so you never see what is "behind" the navbar.
+	    if (st > lastScrollTop && st > navbarHeight){
+	        // Scroll Down
+	        $('header').removeClass('nav-down').addClass('nav-up');
+	    } else {
+	        // Scroll Up
+	        if(st + $(window).height() < $(document).height()) {
+	            $('header').removeClass('nav-up').addClass('nav-down');
+	        }
+	    }
+
+	    lastScrollTop = st;
+	}
+
+
+
 	$("li.work-item").each(function(i, el) {
     var $this = $(this);
     setTimeout(function() {
@@ -14,16 +65,7 @@ $(document).ready(function() {
 		}, i*100);
 	});
 
-	// Common Variables
-	menuSelector = $(".menu-selector");
-	overlay = $(".content-overlay");
-	nav = $("nav")
-	canvas = $("canvas")
-	content = $(".content")
-	headerItems = $(".header-items")
-	main = $(".main")
-	body = $("body")
-	menuItem = $(".menu-item")
+
 
 
 	$(".menu-item > a").click(function (e) {
@@ -37,30 +79,67 @@ $(document).ready(function() {
 		headerItems.toggleClass("header-open");
 		main.toggleClass("open");
 		$(".intro").toggleClass("open");
+		$('.post-header').toggleClass('open');
 
 	    setTimeout(function(){
 	         window.location = goTo;
 	    },300);
 	});
 
-	menuSelector.click(function() {
+
+
+	overlay.click(function() {
+		overlay.fadeTo(300, 0);
+		setTimeout(function() {
+			overlay.css("display","none");
+		},300);
 
 		// menuSelector.toggleClass("open");
 		nav.toggleClass("nav-open");
-		overlay.toggleClass("open");
+		// overlay.toggleClass("open");
 		canvas.toggleClass("open");
 		// content.toggleClass("open");
 		headerItems.toggleClass("open");
 		main.toggleClass("open");
 		body.toggleClass("no-scroll");
 		$(".intro").toggleClass("open");
+		$(".post-content").toggleClass("open");
 		menuSelector.toggleClass("menu-selector-open");
+		$(".project-nav").toggleClass("open");
 
+		$(".top-bar").toggleClass("top-bar-close");
+		$(".middle-bar").toggleClass("middle-bar-close");
+		$(".bottom-bar").toggleClass("bottom-bar-close");
 
-		if (overlay.css('opacity') == 0) {
+		$('.menu-items').toggleClass('slide-in');
+		$('.post-header').toggleClass('open');
+	});
+
+	menuSelector.click(function() {
+
+		// menuSelector.toggleClass("open");
+		nav.toggleClass("nav-open");
+		// overlay.toggleClass("open");
+		canvas.toggleClass("open");
+		// content.toggleClass("open");
+		headerItems.toggleClass("open");
+		main.toggleClass("open");
+		body.toggleClass("no-scroll");
+		$(".intro").toggleClass("open");
+		$(".post-content").toggleClass("open");
+		menuSelector.toggleClass("menu-selector-open");
+		$(".project-nav").toggleClass("open");
+		$('.post-header').toggleClass('open');
+
+		if (overlay.css('display') == "none") {
+			overlay.css("display","block");
 			overlay.fadeTo(300, .85);
+
 		} else {
 			overlay.fadeTo(300, 0);
+			setTimeout(function() {
+				overlay.css("display","none");
+			},300);
 		}
 
 		$(".top-bar").toggleClass("top-bar-close");
