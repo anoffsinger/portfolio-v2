@@ -1498,7 +1498,8 @@ a.menu-active:hover:after {
   .post-content > span {
     display: block;
     width: 60%;
-    margin: 0 auto 3.5625em auto; }
+    margin: 0 auto 3.5625em auto;
+    font-family: "aperculight_italic"; }
     @media only screen and (max-width: 960px) {
       .post-content > span {
         max-width: 80% !important; } }
