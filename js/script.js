@@ -11,6 +11,7 @@ $(document).ready(function() {
 	body = $("body")
 	menuItem = $(".menu-item")
 
+	// receding header
 	var didScroll;
 	var lastScrollTop = 0;
 	var delta = 5;
@@ -50,7 +51,7 @@ $(document).ready(function() {
 	}
 
 
-
+	// work item tile load-in
 	$("li.work-item").each(function(i, el) {
     var $this = $(this);
     setTimeout(function() {
@@ -58,6 +59,7 @@ $(document).ready(function() {
         }, i*100);
 	});
 
+	// post item load-in
 	$(".post-preview").each(function(i, el) {
 	var $this = $(this);
 	setTimeout(function() {
@@ -66,20 +68,38 @@ $(document).ready(function() {
 	});
 
 
-
-
 	$(".menu-item > a").click(function (e) {
     	e.preventDefault();                   // prevent default anchor behavior
     	var goTo = this.getAttribute("href"); // store anchor href
 
+		// menuSelector.toggleClass("open");
 		nav.toggleClass("nav-open");
-		overlay.toggleClass("open");
+		// overlay.toggleClass("open");
 		canvas.toggleClass("open");
 		// content.toggleClass("open");
-		headerItems.toggleClass("header-open");
+		headerItems.toggleClass("open");
 		main.toggleClass("open");
+		body.toggleClass("no-scroll");
 		$(".intro").toggleClass("open");
+		$(".post-content").toggleClass("open");
+		menuSelector.toggleClass("menu-selector-open");
+		$(".project-nav").toggleClass("open");
 		$('.post-header').toggleClass('open');
+
+		if (overlay.css('display') == "none") {
+			overlay.css("display","block");
+			overlay.fadeTo(300, .85);
+
+		} else {
+			overlay.fadeTo(300, 0);
+			setTimeout(function() {
+				overlay.css("display","none");
+			},300);
+		}
+
+		$(".top-bar").toggleClass("top-bar-close");
+		$(".middle-bar").toggleClass("middle-bar-close");
+		$(".bottom-bar").toggleClass("bottom-bar-close");
 
 	    setTimeout(function(){
 	         window.location = goTo;
