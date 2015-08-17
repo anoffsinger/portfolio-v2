@@ -69,15 +69,15 @@ button:focus {
 	position: relative;
 	height: 4.5625em;
 	width: 100%;
-	font: 17px $bodyFont;
-	color: $landingGrey;
+	font: 14px $mediumWeight;
+	color: $mainGrey;
 	opacity: 0;
 	/* margin-left: 0.3125em; */
 
 	-webkit-transition: all .2s ease;
 
 	 &:hover {
-		background-color: $midGrey;
+		background-color: $highlight;
 	}
 
 	> a {
@@ -88,7 +88,7 @@ button:focus {
 		-webkit-transition: transform .2s ease;
 
 		&:hover {
-			color: $charcoal;
+			color: $white;
 			transform: translateX(12px);
 
 		}

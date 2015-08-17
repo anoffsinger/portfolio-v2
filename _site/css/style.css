@@ -45,6 +45,12 @@ a {
   color: #C6C6C6; }
 
 @font-face {
+  font-family: 'apercumedium';
+  src: url("../fonts/apercu_medium-webfont.eot");
+  src: url("../fonts/apercu_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_medium-webfont.woff2") format("woff2"), url("../fonts/apercu_medium-webfont.woff") format("woff"), url("../fonts/apercu_medium-webfont.ttf") format("truetype"), url("../fonts/apercu_medium-webfont.svg#apercumedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'apercubold';
   src: url("../fonts/apercu_bold-webfont.eot");
   src: url("../fonts/apercu_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_bold-webfont.woff") format("woff"), url("../fonts/apercu_bold-webfont.ttf") format("truetype"), url("../fonts/apercu_bold-webfont.svg#apercubold") format("svg");
@@ -153,7 +159,7 @@ h3 {
     top: 1.857142857em;
     left: .714285714em; }
   .about-me-resume:hover {
-    background-color: #F0825F; }
+    background-color: #F6EE92; }
     .about-me-resume:hover > span {
       color: #f0efed; }
 
@@ -559,7 +565,7 @@ h3 {
     .project-description {
       width: 17.875em; } }
   .project-description a {
-    color: #F0825F;
+    color: #F6EE92;
     text-decoration: underline; }
 
 .project-title {
@@ -594,7 +600,7 @@ h3 {
 .project-description-live-link {
   font-family: "aperculight";
   text-decoration: none;
-  background-color: #F0825F;
+  background-color: #F6EE92;
   color: #f0efed;
   display: block;
   width: 4.857142857em;
@@ -761,7 +767,7 @@ a.project-description-live-link {
   display: block;
   width: 200px;
   height: 38px;
-  background-color: #F0825F;
+  background-color: #F6EE92;
   border-radius: 5em;
   left: 5em;
   top: .6875em;
@@ -776,7 +782,7 @@ a.project-description-live-link {
   position: absolute;
   border-style: solid;
   border-width: 6px 9px 6px 0;
-  border-color: transparent #F0825F;
+  border-color: transparent #F6EE92;
   display: block;
   width: 0;
   z-index: 1;
@@ -1130,7 +1136,7 @@ a.project-description-live-link {
   color: #303d41; }
 
 .text-logo-trade {
-  color: #F0825F; }
+  color: #F6EE92; }
 
 .main-nav {
   font-family: "aperculight";
@@ -1240,7 +1246,7 @@ a.project-description-live-link {
 
 .intro-line {
   font-size: 18px;
-  color: #C6C6C6;
+  color: #D4D4D4;
   line-height: 1.75em;
   text-align: left;
   z-index: 2;
@@ -1312,13 +1318,13 @@ button:focus {
   position: relative;
   height: 4.5625em;
   width: 100%;
-  font: 17px "aperculight";
-  color: #C6C6C6;
+  font: 14px "apercumedium";
+  color: #D4D4D4;
   opacity: 0;
   /* margin-left: 0.3125em; */
   -webkit-transition: all .2s ease; }
   .menu-item:hover {
-    background-color: #EFEFEF; }
+    background-color: #303D41; }
   .menu-item > a {
     display: block;
     height: 4.5625em;
@@ -1326,7 +1332,7 @@ button:focus {
     padding-top: 1.7em;
     -webkit-transition: transform .2s ease; }
     .menu-item > a:hover {
-      color: #3B3B3B;
+      color: #FFFFFF;
       transform: translateX(12px); }
     .menu-item > a::before {
       content: '';
@@ -1336,7 +1342,7 @@ button:focus {
       border-radius: 50%;
       width: 14px;
       height: 14px;
-      background-color: #F0825F; }
+      background-color: #F6EE92; }
     .menu-item > a::after {
       content: '';
       opacity: 0;
@@ -1403,7 +1409,7 @@ a.menu-active:hover:after {
 
 #weather > p {
   display: inline;
-  color: #F0825F; }
+  color: #F6EE92; }
 
 .top-bar,
 .middle-bar,
