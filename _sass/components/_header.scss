@@ -30,13 +30,13 @@ header {
 
 	> h2 {
 		font-family: $workTitleFont;
-		font-size: .875em;
+		font-size: 14px;
 		color: $landingGrey;
 		text-align: right;
 		position: relative;
 		float: right;
 		width: 94%;
-		margin-top: -3px;
+		/* margin-top: -3px; */
 		padding-bottom: 5px;
 
 
@@ -46,19 +46,19 @@ header {
 		padding-bottom: 3px; */
 	}
 
-	h2:before {
-		content: "";
-		position: absolute;
-		height: 1px;
-		bottom: 0;
-		right: 0;
-		background-color: #ececec;
-		-webkit-animation: grow 1s cubic-bezier(.71,.01,.25,.99) forwards;
+/* 	h2:before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	bottom: 0;
+	right: 0;
+	background-color: #ececec;
+	-webkit-animation: grow 1s cubic-bezier(.71,.01,.25,.99) forwards;
 
-		@media (max-width: 960px) {
-			background-color: white;
-		}
+	@media (max-width: 960px) {
+		background-color: white;
 	}
+} */
 }
 
 .header-back {

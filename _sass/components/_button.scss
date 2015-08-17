@@ -119,3 +119,10 @@
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
+
+.button-secondary {
+    font: 12px $mediumWeight;
+    border-bottom: 3px solid $accent;
+    padding-bottom: 3px;
+    color: $highlight;
+}
