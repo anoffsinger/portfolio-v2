@@ -33,6 +33,22 @@
     }
 }
 
+.button-intro {
+    position: relative;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+
+    &:before {
+        position: absolute;
+        height: 3px;
+        width: 10px;
+        background-color: $charcoal;
+        top: 0;
+        left: 0;
+    }
+}
+
 .button-see-all {
     margin: $large auto 0 auto;
     border: none;

@@ -1,49 +1,39 @@
+---
+title: Landing
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Hello</title>
+		<title>:)</title>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 
 	<body>
+
+		{% include menu.html %}
+
 		<div class="wrapper-site">
-			<nav id="menu">
-				<!-- <div class="menu-overlay"></div> -->
-				<ul class="menu-items">
-					<li class="menu-item"><a href="http://localhost:4000">Home</a></li>
-					<li class="menu-item"><a href="http://localhost:4000/work">Work</a></li>
-					<li class="menu-item"><a href="http://localhost:4000/blog">Blog</a></li>
-					<li class="menu-item"><a href="http://localhost:4000/about">About</a></li>
-				</ul>
-				<p class="menu-weather">San Francisco, CA / <span id="weather"></span></p>
-			</nav>
+			<header class="header-menu-selector">
+                <button class="menu-selector">
+    				<div class="top-bar"></div>
+    				<div class="middle-bar"></div>
+    				<div class="bottom-bar"></div>
+    			</button>
+            </header>
 
-			<div class="content content-splash">
-				<div class="content-overlay"></div>
-				<header class="header header-menu">
-                    <div class="header-items">
-                        <button class="menu-selector">
-            				<div class="top-bar"></div>
-            				<div class="middle-bar"></div>
-            				<div class="bottom-bar"></div>
-            			</button>
-                    </div>
-                </header>
-
-				<div class="intro">
-					<h1>The Portfolio Of Adam Noffsinger</h1>
-					<p class="intro-line">
-						<span>Hi, I&#39;m Adam.</span> I'm a Product Designer at Uber in San Francisco. I like to code stuff, write semi-helpful blog posts, and illustrate hot sauce on weekends.
-					</p>
-					<a class="button-main" href="http://localhost:4000/work.html">View Work</a>
-				</div>
+			<div class="intro one-third">
+				<img src="images/logo.png" alt="pencil">
+				<h1>Hello! I'm Adam.</h1>
+				<p> But a lot of people call me Noff. I’m a Product Designer and prototyper working at Uber in San Francisco.</p>
+				<a class="button-intro" href="http://localhost:4000/work.html">View Work</a>
 			</div>
-			<!-- <canvas id="cvs"></canvas> -->
 		</div>
+		<!-- <canvas id="cvs"></canvas> -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/snow.js"> </script>
+		<!-- <script src="js/snow.js"> </script> -->
 		<script src="js/jquery.simpleWeather.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
