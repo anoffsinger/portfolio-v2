@@ -123,11 +123,11 @@ button:focus {
 	}
 }
 
-a:hover:after {
-	opacity: 1;
-	transform: translateX(15px) rotate(90deg);
-	/* transform-origin: center; */
-}
+/* a:hover:after {
+    opacity: 1;
+    transform: translateX(15px) rotate(90deg);
+    transform-origin: center;
+} */
 
 a.menu-active:hover:after {
 	opacity: 0;

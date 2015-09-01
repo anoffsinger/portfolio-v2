@@ -38,16 +38,62 @@
     font-size: 18px;
     display: block;
     margin: 0 auto;
+    width: 85px;
+
+    span {
+        transition: all .4s;
+        display: inline-block;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 39%;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5.165px 0 5.165px 8.9px;
+        border-color: transparent transparent transparent $yellow;
+        -webkit-transition: all .6s;
+        transform: rotate(-90deg);
+
+    }
 
     &:before {
+        content: '';
         position: absolute;
-        height: 3px;
-        width: 10px;
-        background-color: $charcoal;
-        top: 0;
+        bottom: -3px;
         left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: $charcoal;
+        -webkit-transition: all .4s;
+        -webkit-transform-origin: 50% 0%;
+        z-index: -1;
+    }
+
+    &:hover {
+
+        span {
+            transform: translateX(-10px);
+        }
+
+        &:before {
+            transform: translateY(11px) scale(1.6, -14.8);
+            background-color: $yellow;
+        }
+
+        &:after {
+            opacity: 1;
+            transform: translateX(9px);
+            border-color: transparent transparent transparent $charcoal;
+        }
     }
 }
+
+
 
 .button-see-all {
     margin: $large auto 0 auto;

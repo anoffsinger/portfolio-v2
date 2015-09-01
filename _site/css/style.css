@@ -29,7 +29,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #3B3B3B; }
+  color: #6A6A6A; }
 
 @font-face {
   font-family: 'brandon_text_light';
@@ -441,14 +441,44 @@ h3 {
   position: relative;
   font-size: 18px;
   display: block;
-  margin: 0 auto; }
-  .button-intro:before {
+  margin: 0 auto;
+  width: 85px; }
+  .button-intro span {
+    transition: all .4s;
+    display: inline-block; }
+  .button-intro:after {
+    content: '';
     position: absolute;
+    right: 0;
+    top: 39%;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5.165px 0 5.165px 8.9px;
+    border-color: transparent transparent transparent #FCF100;
+    -webkit-transition: all .6s;
+    transform: rotate(-90deg); }
+  .button-intro:before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
     height: 3px;
-    width: 10px;
-    background-color: #3B3B3B;
-    top: 0;
-    left: 0; }
+    width: 100%;
+    background-color: #6A6A6A;
+    -webkit-transition: all .4s;
+    -webkit-transform-origin: 50% 0%;
+    z-index: -1; }
+  .button-intro:hover span {
+    transform: translateX(-10px); }
+  .button-intro:hover:before {
+    transform: translateY(11px) scale(1.6, -14.8);
+    background-color: #FCF100; }
+  .button-intro:hover:after {
+    opacity: 1;
+    transform: translateX(9px);
+    border-color: transparent transparent transparent #6A6A6A; }
 
 .button-see-all {
   margin: 4.25em auto 0 auto;
@@ -520,7 +550,7 @@ h3 {
 
 .button-main:hover::before {
   opacity: 1;
-  background-color: #3B3B3B;
+  background-color: #6A6A6A;
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
   transform: rotate3d(0, 0, 1, 0deg);
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -1273,15 +1303,17 @@ a.project-description-live-link {
     display: block;
     height: 44px;
     width: 13px;
-    margin: 0 auto; }
+    margin: 0 auto 24px auto; }
   .intro h1 {
     font-size: 18px;
-    color: #3B3B3B;
-    text-align: center; }
+    color: #6A6A6A;
+    text-align: center;
+    margin-bottom: 24px; }
   .intro p {
     font-size: 18px;
     color: #D7D7D7;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 24px; }
   @media (max-width: 1124px) {
     .intro {
       width: 70%; } }
@@ -1298,7 +1330,7 @@ a.project-description-live-link {
   margin-bottom: 2em;
   /* 	opacity: 0; */ }
   .intro-line > span {
-    color: #3B3B3B; }
+    color: #6A6A6A; }
 
 .no-scroll {
   overflow: hidden; }
@@ -1398,14 +1430,14 @@ button:focus {
       height: 0;
       border-style: solid;
       border-width: 0 7px 12.1px 7px;
-      border-color: transparent transparent #3B3B3B transparent;
+      border-color: transparent transparent #6A6A6A transparent;
       transition: transform .4s ease; }
 
-a:hover:after {
-  opacity: 1;
-  transform: translateX(15px) rotate(90deg);
-  /* transform-origin: center; */ }
-
+/* a:hover:after {
+    opacity: 1;
+    transform: translateX(15px) rotate(90deg);
+    transform-origin: center;
+} */
 a.menu-active:hover:after {
   opacity: 0; }
 
@@ -1470,7 +1502,7 @@ a.menu-active:hover:after {
   display: block;
   width: 18px;
   height: 3px;
-  background-color: #3B3B3B;
+  background-color: #6A6A6A;
   margin-bottom: 3px;
   transition: transform 300ms cubic-bezier(1, 0, 0, 1), background-color 300ms ease; }
 
@@ -1483,7 +1515,7 @@ a.menu-active:hover:after {
 
 .top-bar-close {
   transform: rotate(-45deg);
-  background-color: #3B3B3B; }
+  background-color: #6A6A6A; }
 
 .middle-bar-close {
   opacity: 0;
@@ -1492,7 +1524,7 @@ a.menu-active:hover:after {
 
 .bottom-bar-close {
   transform: rotate(45deg);
-  background-color: #3B3B3B; }
+  background-color: #6A6A6A; }
 
 #cvs {
   position: fixed;
