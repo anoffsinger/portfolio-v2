@@ -22,45 +22,32 @@ title: Work
     </head>
 
     <body>
+
         <div class="wrapper-site">
-			<nav id="menu">
-    			<!-- <div class="menu-overlay"></div> -->
-    			<ul class="menu-items">
-                    <li class="menu-item"><a href="http://localhost:4000">Home</a></li>
-					<li class="menu-item"><a href="http://localhost:4000/work">Work</a></li>
-					<li class="menu-item"><a href="http://localhost:4000/blog">Blog</a></li>
-					<li class="menu-item"><a href="http://localhost:4000/about">About</a></li>
-    			</ul>
-    			<p class="menu-weather">San Francisco, CA / <span id="weather"></span></p>
-    		</nav>
+
+            {% include header-title.html %}
 
         	<div class="content">
-
-        		<div class="content-overlay"></div>
-
-        		<header class="header nav-down header-menu">
-        			<div class="header-items">
-        				<button class="menu-selector">
-        					<div class="top-bar"></div>
-        					<div class="middle-bar"></div>
-        					<div class="bottom-bar"></div>
-        				</button>
-        			</div>
-        		</header>
-
-        		<header class="header nav-down header-title">
-        			<div class="header-items">
-        				<h2>Work</h2>
-        			</div>
-        		</header>
-
-
-
                 <div class="main">
                     <ol class="work column-grid">
+                        {% for post in site.posts limit: 10 %}
+                            {% if post.categories contains 'work' %}
+                                <li class="one-third col work-item">
+                                    <a href="{{ post.url }}">
+                                        <img src="../images/color-test.png" class="work-img" alt="">
+                                        <div class="work-desc">
+                                            <div class="work-desc-items">
+                                                <span>{{ post.title }}</span>
+                                                <span>{{ post.tags }}</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
                         <li class="one-third col work-item">
                             <a href="/projects/cue-app.html">
-                                <img src="../images/cue-app-thumb.png" class="work-img" alt="">
+                                <img src="../images/color-test.png" class="work-img" alt="">
                                 <div class="work-desc">
                                     <div class="work-desc-items">
                                         <span>Cue App</span>
@@ -71,7 +58,7 @@ title: Work
                         </li>
                         <li class="one-third col work-item">
                             <a href="/projects/skoop.html">
-                                <img src="../images/skoop-thumbnail.png" class="work-img" alt="">
+                                <img src="../images/color-test.png" class="work-img" alt="">
                                 <div class="work-desc">
                                     <div class="work-desc-items">
                                         <span>Skoop Website</span>
@@ -82,7 +69,7 @@ title: Work
                         </li>
                         <li class="one-third col work-item">
                             <a href="/projects/spg.html">
-                                <img src="../images/spg-thumbnail.png" class="work-img" alt="">
+                                <img src="../images/color-test.png" class="work-img" alt="">
                                 <div class="work-desc">
                                     <div class="work-desc-items">
                                         <span>SPG App</span>
@@ -93,7 +80,7 @@ title: Work
                         </li>
                         <li class="one-third col work-item">
                             <a href="/projects/cue-web.html">
-                                <img src="../images/cue-web-thumb.png" class="work-img" alt="">
+                                <img src="../images/color-test.png" class="work-img" alt="">
                                 <div class="work-desc">
                                     <div class="work-desc-items">
                                         <span>Cue Splashpage</span>
@@ -103,8 +90,8 @@ title: Work
                             </a>
                         </li>
                         <li class="one-third col work-item">
-                            <a href="/projects/dr-book.html">
-                                <img src="../images/dr-book-thumbnail.jpg" class="work-img" alt="">
+                            <a href="/projects/color-test.png">
+                                <img src="../images/color-test.png" class="work-img" alt="">
                                 <div class="work-desc">
                                     <div class="work-desc-items">
                                         <span>Dieter Rams Book</span>
@@ -114,8 +101,8 @@ title: Work
                             </a>
                         </li>
                         <li class="one-third col work-item">
-                            <a href="/projects/crafty-namer.html">
-                                <img src="../images/crafty-thumbnail.png" class="work-img" alt="">
+                            <a href="/projects/color-test.png">
+                                <img src="../images/color-test.png" class="work-img" alt="">
                                 <div class="work-desc">
                                     <div class="work-desc-items">
                                         <span>Crafty Namer Website</span>

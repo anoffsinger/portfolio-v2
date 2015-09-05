@@ -137,40 +137,41 @@ $(document).ready(function() {
 
 	menuSelector.click(function() {
 
+		$("#menu").toggleClass("menu-visible");
 		// menuSelector.toggleClass("open");
-		nav.toggleClass("nav-open");
-		// overlay.toggleClass("open");
-		canvas.toggleClass("open");
-		// content.toggleClass("open");
-		headerItems.toggleClass("open");
-		main.toggleClass("open");
-		body.toggleClass("no-scroll");
-		$(".intro").toggleClass("open");
-		$(".post-content").toggleClass("open");
-		menuSelector.toggleClass("menu-selector-open");
-		$(".project-nav").toggleClass("open");
-		$('.post-header').toggleClass('open');
-
-		if (overlay.css('display') == "none") {
-			overlay.css("display","block");
-			overlay.fadeTo(300, .85);
-
-		} else {
-			overlay.fadeTo(300, 0);
-			setTimeout(function() {
-				overlay.css("display","none");
-			},300);
-		}
+		// nav.toggleClass("nav-open");
+		// // overlay.toggleClass("open");
+		// canvas.toggleClass("open");
+		// // content.toggleClass("open");
+		// headerItems.toggleClass("open");
+		// main.toggleClass("open");
+		// body.toggleClass("no-scroll");
+		// $(".intro").toggleClass("open");
+		// $(".post-content").toggleClass("open");
+		// menuSelector.toggleClass("menu-selector-open");
+		// $(".project-nav").toggleClass("open");
+		// $('.post-header').toggleClass('open');
+		//
+		// if (overlay.css('display') == "none") {
+		// 	overlay.css("display","block");
+		// 	overlay.fadeTo(300, .85);
+		//
+		// } else {
+		// 	overlay.fadeTo(300, 0);
+		// 	setTimeout(function() {
+		// 		overlay.css("display","none");
+		// 	},300);
+		// }
 
 		$(".top-bar").toggleClass("top-bar-close");
 		$(".middle-bar").toggleClass("middle-bar-close");
 		$(".bottom-bar").toggleClass("bottom-bar-close");
 
-		var url = window.location.href; // Get current url
-		$('.menu-item a[href="'+url+'"]').toggleClass('menu-active');
-		// Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
-
-		$('.menu-items').toggleClass('slide-in');
+		// var url = window.location.href; // Get current url
+		// $('.menu-item a[href="'+url+'"]').toggleClass('menu-active');
+		// // Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
+		//
+		// $('.menu-items').toggleClass('slide-in');
 	});
 
 	// Download project documentation button

@@ -3,26 +3,29 @@
 	@extend %visually-hidden;
 } */
 	margin: 0 auto;
+	transform: translateY(-20px);
+
 
 	img {
 		display: block;
 		height: 44px;
 		width: 13px;
-		margin: 0 auto 24px auto;
+		margin: 0 auto 28px auto;
 	}
 
 	h1 {
 		font-size: 18px;
 		color: $charcoal;
 		text-align: center;
-		margin-bottom: 24px;
+		margin-bottom: 28px;
 	}
 
 	p {
 		font-size: 18px;
 		color: $lightGrey;
 		text-align: center;
-		margin-bottom: 24px;
+		margin-bottom: 28px;
+		line-height: 155%;
 	}
 
 
@@ -34,20 +37,5 @@
 
 	@media (max-width: 594px) {
 		width: 95%;
-	}
-}
-
-.intro-line {
-	font-size: 18px;
-	color: $mainGrey;
-	line-height: 1.75em;
-	text-align: left;
-
-	z-index: 2;
-	margin-bottom: 2em;
-/* 	opacity: 0; */
-
-	> span {
-		color: $charcoal;
 	}
 }

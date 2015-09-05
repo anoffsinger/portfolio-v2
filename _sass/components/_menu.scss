@@ -2,62 +2,72 @@
     overflow: hidden;
 }
 
-.menu-active:hover {
+/* .menu-active:hover {
   transform: translateX(0px) !important;
   color: $landingGrey !important;
+} */
+
+.menu-visible {
+    opacity: 1 !important;
+    width: 100% !important;
+    height: 100vh !important;
 }
 
 #menu {
-	z-index: 1050;
-	position: fixed;
-    left: -15.625em; /*left or right and the width of your navigation panel*/
-    width: 15.625em; /*should match the above value*/
-	padding-top: 1.2em;
-	overflow: hidden !important;
-	height: 100vh;
-	background-color: $lightGrey;
-	transition: transform .5s ease;
+	/* position: fixed; */
+    /* left: -15.625em; left or right and the width of your navigation panel */
+    /* width: 15.625em; should match the above value */
+    height: 0;
+    width: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -999;
+
+    transition: all 1s;
+
+
+
+
+    li {
+        font-family: $mainType;
+        font-size: 24px;
+        color: $charcoal;
+    }
+	/* transition: transform .5s ease; */
 
 /* 	-webkit-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
 -moz-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
 box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5); */
 }
 
-.nav-open {
-	-webkit-transform: translateX(250px);
-}
-
-.open {
-	-webkit-transform: translateX(250px);
-	/* pointer-events: none; */
-}
-
-.menu-selector-open {
-	pointer-events: auto;
-}
-
-.menu-overlay {
-	height: 110vh;
-	-webkit-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
-	-moz-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
-	box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
-	width: 100%;
-	position: absolute;
-	right: 0;
-	z-index: 10000;
-	pointer-events: none;
-	top: -10px;
-}
+/* .menu-overlay {
+    height: 110vh;
+    -webkit-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
+    -moz-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
+    box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 10000;
+    pointer-events: none;
+    top: -10px;
+} */
 
 .menu-selector {
 	display: block;
 	width: 20px;
 	cursor: pointer;
-	float: left;
+	/* float: left; */
 	opacity: 1;
 	-webkit-transition: transform 300ms ease;
 	border: none;
 	background-color: transparent;
+    z-index: 1000
 }
 
 button:focus {

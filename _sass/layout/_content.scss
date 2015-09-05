@@ -2,8 +2,15 @@
 	position: relative;
 	width: 85%;
 	margin: 0 auto $extraLarge auto;
-	padding-top: 7em;
+	padding-top: 80px;
 
+	p {
+		font-family: $secondaryType;
+		font-size: 18px;
+		margin: 0 auto 32px auto;
+		line-height: 145%;
+		width: 80%;
+	}
 
 /* 	@media (max-width: 400px) {
 	margin-top: 3.8em;
