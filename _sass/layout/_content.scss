@@ -2,9 +2,9 @@
 	position: relative;
 	width: 85%;
 	margin: 0 auto $extraLarge auto;
-	padding-top: 80px;
+	padding-top: 112px;
 
-	p {
+	> p {
 		font-family: $secondaryType;
 		font-size: 18px;
 		margin: 0 auto 32px auto;
@@ -12,16 +12,19 @@
 		width: 80%;
 	}
 
+	> p:last-of-type {
+		margin-bottom: 50px;
+	}
 /* 	@media (max-width: 400px) {
 	margin-top: 3.8em;
 } */
 }
 
 // this can probably be removed
-.main {
+/* .main {
 	transition: transform .5s ease;
 	margin: 2.25em auto $extraLarge auto;
-}
+} */
 
 .content-overlay {
 	position: fixed;

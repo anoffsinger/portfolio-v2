@@ -8,5 +8,10 @@
 
 	{% include menu.html %}
 
-	<h2>{{ page.title }}</h2>
+	<h2>
+		<span>{{ page.title }}</span>
+		{% if page.category != "None" %}
+			<span> &VerticalSeparator; {{ page.category }}</span>
+		{% endif %}
+	</h2>
 </header>

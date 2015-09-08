@@ -1,5 +1,6 @@
 ---
 title: Work
+category: None
 ---
 <!DOCTYPE html>
 <html class="no-js">
@@ -24,95 +25,92 @@ title: Work
     <body>
 
         <div class="wrapper-site">
-
             {% include header-title.html %}
-
         	<div class="content">
-                <div class="main">
-                    <ol class="work column-grid">
-                        {% for post in site.posts limit: 10 %}
-                            {% if post.categories contains 'work' %}
-                                <li class="one-third col work-item">
-                                    <a href="{{ post.url }}">
-                                        <img src="../images/color-test.png" class="work-img" alt="">
-                                        <div class="work-desc">
-                                            <div class="work-desc-items">
-                                                <span>{{ post.title }}</span>
-                                                <span>{{ post.tags }}</span>
-                                            </div>
+                <ol class="work column-grid">
+                    {% for post in site.posts limit: 10 %}
+                        {% if post.categories contains 'work' %}
+                            <li class="one-third col work-item">
+                                <a href="{{ post.url }}">
+                                    <img src="{{ post.thumbnail }}" class="work-img" alt="">
+                                    <div class="work-desc">
+                                        <div class="work-desc-items">
+                                            <span>{{ post.title }}</span>
+                                            <span>{{ post.skills }}</span>
                                         </div>
-                                    </a>
-                                </li>
-                            {% endif %}
-                        {% endfor %}
-                        <li class="one-third col work-item">
-                            <a href="/projects/cue-app.html">
-                                <img src="../images/color-test.png" class="work-img" alt="">
-                                <div class="work-desc">
-                                    <div class="work-desc-items">
-                                        <span>Cue App</span>
-                                        <span>UX, UI, Content</span>
                                     </div>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                    <li class="one-third col work-item">
+                        <a href="/projects/cue-app.html">
+                            <img src="../images/color-test.png" class="work-img" alt="">
+                            <div class="work-desc">
+                                <div class="work-desc-items">
+                                    <span>Cue App</span>
+                                    <span>UX, UI, Content</span>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="one-third col work-item">
-                            <a href="/projects/skoop.html">
-                                <img src="../images/color-test.png" class="work-img" alt="">
-                                <div class="work-desc">
-                                    <div class="work-desc-items">
-                                        <span>Skoop Website</span>
-                                        <span>UX, UI, Dev</span>
-                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="one-third col work-item">
+                        <a href="/projects/skoop.html">
+                            <img src="../images/color-test.png" class="work-img" alt="">
+                            <div class="work-desc">
+                                <div class="work-desc-items">
+                                    <span>Skoop Website</span>
+                                    <span>UX, UI, Dev</span>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="one-third col work-item">
-                            <a href="/projects/spg.html">
-                                <img src="../images/color-test.png" class="work-img" alt="">
-                                <div class="work-desc">
-                                    <div class="work-desc-items">
-                                        <span>SPG App</span>
-                                        <span>UX, UI, Motion</span>
-                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="one-third col work-item">
+                        <a href="/projects/spg.html">
+                            <img src="../images/color-test.png" class="work-img" alt="">
+                            <div class="work-desc">
+                                <div class="work-desc-items">
+                                    <span>SPG App</span>
+                                    <span>UX, UI, Motion</span>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="one-third col work-item">
-                            <a href="/projects/cue-web.html">
-                                <img src="../images/color-test.png" class="work-img" alt="">
-                                <div class="work-desc">
-                                    <div class="work-desc-items">
-                                        <span>Cue Splashpage</span>
-                                        <span>UX, UI, Dev</span>
-                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="one-third col work-item">
+                        <a href="/projects/cue-web.html">
+                            <img src="../images/color-test.png" class="work-img" alt="">
+                            <div class="work-desc">
+                                <div class="work-desc-items">
+                                    <span>Cue Splashpage</span>
+                                    <span>UX, UI, Dev</span>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="one-third col work-item">
-                            <a href="/projects/color-test.png">
-                                <img src="../images/color-test.png" class="work-img" alt="">
-                                <div class="work-desc">
-                                    <div class="work-desc-items">
-                                        <span>Dieter Rams Book</span>
-                                        <span>Print</span>
-                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="one-third col work-item">
+                        <a href="/projects/color-test.png">
+                            <img src="../images/color-test.png" class="work-img" alt="">
+                            <div class="work-desc">
+                                <div class="work-desc-items">
+                                    <span>Dieter Rams Book</span>
+                                    <span>Print</span>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="one-third col work-item">
-                            <a href="/projects/color-test.png">
-                                <img src="../images/color-test.png" class="work-img" alt="">
-                                <div class="work-desc">
-                                    <div class="work-desc-items">
-                                        <span>Crafty Namer Website</span>
-                                        <span>UX, UI, Dev</span>
-                                    </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="one-third col work-item">
+                        <a href="/projects/color-test.png">
+                            <img src="../images/color-test.png" class="work-img" alt="">
+                            <div class="work-desc">
+                                <div class="work-desc-items">
+                                    <span>Crafty Namer Website</span>
+                                    <span>UX, UI, Dev</span>
                                 </div>
-                            </a>
-                        </li>
-                    </ol>
-                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ol>
+
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

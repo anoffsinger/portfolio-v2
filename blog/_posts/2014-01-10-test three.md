@@ -4,6 +4,14 @@ layout: blog-post
 category: blog
 ---
 
-This is the second blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum leo non felis porttitor vulputate. Nulla ipsum quam, auctor ut hendrerit quis, tincidunt eu metus. Quisque ipsum tellus, semper a tempus quis, interdum vel magna. Cras a nisl diam, in accumsan augue. Pellentesque varius nibh eu diam tempor rhoncus.
+<div><img class="project-image" alt="My Pic" src="http://localhost:4000/images/cover.jpg"></div>
 
-Erat pellentesque ornare gravida, ipsum est luctus neque, eget condimentum urna arcu sit amet felis. Duis nisl augue, scelerisque quis iaculis non, commodo a tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tincidunt porttitor nibh at semper.
+<span>{{ page.date | date_to_long_string }}</span>
+
+This is the first blog post. Etiam ut nunc erat. Sed et velit ac nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifend blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Curabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sapien in turpis consequat pharetra sit amet quis elit.
+
+This is the first blog post. Etiam ut nunc erat. Sed et velit ac nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifend blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Curabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sapien in turpis consequat pharetra sit amet quis elit. This is the first blog post. Etiam ut nunc erat. Sed et velit ac nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifend blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Curabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sapien in turpis consequat pharetra sit amet quis elit.
+
+This is the first blog post. Etiam ut nunc erat. Sed et velit ac nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifend blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Curabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sapien in turpis consequat pharetra sit amet quis elit.
+
+This is the first blog post. Etiam ut nunc erat. Sed et velit ac nisi mattis mollis tempus id nulla. In varius fermentum posuere. Vivamus suscipit accumsan arcu ac ullamcorper. Aliquam adipiscing, ante non eleifend blandit, nunc diam vulputate augue, eu convallis lorem lacus in lacus. Curabitur ultricies ultrices diam, vel tincidunt dui rhoncus a. Vivamus at sapien in turpis consequat pharetra sit amet quis elit.

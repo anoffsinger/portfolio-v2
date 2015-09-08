@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="all" unicode="&#xe800;" d="m107 637l-1 0c-58 0-106 48-106 106l0 1c0 59 48 106 106 106l1 0c58 0 106-47 106-106l0-1c0-58-48-106-106-106z m360 0l-1 0c-58 0-106 48-106 106l0 1c0 59 48 106 106 106l1 0c59 0 106-47 106-106l0-1c0-58-47-106-106-106z m360 0l0 0c-59 0-106 48-106 106l0 1c0 59 47 106 106 106l0 0c59 0 106-47 106-106l0-1c0-58-47-106-106-106z m-720-360l-1 0c-58 0-106 48-106 106l0 1c0 58 48 106 106 106l1 0c58 0 106-48 106-106l0-1c0-58-48-106-106-106z m360 0l-1 0c-58 0-106 48-106 106l0 1c0 58 48 106 106 106l1 0c59 0 106-48 106-106l0-1c0-58-47-106-106-106z m360 0l0 0c-59 0-106 48-106 106l0 1c0 58 47 106 106 106l0 0c59 0 106-48 106-106l0-1c0-58-47-106-106-106z m-720-360l-1 0c-58 0-106 47-106 106l0 0c0 59 48 106 106 106l1 0c58 0 106-47 106-106l0 0c0-59-48-106-106-106z m360 0l-1 0c-58 0-106 47-106 106l0 0c0 59 48 106 106 106l1 0c59 0 106-47 106-106l0 0c0-59-47-106-106-106z m360 0l0 0c-59 0-106 47-106 106l0 0c0 59 47 106 106 106l0 0c59 0 106-47 106-106l0 0c0-59-47-106-106-106z" horiz-adv-x="1000" />
+<glyph glyph-name="arrow" unicode="&#xe801;" d="m200-17l0 800 533-400-533-400z" horiz-adv-x="1000" />
+<glyph glyph-name="get" unicode="&#xe802;" d="m0-7l1000 0 0-143-1000 0 0 143z m143 857l714 0-357-607-357 607z" horiz-adv-x="1000" />
+<glyph glyph-name="link" unicode="&#xe803;" d="m276 89l-103 104 253 253 76-76 86 86-162 162-426-425 276-276 209 208-86 87-123-123z m381 761l-210-211 86-86 124 125 104-104-253-253-76 76-86-86 162-162 425 425-276 276z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

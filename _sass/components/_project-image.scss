@@ -9,14 +9,24 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     width: 100%;
+    margin-bottom: 50px;
+}
+
+.project-image-half-left {
+    width: 49.2%;
+    float: left;
+}
+
+.project-image-half-right {
+    width: 49.2%;
+    float: right;
 }
 
 .project-image-small-container {
     @extend %clearfix;
 
-    width: 76.8428373%;
+    width: 100%;
     margin: 0 auto;
-    margin-bottom: $small;
 
     @media (max-width: 50em) {
         width: 100%;

@@ -1,38 +1,5 @@
 // Buttons
 
-.button {
-    display: block;
-    background-color: $lightBlue;
-    height: $medium;
-    width: 10.625em;
-    color: $silver;
-    text-align: center;
-    font-family: $headerFont;
-    font-size: $subtextSize;
-    text-transform: uppercase;
-    letter-spacing: .25em;
-    padding: 1.214285714em;
-
-    @include transition(background-color, .5s);
-
-    &:hover {
-        background-color: $white;
-        color: $lightBlue;
-    }
-
-    @media (max-width: 50em) {
-        &:active {
-            background-color: $white;
-            color: $lightBlue;
-        }
-
-        &:hover {
-            background-color: $lightBlue;
-            color: $silver;
-        }
-    }
-}
-
 .button-intro {
     position: relative;
     font-size: 18px;
@@ -93,98 +60,50 @@
     }
 }
 
-
-
-.button-see-all {
-    margin: $large auto 0 auto;
-    border: none;
-    outline: none;
-    cursor: pointer;
-
-    @media (max-width: 50em) {
-        margin-bottom: $large;
-    }
-}
-
-.button-see-all-back {
-
-    margin: 0 auto $large auto;
-
-    @media (max-width: 50em) {
-        margin-bottom: $large;
-    }
-}
-
-.button-read-more {
-    display: block;
-    font-family: $bodyFont;
-    height: 2.5em;
-    padding: 10px;
-    border: 1px solid #5e5e5e;
-    font-family: $bodyFont;
-    width: 6em;
-    color: #5e5e5e;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.button-main {
-	overflow: hidden;
-	width: 120px;
-    height: 40px;
-    border-radius: 100px;
-    display: block;
-    padding: 10px;
-    vertical-align: middle;
-    position: relative;
-    -webkit-backface-visibility: hidden;
-    font-family: $bodyFont;
-    background-color: #D8D8D8;
-    color: $white;
-
-    -webkit-transition: border-color .7s, color .7s;
-	transition: border-color 0.3s, color 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.25, .1, 0.25, 1);
-	transition-timing-function: cubic-bezier(0.25, .1, 0.25, 1);
-	duration: 1;
-	z-index: 999;
-	color: $white;
-	text-align: center;
-
-}
-
-.button-main::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 150%;
-	height: 100%;
-	background: #37474f;
-	z-index: -1;
-	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-	transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-	-webkit-transform-origin: 0% 100%;
-	transform-origin: 0% 100%;
-	-webkit-transition: -webkit-transform .7s, opacity .7s, background-color .7s;
-	transition: transform .7s, opacity .7s, background-color .7s;
-}
-.button-main:hover {
-	color: $white;
-}
-
-.button-main:hover::before {
-	opacity: 1;
-	background-color: $charcoal;
-	-webkit-transform: rotate3d(0, 0, 1, 0deg);
-	transform: rotate3d(0, 0, 1, 0deg);
-	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-
 .button-secondary {
-    font: 12px $mediumWeight;
-    border-bottom: 3px solid $accent;
-    padding-bottom: 3px;
-    color: $highlight;
+    font-family: $mainType, 'serif';
+    color: $charcoal;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    width: 68px;
+    transition: all .4s;
+
+    span {
+        transition: all .4s;
+        display: inline-block;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: $charcoal;
+        -webkit-transition: all .4s;
+        -webkit-transform-origin: 50% 0%;
+        z-index: -1;
+    }
+
+    &:hover {
+
+        span {
+            transform: translateX(13px);
+            transition: all .4s;
+        }
+
+        &:before {
+            transform-origin: 0% 0%;
+            transform: translateY(5px) scale(1.4, -10);
+            background-color: $yellow;
+        }
+
+/*         &:after {
+    opacity: 1;
+    transform: translateX(9px);
+    border-color: transparent transparent transparent $charcoal;
+} */
+    }
 }

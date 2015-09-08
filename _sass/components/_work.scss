@@ -8,6 +8,7 @@
     overflow: hidden;
 	position: relative;
 	opacity: 0;
+	transform: translateY(20px);
 
 	> a {
 		display: block;
@@ -17,7 +18,7 @@
 }
 
 .work-item-loaded {
-	transform: translateY(-20px);
+	transform: translateY(0px);
 	opacity: 1;
 }
 
@@ -52,7 +53,7 @@ background-size: contain;
 	> span {
 		top: 30px;
 		color: $darkBlue;
-		font-family: $workTitleFont;
+		font-family: $mainType;
 		font-size: 16px;
 		position: absolute;
 	}
@@ -67,7 +68,7 @@ background-size: contain;
 		left: 0;
 		top: 42px;
 		@include transition(all, .5s);
-		font-family: $subtextFont;
+		font-family: $mainType;
 		font-size: 12px;
 	}
 }

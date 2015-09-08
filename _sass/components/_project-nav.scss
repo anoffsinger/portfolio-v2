@@ -1,164 +1,56 @@
-// Navigation for portfolio projects on all project pages
-
 .project-nav {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 2;
     width: 100%;
-    background-color: #3b3b3b;
+    background-color: $darkGrey;
     height: 44px;
-    transition: transform .5s ease;
-    padding: 14px 0 14px 0;
+    padding: 11px 7.5% 0 7.5%;
 
     > div {
+
+        @extend %clearfix;
+
         width: 85%;
         margin: 0 auto;
     }
-
-/*     @media (max-width: 50em) {
-    left: 50%;
-    margin-left: -7.125em;
-    top: auto;
-    bottom: 0;
-} */
 }
 
 .project-nav-switcher {
     float: left;
 
-    > a {
+    a {
         margin-right: 30px;
     }
 }
 
 .project-nav-options {
     float: right;
-
-    > a {
+    a {
         margin-left: 30px;
     }
 }
 
-.project-nav-next, .project-nav-back, .project-nav-all, .project-nav-download, .project-nav-link {
-    height: 16px;
-    width: 16px;
-    display: block;
+.project-nav-next, .project-nav-back, .project-nav-get, .project-nav-link {
     float: left;
-
-/*     @media (max-width: 50em) {
-    float: left;
-    background-color: $darkBlue;
-} */
 
     > span {
-        display: block;
-        font-size: 18px;
+        font-size: 15px;
         color: $white;
-    }
-}
-
-.project-nav-next-project {
-    /* opacity: 0; */
-    color: $white;
-    font: 12px $workTitleFont;
-}
-
-/* .project-nav-next, .project-nav-back, .project-nav-all, .project-nav-home {
-
-        &:hover {
-            @include transition(background-color, .3s);
-            background-color: $white;
-
-            span {
-                color: $charcoal;
-
-@media (max-width: 50em) {
-    color: $silver;
-}
-            }
-        }
-    } */
-
-.project-nav-download {
-    @media (max-width: 50em) {
-        display: none;
     }
 
     &:hover {
-        @include transition(background-color, .3s);
-        background-color: $darkBlue;
-
-        span {
-            color: $white;
-
-            @media (max-width: 50em) {
-                color: $darkBlue;
-            }
+        > span {
+            color: $yellow;
         }
     }
 }
 
-.project-nav-home {
-/*     padding-left: .875em;
-padding-top: .875em; */
+span.icon-link {
+    font-size: 17px;
 }
 
-.project-nav-next {
-/*     padding-left: 1.125em;
-padding-top: 1.125em; */
-/*     float: left; */
+.project-nav-next-project {
+    color: $white;
+    font-size: 14px;
 }
-
-.project-nav-back {
-/*     padding-left: .9375em;
-padding-top: 1.125em; */
-/*     float: left; */
-    transform: rotate(180deg);
-}
-
-.project-nav-download {
-/*     padding-left: 16.5px;
-padding-top: 16px;
-position: relative; */
-    /* float: right; */
-}
-
-.project-nav-all {
-    /* padding-left: 1.0625em;
-    padding-top: 1.125em;
-    float: right;
-     */
- }
-
-/* .project-nav-download-bubble {
-    position: absolute;
-    display: block;
-    width: 200px;
-    height: 38px;
-    background-color: $salmon;
-    border-radius: 5em;
-    left: 5em;
-    top: .6875em;
-    padding: .8125em 0 0 1.125em;
-
-    > span {
-        font: normal normal 12px $bodyFont;
-        color: $white;
-        width: 100%;
-    }
-}
- */
-/* .project-nav-download-bubble:after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 6px 9px 6px 0;
-    border-color: transparent $salmon;
-    display: block;
-    width: 0;
-    z-index: 1;
-    left: -.4375em;
-    top: .8125em;
-}
- */

@@ -1,12 +1,8 @@
 .cue-demo-video {
     display: block;
-    width: 76.7361111%;
-    margin: 0 auto $small auto;
+    width: 100%;
+    margin: 0 auto 50px auto;
 
     -webkit-filter: brightness(105%) contrast(100%) saturate(97%) hue-rotate(8deg);
     filter: brightness(105%) contrast(100%) saturate(97%) hue-rotate(8deg);
-
-    @media (max-width: 50em) {
-        width: 100%;
-    }
 }

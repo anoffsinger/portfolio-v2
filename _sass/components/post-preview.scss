@@ -1,40 +1,36 @@
-.post-preview {
+.blog-post-preview {
 	@extend %clearfix;
 
 	opacity: 0;
 	transition: all .15s ease-out;
 
-	padding: 3%;
+	padding: 42px;
 	height: auto;
 	margin: 0 auto $large auto;
 	background-color: $lightestGrey;
 
-	> h2 {
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 400;
-		font-size: 24px;
-		color: $longformCopy;
+	h2 {
+		font-size: 28px;
+		color: $charcoal;
 		line-height: 1.2em;
+		margin-bottom: 10px
 	}
 
 	> span {
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 100;
-		font-size: 11px;
-		color: $longformCopy;
+		font-size: 13px;
+		color: $charcoal;
 		margin-bottom: 42px;
 		display: block;
 	}
 
-	> div {
+	div {
 
 		margin-bottom: 42px;
 
-		> p {
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 100;
-			font-size: 14px;
-			color: $longformCopy;
+		p {
+			font-size: 16px;
+			color: $charcoal;
+			line-height: 150%;
 		}
 	}
 }
