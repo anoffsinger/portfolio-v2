@@ -45,51 +45,11 @@ a {
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'apercumedium';
-  src: url("../fonts/apercu_medium-webfont.eot");
-  src: url("../fonts/apercu_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_medium-webfont.woff2") format("woff2"), url("../fonts/apercu_medium-webfont.woff") format("woff"), url("../fonts/apercu_medium-webfont.ttf") format("truetype"), url("../fonts/apercu_medium-webfont.svg#apercumedium") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'apercubold';
-  src: url("../fonts/apercu_bold-webfont.eot");
-  src: url("../fonts/apercu_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_bold-webfont.woff") format("woff"), url("../fonts/apercu_bold-webfont.ttf") format("truetype"), url("../fonts/apercu_bold-webfont.svg#apercubold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'aperculight_italic';
-  src: url("../fonts/apercu_light_italic-webfont.eot");
-  src: url("../fonts/apercu_light_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_light_italic-webfont.woff") format("woff"), url("../fonts/apercu_light_italic-webfont.ttf") format("truetype"), url("../fonts/apercu_light_italic-webfont.svg#aperculight_italic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'aperculight';
-  src: url("../fonts/apercu_light-webfont.eot");
-  src: url("../fonts/apercu_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_light-webfont.woff") format("woff"), url("../fonts/apercu_light-webfont.ttf") format("truetype"), url("../fonts/apercu_light-webfont.svg#aperculight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'apercuregular';
-  src: url("../fonts/apercu_regular-webfont.eot");
-  src: url("../fonts/apercu_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu_regular-webfont.woff") format("woff"), url("../fonts/apercu_regular-webfont.ttf") format("truetype"), url("../fonts/apercu_regular-webfont.svg#apercuregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
   font-family: 'fontello';
-  src: url("../fonts/fontello.eot?42528682");
-  src: url("../fonts/fontello.eot?42528682#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?42528682") format("woff"), url("../fonts/fontello.ttf?42528682") format("truetype"), url("../fonts/fontello.svg?42528682#fontello") format("svg");
+  src: url("../fonts/fontello.eot?85084791");
+  src: url("../fonts/fontello.eot?85084791#iefix") format("embedded-opentype"), url("../fonts/fontello.woff?85084791") format("woff"), url("../fonts/fontello.ttf?85084791") format("truetype"), url("../fonts/fontello.svg?85084791#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?42528682#fontello') format('svg');
-  }
-}
-*/
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -97,26 +57,18 @@ a {
   speak: none;
   display: inline-block;
   text-decoration: inherit;
-  /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+  -moz-osx-font-smoothing: grayscale; }
 
 .icon-all:before {
   content: '\e800'; }
 
 /* '' */
-.icon-arrow:before {
+.icon-next:before {
   content: '\e801'; }
 
 /* '' */
@@ -128,6 +80,10 @@ a {
   content: '\e803'; }
 
 /* '' */
+.icon-previous:before {
+  content: '\e804'; }
+
+/* '' */
 h2 {
   /*     font-family: $headerFont;
   font-size: $headerFontSize;
@@ -660,31 +616,35 @@ h3 {
 a.project-description-live-link {
   color: #f0efed; }
 
-.icon-next, .icon-menu, .icon-last, .icon-home, .icon-download {
-  color: #303d41;
-  font-size: 16px; }
-  @media (max-width: 800px) {
-    .icon-next, .icon-menu, .icon-last, .icon-home, .icon-download {
-      color: #f0efed; } }
+/* .icon-next, .icon-menu, .icon-last, .icon-home, .icon-download {
+    color: $darkBlue;
+    font-size: 16px;
+
+    @media (max-width: 800px) {
+        color: $silver;
+    }
+}
 
 .icon-home {
-  font-size: 1.7em; }
+    font-size: 1.7em;
+}
 
 .icon-home:before {
-  content: "\e601"; }
-
+    content: "e601";
+}
 .icon-last:before {
-  content: "\e602"; }
-
+    content: "e602";
+}
 .icon-menu:before {
-  content: "\e603"; }
-
+    content: "e603";
+}
 .icon-next:before {
-  content: "\e604"; }
-
+    content: "e604";
+}
 .icon-download:before {
-  content: "\e600"; }
-
+    content: "e600";
+}
+ */
 .project-nav {
   position: fixed;
   bottom: 0;
@@ -700,27 +660,133 @@ a.project-description-live-link {
 .project-nav-switcher {
   float: left; }
   .project-nav-switcher a {
-    margin-right: 30px; }
+    margin-right: 30px;
+    float: left; }
+
+.project-nav-switcher-titles {
+  width: 300px;
+  position: relative;
+  float: left;
+  padding-top: 1px; }
+  .project-nav-switcher-titles span {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all .2s ease; }
 
 .project-nav-options {
   float: right; }
   .project-nav-options a {
     margin-left: 30px; }
 
-.project-nav-next, .project-nav-back, .project-nav-get, .project-nav-link {
-  float: left; }
-  .project-nav-next > span, .project-nav-back > span, .project-nav-get > span, .project-nav-link > span {
-    font-size: 15px;
-    color: #FFFFFF; }
-  .project-nav-next:hover > span, .project-nav-back:hover > span, .project-nav-get:hover > span, .project-nav-link:hover > span {
+.project-nav-next > span, .project-nav-back > span {
+  font-size: 15px;
+  color: #FFFFFF; }
+.project-nav-next:hover > span, .project-nav-back:hover > span {
+  color: #FCF100; }
+
+.project-nav-back:hover ~ div span:nth-of-type(1) {
+  opacity: 1; }
+
+.project-nav-next:hover ~ div span:nth-of-type(2) {
+  opacity: 1; }
+
+.project-nav-get {
+  position: relative; }
+  .project-nav-get > span {
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: all .2s ease; }
+  .project-nav-get:hover > span {
     color: #FCF100; }
+  .project-nav-get:hover div {
+    opacity: 1;
+    transform: translateY(-10px) scale(1); }
 
-span.icon-link {
-  font-size: 17px; }
+.project-nav-link {
+  position: relative; }
+  .project-nav-link > span {
+    font-size: 16px;
+    color: #FFFFFF;
+    transition: all .2s ease; }
+  .project-nav-link:hover > span {
+    color: #FCF100; }
+  .project-nav-link:hover div {
+    opacity: 1;
+    transform: translateY(-10px) scale(1); }
 
+/* span.icon-link {
+    font-size: 17px;
+} */
 .project-nav-next-project {
   color: #FFFFFF;
   font-size: 14px; }
+
+.project-nav-previous-project {
+  color: #FFFFFF;
+  font-size: 14px; }
+
+.project-nav-inactive {
+  color: #6A6A6A;
+  pointer-events: none; }
+
+.project-nav-get-tip {
+  position: absolute;
+  top: -43px;
+  left: -38px;
+  display: flex;
+  align-items: center;
+  width: 85px;
+  height: 30px;
+  background-color: #FCF100;
+  border-radius: 5em;
+  transition: all .2s ease;
+  opacity: 0;
+  transform: scale(0.8); }
+  .project-nav-get-tip span {
+    font-size: 13px;
+    color: #6A6A6A;
+    margin: 0 auto; }
+
+.project-nav-get-tip:after {
+  content: '';
+  position: absolute;
+  left: 45%;
+  bottom: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 6px 0 6px;
+  border-color: #FCF100 transparent transparent transparent; }
+
+.project-nav-link-tip {
+  position: absolute;
+  top: -43px;
+  left: -38px;
+  display: flex;
+  align-items: center;
+  width: 85px;
+  height: 30px;
+  background-color: #FCF100;
+  border-radius: 5em;
+  transition: all .2s ease;
+  opacity: 0;
+  transform: scale(0.8); }
+  .project-nav-link-tip span {
+    font-size: 13px;
+    color: #6A6A6A;
+    margin: 0 auto; }
+
+.project-nav-link-tip:after {
+  content: '';
+  position: absolute;
+  left: 45%;
+  bottom: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 6px 0 6px;
+  border-color: #FCF100 transparent transparent transparent; }
 
 .cue-demo-video {
   display: block;

@@ -5,6 +5,7 @@ category: Work
 skills: Design, UX, Dev
 thumbnail: ../images/skoop-thumbnail.png
 link: https://healthyskoop.com/
+materials: https://healthyskoop.com/
 ---
 <div><img class="project-image" alt="Skoop homepage" src="http://localhost:4000/images/skoop-homepage.png"></div>
 

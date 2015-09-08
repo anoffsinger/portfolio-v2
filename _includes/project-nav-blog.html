@@ -1,10 +1,10 @@
 <div class="project-nav">
 	<div>
 		<div class="project-nav-switcher">
-			{% if page.previous and page.previous.category contains "blog" %}
+			{% if page.previous and page.previous.category contains "Blog" %}
 				<a class="project-nav-back" href="{{page.previous.url}}" title="Previous Project"><span class="icon-arrow"></span></a>
 			{% endif %}
-			{% if page.next and page.next.category contains "blog" %}
+			{% if page.next and page.next.category contains "Blog" %}
 				<a class="project-nav-next" href="{{page.next.url}}" title="Next Project"><span class="icon-arrow"></span></a>
 			{% endif %}
 			<span class="project-nav-next-project">Title of Project</span>
