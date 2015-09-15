@@ -8,30 +8,29 @@
 } */
 
 .menu-visible {
-    opacity: 1 !important;
-    width: 100% !important;
-    height: 100vh !important;
+    opacity: .95 !important;
+    pointer-events: auto !important;
+    // width: 100% !important;
+    // height: 100vh !important;
 }
 
 #menu {
 	/* position: fixed; */
     /* left: -15.625em; left or right and the width of your navigation panel */
     /* width: 15.625em; should match the above value */
-    height: 0;
-    width: 0;
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, .95);
+    background-color: white;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
     z-index: -999;
-
-    transition: all 1s;
-
-
-
+    transition: all .5s;
+    pointer-events: none;
+    padding: 0 7.5% 0 7.5%;
 
     li {
         font-family: $mainType;
@@ -219,7 +218,7 @@ a.menu-active:hover:after {
         transform: translateX(18px);
     }
     > .menu-middle-bar:after {
-        transform: translateX(18px);
+        transform: translateX(-18px);
     }
     > .menu-bottom-bar:after {
         transform: translateX(18px);
@@ -236,7 +235,7 @@ a.menu-active:hover:after {
 	height: 3px;
 	background-color: $charcoal;
 	margin-bottom: 3px;
-	transition: all .25s cubic-bezier(1, .05, .85, 1);
+	transition: all .4s cubic-bezier(1, 0, 0, 1);
 }
 
 .menu-bottom-bar {
@@ -251,7 +250,8 @@ a.menu-active:hover:after {
         background-color: $lightGrey;
         left: -18px;
         top: 0;
-        transition: all .1s cubic-bezier(1, .05, .85, 1) .2s;
+        // transition: all .1s cubic-bezier(1, .05, .85, 1) .2s;
+        transition: all .3s cubic-bezier(1, .05, .85, 1);
     }
 }
 
@@ -267,7 +267,7 @@ a.menu-active:hover:after {
         background-color: $lightGrey;
         left: -18px;
         top: 0;
-        transition: all .1s cubic-bezier(1, .05, .85, 1);
+        transition: all .3s cubic-bezier(1, .05, .85, 1);
     }
 }
 
@@ -282,9 +282,9 @@ a.menu-active:hover:after {
         width: 18px;
         height: 3px;
         background-color: $lightGrey;
-        left: -18px;
+        right: -18px;
         top: 0;
-        transition: all .1s cubic-bezier(1, .05, .85, 1) .1s;
+        transition: all .3s cubic-bezier(1, .05, .85, 1);
     }
 }
 

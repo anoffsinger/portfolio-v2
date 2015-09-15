@@ -397,7 +397,7 @@ h3 {
   margin: 0 auto;
   width: 85px; }
   .button-intro span {
-    transition: all 0.3s cubic-bezier(1, 0.05, 0.85, 1);
+    transition: all 0.6s cubic-bezier(1, 0, 0, 1);
     display: inline-block; }
   .button-intro:after {
     content: '';
@@ -410,7 +410,7 @@ h3 {
     border-style: solid;
     border-width: 5.165px 0 5.165px 8.9px;
     border-color: transparent transparent transparent #FCF100;
-    -webkit-transition: all 0.3s cubic-bezier(1, 0.05, 0.85, 1);
+    -webkit-transition: all 0.6s cubic-bezier(1, 0, 0, 1);
     transform: rotate(-90deg); }
   .button-intro:before {
     content: '';
@@ -420,7 +420,7 @@ h3 {
     height: 3px;
     width: 100%;
     background-color: #6A6A6A;
-    -webkit-transition: all 0.3s cubic-bezier(1, 0.05, 0.85, 1);
+    -webkit-transition: all 0.6s cubic-bezier(1, 0, 0, 1);
     -webkit-transform-origin: 50% 0%;
     z-index: -1; }
   .button-intro:hover span {
@@ -1249,25 +1249,26 @@ a.project-description-live-link {
   color: $landingGrey !important;
 } */
 .menu-visible {
-  opacity: 1 !important;
-  width: 100% !important;
-  height: 100vh !important; }
+  opacity: .95 !important;
+  pointer-events: auto !important; }
 
 #menu {
   /* position: fixed; */
   /* left: -15.625em; left or right and the width of your navigation panel */
   /* width: 15.625em; should match the above value */
-  height: 0;
-  width: 0;
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: white;
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
   z-index: -999;
-  transition: all 1s;
+  transition: all .5s;
+  pointer-events: none;
+  padding: 0 7.5% 0 7.5%;
   /* transition: transform .5s ease; */
   /* 	-webkit-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
   -moz-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
@@ -1418,7 +1419,7 @@ a.menu-active:hover:after {
 .menu-selector:hover > .menu-top-bar:after {
   transform: translateX(18px); }
 .menu-selector:hover > .menu-middle-bar:after {
-  transform: translateX(18px); }
+  transform: translateX(-18px); }
 .menu-selector:hover > .menu-bottom-bar:after {
   transform: translateX(18px); }
 
@@ -1431,7 +1432,7 @@ a.menu-active:hover:after {
   height: 3px;
   background-color: #6A6A6A;
   margin-bottom: 3px;
-  transition: all 0.25s cubic-bezier(1, 0.05, 0.85, 1); }
+  transition: all 0.4s cubic-bezier(1, 0, 0, 1); }
 
 .menu-bottom-bar {
   transform-origin: bottom left; }
@@ -1444,7 +1445,7 @@ a.menu-active:hover:after {
     background-color: #D7D7D7;
     left: -18px;
     top: 0;
-    transition: all 0.1s cubic-bezier(1, 0.05, 0.85, 1) 0.2s; }
+    transition: all 0.3s cubic-bezier(1, 0.05, 0.85, 1); }
 
 .menu-top-bar {
   transform-origin: top left; }
@@ -1457,7 +1458,7 @@ a.menu-active:hover:after {
     background-color: #D7D7D7;
     left: -18px;
     top: 0;
-    transition: all 0.1s cubic-bezier(1, 0.05, 0.85, 1); }
+    transition: all 0.3s cubic-bezier(1, 0.05, 0.85, 1); }
 
 .menu-middle-bar {
   transition-property: opacity;
@@ -1469,9 +1470,9 @@ a.menu-active:hover:after {
     width: 18px;
     height: 3px;
     background-color: #D7D7D7;
-    left: -18px;
+    right: -18px;
     top: 0;
-    transition: all 0.1s cubic-bezier(1, 0.05, 0.85, 1) 0.1s; }
+    transition: all 0.3s cubic-bezier(1, 0.05, 0.85, 1); }
 
 .top-bar-close {
   transform: rotate(45deg);
