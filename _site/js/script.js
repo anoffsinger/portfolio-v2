@@ -139,6 +139,10 @@ $(document).ready(function() {
 
 		$("#menu").toggleClass("menu-visible");
 		$(menuSelector).toggleClass("menu-selector-open");
+		$(".nav-items li:nth-of-type(1)").toggleClass("kittens");
+		$(".nav-items li:nth-of-type(2)").toggleClass("kittens");
+		$(".nav-items li:nth-of-type(3)").toggleClass("kittens");
+		$(".nav-items li:nth-of-type(4)").toggleClass("kittens");
 		// menuSelector.toggleClass("open");
 		// nav.toggleClass("nav-open");
 		// // overlay.toggleClass("open");

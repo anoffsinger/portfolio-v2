@@ -45,7 +45,8 @@
     &:hover {
 
         span {
-            transform: translateX(-10px);
+            transform: translateX(-10px) translateY(-10);
+            /* text-shadow: -20px -5px 0px #f4f4f4; */
         }
 
         &:before {
