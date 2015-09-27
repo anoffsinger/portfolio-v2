@@ -52,6 +52,9 @@ header {
 		display: block;
 		font-size: 16px;
 		color: $coral;
+		transition: all 600ms ease;
+		transform: translateX(30px);
+		opacity: 0;
 
 		> span:nth-of-type(1) {
 			color: $charcoal;
@@ -61,6 +64,11 @@ header {
 			color: $lightGrey;
 		}
 	}
+}
+
+.header-title-loaded {
+	opacity: 1 !important;
+	transform: translateX(0) !important;
 }
 
 .header {

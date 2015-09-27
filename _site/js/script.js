@@ -10,6 +10,7 @@ $(document).ready(function() {
 	main = $(".main")
 	body = $("body")
 	menuItem = $(".menu-item")
+	headerTitle = $(".header-title > h2")
 
 	// receding header
 	var didScroll;
@@ -20,6 +21,8 @@ $(document).ready(function() {
 	$(window).scroll(function(event){
 	    didScroll = true;
 	});
+
+	headerTitle.addClass("header-title-loaded")
 
 	// setInterval(function() {
 	//     if (didScroll) {
@@ -68,43 +71,43 @@ $(document).ready(function() {
 	});
 
 
-	$(".menu-item > a").click(function (e) {
-    	e.preventDefault();                   // prevent default anchor behavior
-    	var goTo = this.getAttribute("href"); // store anchor href
-
+	// $(".kittens").click(function (e) {
+    // 	e.preventDefault();                   // prevent default anchor behavior
+    // 	var goTo = this.getAttribute("href"); // store anchor href
+	// 	headerTitle.hide();
 		// menuSelector.toggleClass("open");
-		nav.toggleClass("nav-open");
+		// nav.toggleClass("nav-open");
 		// overlay.toggleClass("open");
-		canvas.toggleClass("open");
+		// canvas.toggleClass("open");
 		// content.toggleClass("open");
-		headerItems.toggleClass("open");
-		main.toggleClass("open");
-		body.toggleClass("no-scroll");
-		$(".intro").toggleClass("open");
-		$(".post-content").toggleClass("open");
-		menuSelector.toggleClass("menu-selector-open");
-		$(".project-nav").toggleClass("open");
-		$('.post-header').toggleClass('open');
+		// headerItems.toggleClass("open");
+		// main.toggleClass("open");
+		// body.toggleClass("no-scroll");
+		// $(".intro").toggleClass("open");
+		// $(".post-content").toggleClass("open");
+		// menuSelector.toggleClass("menu-selector-open");
+		// $(".project-nav").toggleClass("open");
+		// $('.post-header').toggleClass('open');
 
-		if (overlay.css('display') == "none") {
-			overlay.css("display","block");
-			overlay.fadeTo(300, .85);
+		// if (overlay.css('display') == "none") {
+		// 	overlay.css("display","block");
+		// 	overlay.fadeTo(300, .85);
+		//
+		// } else {
+		// 	overlay.fadeTo(300, 0);
+		// 	setTimeout(function() {
+		// 		overlay.css("display","none");
+		// 	},300);
+		// }
+		//
+		// $(".menu-top-bar").toggleClass("top-bar-close");
+		// $(".menu-middle-bar").toggleClass("middle-bar-close");
+		// $(".menu-bottom-bar").toggleClass("bottom-bar-close");
 
-		} else {
-			overlay.fadeTo(300, 0);
-			setTimeout(function() {
-				overlay.css("display","none");
-			},300);
-		}
-
-		$(".menu-top-bar").toggleClass("top-bar-close");
-		$(".menu-middle-bar").toggleClass("middle-bar-close");
-		$(".menu-bottom-bar").toggleClass("bottom-bar-close");
-
-	    setTimeout(function(){
-	         window.location = goTo;
-	    },300);
-	});
+	//     setTimeout(function(){
+	//          window.location = goTo;
+	//     },50000);
+	// });
 
 
 

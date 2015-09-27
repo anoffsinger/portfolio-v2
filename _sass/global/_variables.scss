@@ -3,6 +3,8 @@
 	-webkit-transition: background-color 1s ease;
 }
 
+$duration: .4s;
+$bezier: cubic-bezier(1,0,.25,1);
 $charcoal: #6A6A6A;
 $coral: #FF8969;
 $yellow: #FCF100;

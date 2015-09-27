@@ -2,16 +2,25 @@
     overflow: hidden;
 }
 
+.nav-items li {
+    margin-bottom: 10px;
+
+    a {
+        font-size: 28px;
+    }
+
+}
+
 .nav-items li:nth-of-type(1) {
-    transform: translateX(-30px);
+    transform: translateX(-10px);
     opacity: 0;
-    transition: .5s all;
+    transition: $duration all ease;
 }
 
 .nav-items li:nth-of-type(2) {
-    transform: translateX(-30px);
+    transform: translateX(-10px);
     opacity: 0;
-    transition: .5s all .1s;
+    transition: $duration all ease .1s;
 }
 
 .kittens {
@@ -20,15 +29,15 @@
 }
 
 .nav-items li:nth-of-type(3) {
-    transform: translateX(-30px);
+    transform: translateX(-10px);
     opacity: 0;
-    transition: .5s all .2s;
+    transition: $duration all ease .2s;
 }
 
 .nav-items li:nth-of-type(4) {
-    transform: translateX(-30px);
+    transform: translateX(-10px);
     opacity: 0;
-    transition: .5s all .3s;
+    transition: $duration all ease .3s;
 }
 
 /* .menu-active:hover {
@@ -72,21 +81,6 @@
 -moz-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
 box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5); */
 }
-
-/* .menu-overlay {
-    height: 110vh;
-    -webkit-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
-    -moz-box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
-    box-shadow: inset -7px 0px 2px 5px rgba(224,224,224,0.5);
-    width: 100%;
-    position: absolute;
-    right: 0;
-    z-index: 10000;
-    pointer-events: none;
-    top: -10px;
-} */
-
-
 
 button:focus {
 	outline: none;
@@ -226,7 +220,7 @@ a.menu-active:hover:after {
 	cursor: pointer;
 	/* float: left; */
 	opacity: 1;
-	-webkit-transition: transform 300ms ease;
+	-webkit-transition: transform $duration $bezier;
 	border: none;
 	background-color: transparent;
     /* z-index: 1000; */
@@ -270,7 +264,7 @@ a.menu-active:hover:after {
 	height: 3px;
 	background-color: $charcoal;
 	margin-bottom: 3px;
-	transition: all .4s cubic-bezier(1, 0, 0, 1);
+	transition: all $duration $bezier;
 }
 
 .menu-bottom-bar {
@@ -286,7 +280,7 @@ a.menu-active:hover:after {
         left: -18px;
         top: 0;
         // transition: all .1s cubic-bezier(1, .05, .85, 1) .2s;
-        transition: all .3s cubic-bezier(1, .05, .85, 1);
+        transition: all $duration $bezier;
     }
 }
 
@@ -302,7 +296,7 @@ a.menu-active:hover:after {
         background-color: $lightGrey;
         left: -18px;
         top: 0;
-        transition: all .3s cubic-bezier(1, .05, .85, 1);
+        transition: all $duration $bezier;
     }
 }
 
@@ -319,7 +313,7 @@ a.menu-active:hover:after {
         background-color: $lightGrey;
         right: -18px;
         top: 0;
-        transition: all .3s cubic-bezier(1, .05, .85, 1);
+        transition: all $duration $bezier;
     }
 }
 

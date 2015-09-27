@@ -14,7 +14,7 @@
 		display: block;
 	}
 
-	transition: all .15s ease-out;
+	transition: all $duration ease;
 }
 
 .work-item-loaded {

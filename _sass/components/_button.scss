@@ -8,7 +8,7 @@
     width: 85px;
 
     span {
-        transition: all .6s cubic-bezier(1, 0, 0, 1);
+        transition: all $duration $bezier;
         display: inline-block;
     }
 
@@ -23,7 +23,7 @@
         border-style: solid;
         border-width: 5.165px 0 5.165px 8.9px;
         border-color: transparent transparent transparent $yellow;
-        -webkit-transition: all .6s cubic-bezier(1, 0, 0, 1);
+        -webkit-transition: all $duration $bezier;
         // -webkit-transition: all .3s cubic-bezier(1, .05, .85, 1);
         transform: rotate(-90deg);
 
@@ -37,7 +37,7 @@
         height: 3px;
         width: 100%;
         background-color: $charcoal;
-        -webkit-transition: all .6s cubic-bezier(1, 0, 0, 1);
+        -webkit-transition: all $duration $bezier;
         -webkit-transform-origin: 50% 0%;
         z-index: -1;
     }
@@ -45,7 +45,7 @@
     &:hover {
 
         span {
-            transform: translateX(-10px) translateY(-10);
+            transform: translateX(-10px);
             /* text-shadow: -20px -5px 0px #f4f4f4; */
         }
 
