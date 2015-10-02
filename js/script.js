@@ -22,7 +22,7 @@ $(document).ready(function() {
 	    didScroll = true;
 	});
 
-	headerTitle.addClass("header-title-loaded")
+	headerTitle.addClass("header-title-loaded");
 
 	// setInterval(function() {
 	//     if (didScroll) {
@@ -142,10 +142,12 @@ $(document).ready(function() {
 
 		$("#menu").toggleClass("menu-visible");
 		$(menuSelector).toggleClass("menu-selector-open");
-		$(".nav-items li:nth-of-type(1)").toggleClass("kittens");
-		$(".nav-items li:nth-of-type(2)").toggleClass("kittens");
-		$(".nav-items li:nth-of-type(3)").toggleClass("kittens");
-		$(".nav-items li:nth-of-type(4)").toggleClass("kittens");
+		$(".nav-items li:nth-of-type(1)").toggleClass("nav-item-loaded");
+		$(".nav-items li:nth-of-type(2)").toggleClass("nav-item-loaded");
+		$(".nav-items li:nth-of-type(3)").toggleClass("nav-item-loaded");
+		$(".nav-items li:nth-of-type(4)").toggleClass("nav-item-loaded");
+
+
 		// menuSelector.toggleClass("open");
 		// nav.toggleClass("nav-open");
 		// // overlay.toggleClass("open");
@@ -176,9 +178,11 @@ $(document).ready(function() {
 		$(".menu-bottom-bar").toggleClass("bottom-bar-close");
 
 		// var url = window.location.href; // Get current url
-		// $('.menu-item a[href="'+url+'"]').toggleClass('menu-active');
-		// // Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
-		//
+		// console.log(url);
+		// $('a[href="'+url+'"]').toggleClass('menu-active');
+
+		// Select an a element that has the matching href and apply a class of 'active'. Also prepend a - to the content of the link
+
 		// $('.menu-items').toggleClass('slide-in');
 	});
 

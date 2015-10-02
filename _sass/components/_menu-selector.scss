@@ -1,0 +1,117 @@
+
+.menu-selector {
+	display: block;
+	width: 18px;
+	cursor: pointer;
+	/* float: left; */
+	opacity: 1;
+	-webkit-transition: transform $duration $bezier;
+	border: none;
+	background-color: transparent;
+    /* z-index: 1000; */
+    overflow: hidden;
+}
+
+.menu-selector-open {
+    overflow: visible;
+
+    .menu-top-bar:after {
+        transform: translateX(18px);
+        background-color: $charcoal !important;
+    }
+
+    .menu-bottom-bar:after {
+        transform: translateX(18px);
+        background-color: $charcoal !important;
+    }
+}
+
+.menu-selector:hover {
+    .menu-top-bar:after {
+        transform: translateX(18px);
+    }
+    .menu-middle-bar:after {
+        transform: translateX(-18px);
+    }
+    .menu-bottom-bar:after {
+        transform: translateX(18px);
+    }
+}
+
+.menu-top-bar,
+.menu-middle-bar,
+.menu-bottom-bar {
+    position: relative;
+    display: block;
+	width: 18px;
+	height: 3px;
+	background-color: $charcoal;
+	margin-bottom: 3px;
+	transition: all $duration $bezier;
+}
+
+.menu-bottom-bar {
+	transform-origin: bottom left;
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 18px;
+        height: 3px;
+        background-color: $lightGrey;
+        left: -18px;
+        top: 0;
+        // transition: all .1s cubic-bezier(1, .05, .85, 1) .2s;
+        transition: all $duration $bezier;
+    }
+}
+
+.menu-top-bar {
+	transform-origin: top left;
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 18px;
+        height: 3px;
+        background-color: $lightGrey;
+        left: -18px;
+        top: 0;
+        transition: all $duration $bezier;
+    }
+}
+
+.menu-middle-bar {
+	transition-property: opacity;
+	transition-duration: 0.6s;
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 18px;
+        height: 3px;
+        background-color: $lightGrey;
+        right: -18px;
+        top: 0;
+        transition: all $duration $bezier;
+    }
+}
+
+.top-bar-close {
+	transform: rotate(45deg);
+	background-color: $charcoal;
+}
+
+.middle-bar-close {
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.3s;
+}
+
+.bottom-bar-close {
+	transform: rotate(-45deg);
+	background-color: $charcoal;
+}
