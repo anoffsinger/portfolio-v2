@@ -1241,26 +1241,22 @@ a.project-description-live-link {
       line-height: 150%; }
 
 .intro {
-  /* 	> h1 {
-  	@extend %visually-hidden;
-  } */
-  margin: 0 auto;
-  transform: translateY(-20px); }
+  margin: 0 auto; }
   .intro img {
     display: block;
-    height: 44px;
-    width: 13px;
-    margin: 0 auto 28px auto; }
+    height: 2.75em;
+    width: .8125em;
+    margin: 0 auto 1.75em auto; }
   .intro h1 {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #6A6A6A;
     text-align: center;
-    margin-bottom: 28px; }
+    margin-bottom: 1.75em; }
   .intro p {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #D7D7D7;
     text-align: center;
-    margin-bottom: 28px;
+    margin-bottom: 1.75em;
     line-height: 155%; }
   @media (max-width: 1124px) {
     .intro {

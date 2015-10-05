@@ -1,30 +1,25 @@
 .intro {
-/* 	> h1 {
-	@extend %visually-hidden;
-} */
 	margin: 0 auto;
-	transform: translateY(-20px);
-
 
 	img {
 		display: block;
-		height: 44px;
-		width: 13px;
-		margin: 0 auto 28px auto;
+		height: 2.75em;
+		width: .8125em;
+		margin: 0 auto 1.75em auto;
 	}
 
 	h1 {
-		font-size: 18px;
+		font-size: 1.125em;
 		color: $charcoal;
 		text-align: center;
-		margin-bottom: 28px;
+		margin-bottom: 1.75em;
 	}
 
 	p {
-		font-size: 18px;
+		font-size: 1.125em;
 		color: $lightGrey;
 		text-align: center;
-		margin-bottom: 28px;
+		margin-bottom: 1.75em;
 		line-height: 155%;
 	}
 
