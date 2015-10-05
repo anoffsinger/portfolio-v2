@@ -102,17 +102,15 @@ li.nav-item-loaded {
     &:after {
         content: '';
         position: absolute;
-        right: -15px;
-        top: 15px;
+        right: -10px;
+        top: 17px;
         opacity: 0;
         width: 0;
         height: 0;
         border-style: solid;
         border-width: 5.165px 0 5.165px 8.9px;
         border-color: transparent transparent transparent $charcoal;
-        -webkit-transition: all $duration $bezier;
-        // -webkit-transition: all .3s cubic-bezier(1, .05, .85, 1);
-        /* transform: rotate(-90deg); */
+        -webkit-transition: all $duration ease .2s;
     }
 
     &:hover {

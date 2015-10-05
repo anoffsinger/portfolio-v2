@@ -24,8 +24,6 @@
         border-width: 5.165px 0 5.165px 8.9px;
         border-color: transparent transparent transparent $yellow;
         -webkit-transition: all $duration $bezier;
-        // -webkit-transition: all .3s cubic-bezier(1, .05, .85, 1);
-        transform: rotate(-90deg);
     }
 
     &:before {
@@ -70,37 +68,51 @@
     position: relative;
     display: block;
     width: 68px;
-    transition: all .4s;
 
     span {
-        transition: all .4s;
+        transition: all $duration ease;
         display: inline-block;
     }
 
-    &:before {
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     bottom: -3px;
+    //     left: 0;
+    //     height: 3px;
+    //     width: 100%;
+    //     background-color: $charcoal;
+    //     -webkit-transition: all .4s;
+    //     -webkit-transform-origin: 50% 0%;
+    //     z-index: -1;
+    // }
+    &:after {
         content: '';
         position: absolute;
-        bottom: -3px;
-        left: 0;
-        height: 3px;
-        width: 100%;
-        background-color: $charcoal;
-        -webkit-transition: all .4s;
-        -webkit-transform-origin: 50% 0%;
-        z-index: -1;
-    }
+        right: -15px;;
+        top: 5px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5.165px 0 5.165px 8.9px;
+        border-color: transparent transparent transparent $charcoal;
 
+
+
+        transition: all $duration ease;
+    }
     &:hover {
 
+        color: $lightGrey;
+
         span {
-            transform: translateX(13px);
-            transition: all .4s;
+            // transform: translateX(13px);
+            // transition: all .4s;
+
         }
 
-        &:before {
-            transform-origin: 0% 0%;
-            transform: translateY(5px) scale(1.4, -10);
-            background-color: $yellow;
+        &:after {
+            border-color: transparent transparent transparent $lightGrey;
         }
 
 /*         &:after {

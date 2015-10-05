@@ -7,7 +7,7 @@
 	{% include menu.html %}
 	<h2>
 		<span>{{ page.title }}</span>
-		{% if page.category != "None" %}
+		{% if page.category == "Work" or page.category == "Blog" page.category == "Experiments" %}
 			<span> &VerticalSeparator; {{ page.category }}</span>
 		{% endif %}
 	</h2>
