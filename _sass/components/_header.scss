@@ -8,7 +8,7 @@ header {
 	width: 100%;
 	left: 0;
 	top: 0;
-	height: 112px;
+	height: 7em;
 	z-index: 2;
 	display: flex;
 	align-items: center;
@@ -32,7 +32,7 @@ header {
 	width: 100%;
 	left: 0;
 	top: 0;
-	height: 112px;
+	height: 7em;
 	z-index: 2;
 	display: flex;
 	align-items: center;
@@ -50,10 +50,10 @@ header {
 
 	h2 {
 		display: block;
-		font-size: 16px;
+		font-size: 1em;
 		color: $coral;
 		transition: all 600ms ease;
-		transform: translateX(30px);
+		transform: translateX(1.875em);
 		opacity: 0;
 
 		> span:nth-of-type(1) {
@@ -98,13 +98,13 @@ header {
 	transition: transform .5s ease;
 
 	> h2 {
-		font-size: 14px;
+		font-size: .875em;
 		color: $landingGrey;
 		text-align: right;
 		position: relative;
 		float: right;
 		width: 94%;
-		padding-bottom: 5px;
+		padding-bottom: .3125em;
 	}
 }
 
@@ -112,16 +112,13 @@ header {
 	font-family: $workTitleFont;
 	font-size: .875em;
 	color: $landingGrey;
-	margin-left: 100px;
-
+	margin-left: 6.25em;
 	transition: color .2s ease;
 }
 
 .header-back:hover {
 	color: $darkBlue;
 }
-
-
 
 @-webkit-keyframes grow {
     from { width: 0%; }

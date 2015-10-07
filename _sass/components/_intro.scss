@@ -1,5 +1,18 @@
 .intro {
 	margin: 0 auto;
+	width: 23.8%;
+
+	@media (max-width: 1174px) {
+		width: 30%;
+	}
+
+	@media (max-width: 944px) {
+		width: 39%;
+	}
+
+	@media (max-width: 696px) {
+		width: 64%;
+	}
 
 	img {
 		display: block;
@@ -21,16 +34,12 @@
 		text-align: center;
 		margin-bottom: 1.75em;
 		line-height: 155%;
+
+
 	}
 
 
 
 
-	@media (max-width: 1124px) {
-		width: 70%;
-	}
 
-	@media (max-width: 594px) {
-		width: 95%;
-	}
 }
