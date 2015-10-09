@@ -17,8 +17,7 @@ body:after, .project-list:after, .project-list-all:after, .project-nav > div:aft
 body {
   font-size: 100%;
   font-family: "brandon_text_regular";
-  background-color: #FFFFFF;
-  -webkit-font-smoothing: antialiased !important; }
+  background-color: #FFFFFF; }
 
 footer {
   padding: 3.5625em 0;
