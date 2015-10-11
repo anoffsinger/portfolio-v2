@@ -3,8 +3,15 @@
 	-webkit-transition: background-color 1s ease;
 }
 
+// type
+$brandonTextRegular: 'brandon_text_regular', Helvetica, 'sans serif';
+$mediumFont: 1.2em;
+
+// animations
 $duration: .4s;
 $bezier: cubic-bezier(1,0,.25,1);
+
+// colors
 $charcoal: #6A6A6A;
 $coral: #FF8969;
 $yellow: #FCF100;
@@ -13,10 +20,16 @@ $lightGrey: #D7D7D7;
 $canvasGrey: #E8E8E8;
 $darkGrey: #3b3b3b;
 
+// spacing
+
+
+
+
 $mainType: 'brandon_text_regular';
 $secondaryType: 'brandon_text_light';
 
 $mediumSpace: 36px;
+
 
 
 

@@ -22,22 +22,23 @@
 	}
 
 	h1 {
-		font-size: 1.125em;
+		font-family: $brandonTextRegular;
+		font-size: $mediumFont;
 		color: $charcoal;
 		text-align: center;
 		margin-bottom: 1.75em;
 	}
 
 	p {
-		font-size: 1.125em;
+		font-size: $mediumFont;
 		color: $lightGrey;
 		text-align: center;
 		margin-bottom: 1.75em;
 		line-height: 155%;
 
-		@media (max-width: 696px) {
-			font-size: 1.3em;
-		}
+		// @media (max-width: 696px) {
+		// 	font-size: 1.3em;
+		// }
 
 
 	}

@@ -1,5 +1,5 @@
 .blog-post-preview {
-	@extend %clearfix;
+	// @extend %clearfix;
 
 	opacity: 0;
 	transition: all $duration ease;
@@ -7,7 +7,7 @@
 
 	padding: 42px;
 	height: auto;
-	margin: 0 auto $large auto;
+	margin: 0 auto 2em auto;
 	background-color: $lightestGrey;
 
 	h2 {
