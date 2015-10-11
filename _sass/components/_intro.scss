@@ -35,6 +35,10 @@
 		margin-bottom: 1.75em;
 		line-height: 155%;
 
+		@media (max-width: 696px) {
+			font-size: 1.3em;
+		}
+
 
 	}
 

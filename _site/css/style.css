@@ -35,6 +35,9 @@ a {
 button:focus {
   outline: none; }
 
+h1 {
+  font-weight: normal !important; }
+
 @font-face {
   font-family: 'brandon_text_light';
   src: url("../fonts/hvd_fonts_-_brandontext-light-webfont.eot");
@@ -1268,6 +1271,9 @@ a.project-description-live-link {
     text-align: center;
     margin-bottom: 1.75em;
     line-height: 155%; }
+    @media (max-width: 696px) {
+      .intro p {
+        font-size: 1.3em; } }
 
 /* .no-scroll {
     overflow: hidden;
