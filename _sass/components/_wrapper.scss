@@ -2,6 +2,10 @@
 	position: relative;
 	width: 85%;
 	margin: 0 auto $extraLarge auto;
+
+	@media (max-width: 696px) {
+		width: 100%;
+	}
 }
 
 .wrapper-splash {

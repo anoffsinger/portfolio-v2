@@ -1725,6 +1725,9 @@ header {
   position: relative;
   width: 85%;
   margin: 0 auto 7em auto; }
+  @media (max-width: 696px) {
+    .wrapper-site {
+      width: 100%; } }
 
 .wrapper-splash {
   position: absolute;
@@ -1844,6 +1847,9 @@ header {
     width: 80%; }
   .content > p:last-of-type {
     margin-bottom: 50px; }
+  @media (max-width: 696px) {
+    .content {
+      width: 100%; } }
 
 /* .main {
 	transition: transform .5s ease;
