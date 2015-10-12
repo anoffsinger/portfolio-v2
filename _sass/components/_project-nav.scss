@@ -6,7 +6,6 @@
     background-color: $darkGrey;
     height: 44px;
     padding: 11px 7.5% 0 7.5%;
-    /* transition: all .1s ease; */
 
     > div {
         @extend %clearfix;
@@ -15,11 +14,11 @@
         margin: 0 auto;
     }
 }
-
-.project-nav-hidden {
-    /* transform: translateY(44px); */
-    opacity: 0;
-}
+//
+// .project-nav-hidden {
+//     /* transform: translateY(44px); */
+//     opacity: 0;
+// }
 
 .project-nav-switcher {
     float: left;
@@ -142,19 +141,22 @@
 
 .project-nav-link {
     position: relative;
+
     > span {
         font-size: 16px;
         color: $white;
         transition: all .2s ease;
     }
 
-    &:hover {
-        > span {
-            color: $lightGrey;
-        }
-        div {
+    > span:hover {
+
+        color: $lightGrey;
+
+
+        + div {
             opacity: 1;
             transform: translateY(10px) scale(1);
+            pointer-events: auto;
         }
     }
 }
@@ -174,6 +176,7 @@
 }
 
 .project-nav-inactive {
+    display: none;
     color: $charcoal;
     pointer-events: none;
 }
@@ -190,6 +193,7 @@
     border-radius: 5em;
     transition: all .2s ease;
     opacity: 0;
+    pointer-events: none;
 
 
     span {
@@ -224,6 +228,7 @@
     border-radius: 5em;
     transition: all .2s ease;
     opacity: 0;
+    pointer-events: none;
 
     span {
         font-size: 13px;
@@ -237,7 +242,6 @@
     position: absolute;
     left: 45%;
     bottom: -8px;
-
     width: 0;
     height: 0;
     border-style: solid;

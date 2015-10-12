@@ -1,5 +1,3 @@
-// Buttons
-
 .button-intro {
     position: relative;
     font-size: $mediumFont;
@@ -65,60 +63,12 @@
     font-family: $mainType, 'serif';
     color: $charcoal;
     font-size: 1em;
-    position: relative;
-    display: block;
-    width: 84px;
+    display: inline-block;
+    border-bottom: 3px solid $charcoal;
+    transition: all .2s ease;
 
-    span {
-        transition: all $duration ease;
-        display: inline-block;
-    }
-
-    // &:before {
-    //     content: '';
-    //     position: absolute;
-    //     bottom: -3px;
-    //     left: 0;
-    //     height: 3px;
-    //     width: 100%;
-    //     background-color: $charcoal;
-    //     -webkit-transition: all .4s;
-    //     -webkit-transform-origin: 50% 0%;
-    //     z-index: -1;
-    // }
-    &:after {
-        content: '';
-        position: absolute;
-        right: -15px;;
-        top: 6px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 5.165px 0 5.165px 8.9px;
-        border-color: transparent transparent transparent $charcoal;
-
-
-
-        transition: all $duration ease;
-    }
     &:hover {
-
         color: $lightGrey;
-
-        span {
-            // transform: translateX(13px);
-            // transition: all .4s;
-
-        }
-
-        &:after {
-            border-color: transparent transparent transparent $lightGrey;
-        }
-
-/*         &:after {
-    opacity: 1;
-    transform: translateX(9px);
-    border-color: transparent transparent transparent $charcoal;
-} */
+        border-color: $lightGrey;
     }
 }

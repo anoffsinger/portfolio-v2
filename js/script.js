@@ -150,6 +150,7 @@ $(document).ready(function() {
 		$(".menu-top-bar").toggleClass("top-bar-close");
 		$(".menu-middle-bar").toggleClass("middle-bar-close");
 		$(".menu-bottom-bar").toggleClass("bottom-bar-close");
+		body.toggleClass("no-scroll");
 
 
 		// menuSelector.toggleClass("open");

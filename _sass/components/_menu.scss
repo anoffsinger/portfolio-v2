@@ -1,6 +1,6 @@
-/* .no-scroll {
+.no-scroll {
     overflow: hidden;
-} */
+}
 
 #menu {
 	position: absolute;
@@ -77,6 +77,22 @@
         font-size: 28px;
         font-family: $mainType;
         color: $charcoal;
+		display: block;
+		transition: all .2s ease;
+
+		&:after {
+			content: '';
+			position: absolute;
+			right: -15px;
+			top: 17px;
+			opacity: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 5.165px 0 5.165px 8.9px;
+			border-color: transparent transparent transparent $charcoal;
+			transition: all .2s ease;
+		}
     }
 
 	&:after {
@@ -114,16 +130,14 @@ li.nav-item-loaded {
     opacity: 1;
     transform: translateX(0px);
 
-    &:hover {
-        // transform: translateX(10px);
-		> a {
-			color: $lightGrey;
-		}
 
-        &:after {
-            opacity: 1;
-            // transform: translateX(9px);
-            // border-color: transparent transparent transparent $charcoal;
-        }
-    }
+        // transform: translateX(10px);
+	> a:hover {
+		transform: translateX(10px);
+
+		&:after {
+			opacity: 1;
+		}
+	}
+
 }

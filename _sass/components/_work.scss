@@ -9,12 +9,11 @@
 	position: relative;
 	opacity: 0;
 	transform: translateY(20px);
+	transition: all $duration ease;
 
 	> a {
 		display: block;
 	}
-
-	transition: all $duration ease;
 }
 
 .work-item-loaded {
@@ -23,13 +22,8 @@
 }
 
 .work-img {
-/* 	background-image: url("../images/cue-app-thumb.png");
-background-repeat: no-repeat;
-background-size: contain;
- */
 	display: block;
 	width: 100%;
-
 	transition: all .2s ease;
 }
 
@@ -44,49 +38,45 @@ background-size: contain;
 	right: 0;
 	height: 80px;
 	opacity: 0;
-
-
-	@include transition(all, .15s);
+	transition: all $duration ease;
 }
 
 .work-desc-items {
-
 	height: 100px;
 	width: 80%;
 	margin: 0 auto;
 	position: relative;
 
 	> span {
-		top: 0px;
 		color: $white;
 		position: absolute;
+		width: 100%;
+		text-align: center;
 	}
 
 	> span:nth-of-type(1) {
-		width: 100%;
-		text-align: center;
+		opacity: 0;
 		top: 18px;
-		@include transition(all, .3s);
-		font-weight: bold;
+		transition: all $duration ease;
+		font-family: $brandonTextBold;
 		font-size: 26px;
 	}
 
 	> span:nth-of-type(2) {
-		width: 100%;
-		text-align: center;
+		opacity: 0;
 		top: 60px;
-		@include transition(all, .5s);
+		transition: all $duration ease .08s;
 		font-size: 14px;
 	}
 }
 
 .work-item:hover {
-
 	.work-desc {
 		opacity: 1;
 
 		span {
 			transform: translateY(-5px);
+			opacity: 1;
 		}
 	}
 
