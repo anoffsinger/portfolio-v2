@@ -23,6 +23,11 @@ $(document).ready(function() {
 	// });
 
 	headerTitle.addClass("header-title-loaded");
+	headerTitle.addClass("header-title-loaded");
+	$('.intro > img').addClass("intro-loaded");
+	$('.intro > h1').addClass("intro-loaded");
+	$('.intro > p').addClass("intro-loaded");
+	$('.button-intro').addClass("intro-loaded");
 
 
 	// setInterval(function() {

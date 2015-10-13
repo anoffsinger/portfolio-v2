@@ -19,6 +19,9 @@
 		height: 2.75em;
 		width: .8125em;
 		margin: 0 auto 1.75em auto;
+		transform: translateY(5px);
+		transition: all $duration ease;
+		opacity: 0;
 	}
 
 	h1 {
@@ -27,6 +30,9 @@
 		color: $charcoal;
 		text-align: center;
 		margin-bottom: 1.75em;
+		transform: translateY(5px);
+		transition: all $duration ease .08s;
+		opacity: 0;
 	}
 
 	p {
@@ -35,16 +41,17 @@
 		text-align: center;
 		margin-bottom: 1.75em;
 		line-height: 155%;
+		transform: translateY(5px);
+		transition: all $duration ease .16s;
+		opacity: 0;
 
 		// @media (max-width: 696px) {
 		// 	font-size: 1.3em;
 		// }
-
-
 	}
+}
 
-
-
-
-
+.intro-loaded {
+	transform: translateY(0px) !important;
+	opacity: 1 !important;
 }
