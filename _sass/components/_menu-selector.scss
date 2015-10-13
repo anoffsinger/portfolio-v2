@@ -19,7 +19,10 @@
         transform: translateX(18px);
         background-color: $charcoal !important;
     }
-
+	.menu-middle-bar:after {
+		transform: translateX(18px);
+		background-color: $charcoal !important;
+	}
     .menu-bottom-bar:after {
         transform: translateX(18px);
         background-color: $charcoal !important;
@@ -31,7 +34,7 @@
         transform: translateX(18px);
     }
     .menu-middle-bar:after {
-        transform: translateX(-18px);
+        transform: translateX(18px);
     }
     .menu-bottom-bar:after {
         transform: translateX(18px);
@@ -47,7 +50,7 @@
 	height: 3px;
 	background-color: $charcoal;
 	margin-bottom: 3px;
-	transition: all $duration $bezier;
+	transition: all $duration $bezierAlt;
 }
 
 .menu-bottom-bar {
@@ -63,7 +66,7 @@
         left: -18px;
         top: 0;
         // transition: all .1s cubic-bezier(1, .05, .85, 1) .2s;
-        transition: all $duration $bezier;
+        transition: all $duration $bezier .2s;
     }
 }
 
@@ -94,9 +97,9 @@
         width: 18px;
         height: 3px;
         background-color: $lightGrey;
-        right: -18px;
+        right: 18px;
         top: 0;
-        transition: all $duration $bezier;
+        transition: all $duration $bezier .1s;
     }
 }
 

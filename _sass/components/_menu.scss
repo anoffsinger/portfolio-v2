@@ -79,6 +79,7 @@
         color: $charcoal;
 		display: block;
 		transition: all .2s ease;
+        z-index: 3000;
 
 		&:after {
 			content: '';

@@ -3,22 +3,22 @@
 		{% if page.category contains "Home" %}
 		<li class="no-hover"><a class="menu-active" href="http://localhost:4000/">Home</a></li>
 		{% else %}
-		<li><a href="http://localhost:4000/">Home</a></li>
+		<li><a class="nav-items-link" href="http://localhost:4000/">Home</a></li>
 		{% endif %}
 		{% if page.category contains "Work" or page.category contains "Work-Overview" %}
 		<li class="no-hover"><a class="menu-active" href="http://localhost:4000/work/">Work</a></li>
 		{% else %}
-		<li><a href="http://localhost:4000/work/">Work</a></li>
+		<li><a class="nav-items-link" href="http://localhost:4000/work/">Work</a></li>
 		{% endif %}
 		{% if page.category contains "Blog" or page.category contains "Blog-Overview" %}
 		<li class="no-hover"><a class="menu-active" href="http://localhost:4000/blog/">Blog</a></li>
 		{% else %}
-		<li ><a href="http://localhost:4000/blog/">Blog</a></li>
+		<li ><a class="nav-items-link" href="http://localhost:4000/blog/">Blog</a></li>
 		{% endif %}
 		{% if page.category contains "About" %}
 		<li class="no-hover"><a class="menu-active" href="http://localhost:4000/about/">About</a></li>
 		{% else %}
-		<li><a href="http://localhost:4000/about/">About</a></li>
+		<li><a class="nav-items-link" href="http://localhost:4000/about/">About</a></li>
 		{% endif %}
 	</ul>
 </nav>

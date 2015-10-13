@@ -77,9 +77,23 @@ $(document).ready(function() {
 	});
 
 
-	// $(".kittens").click(function (e) {
-    // 	e.preventDefault();                   // prevent default anchor behavior
-    // 	var goTo = this.getAttribute("href"); // store anchor href
+	$(".nav-items-link").click(function (e) {
+		console.log("bleh");
+		e.preventDefault();                   // prevent default anchor behavior
+		$(menuSelector).toggleClass("menu-selector-open");
+		$(".nav-items li:nth-of-type(1)").toggleClass("nav-item-loaded");
+		$(".nav-items li:nth-of-type(2)").toggleClass("nav-item-loaded");
+		$(".nav-items li:nth-of-type(3)").toggleClass("nav-item-loaded");
+		$(".nav-items li:nth-of-type(4)").toggleClass("nav-item-loaded");
+		$(".menu-top-bar").toggleClass("top-bar-close");
+		$(".menu-middle-bar").toggleClass("middle-bar-close");
+		$(".menu-bottom-bar").toggleClass("bottom-bar-close");
+		var goTo = this.getAttribute("href");
+		setTimeout(function(){
+	         window.location = goTo;
+	    }, 300);
+	});
+		 // store anchor href
 	// 	headerTitle.hide();
 		// menuSelector.toggleClass("open");
 		// nav.toggleClass("nav-open");
@@ -110,10 +124,7 @@ $(document).ready(function() {
 		// $(".menu-middle-bar").toggleClass("middle-bar-close");
 		// $(".menu-bottom-bar").toggleClass("bottom-bar-close");
 
-	//     setTimeout(function(){
-	//          window.location = goTo;
-	//     },50000);
-	// });
+
 
 
 

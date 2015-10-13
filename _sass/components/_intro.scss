@@ -19,7 +19,7 @@
 		height: 2.75em;
 		width: .8125em;
 		margin: 0 auto 1.75em auto;
-		transform: translateY(5px);
+		transform: translateY(10px);
 		transition: all $duration ease;
 		opacity: 0;
 	}
@@ -30,8 +30,8 @@
 		color: $charcoal;
 		text-align: center;
 		margin-bottom: 1.75em;
-		transform: translateY(5px);
-		transition: all $duration ease .08s;
+		transform: translateY(10px);
+		transition: all $duration ease .1s;
 		opacity: 0;
 	}
 
@@ -41,8 +41,8 @@
 		text-align: center;
 		margin-bottom: 1.75em;
 		line-height: 155%;
-		transform: translateY(5px);
-		transition: all $duration ease .16s;
+		transform: translateY(10px);
+		transition: all $duration ease .2s;
 		opacity: 0;
 
 		// @media (max-width: 696px) {
