@@ -3,30 +3,28 @@
 	display: block;
 	width: 18px;
 	cursor: pointer;
-	/* float: left; */
 	opacity: 1;
 	-webkit-transition: transform $duration $bezier;
 	border: none;
 	background-color: transparent;
-    /* z-index: 1000; */
     overflow: hidden;
 }
 
 .menu-selector-open {
     overflow: visible;
 
-    .menu-top-bar:after {
-        transform: translateX(18px);
-        background-color: $charcoal !important;
-    }
-	.menu-middle-bar:after {
-		transform: translateX(18px);
-		background-color: $charcoal !important;
-	}
-    .menu-bottom-bar:after {
-        transform: translateX(18px);
-        background-color: $charcoal !important;
-    }
+    // .menu-top-bar:after {
+    //     transform: translateX(18px);
+	//
+    // }
+	// .menu-middle-bar:after {
+	// 	transform: translateX(18px);
+	//
+	// }
+    // .menu-bottom-bar:after {
+    //     transform: translateX(18px);
+	//
+    // }
 }
 
 .menu-selector:hover {
@@ -51,6 +49,7 @@
 	background-color: $charcoal;
 	margin-bottom: 3px;
 	transition: all $duration $bezierAlt;
+	overflow: hidden;
 }
 
 .menu-bottom-bar {
@@ -105,7 +104,7 @@
 
 .top-bar-close {
 	transform: rotate(45deg);
-	background-color: $charcoal;
+
 }
 
 .middle-bar-close {
@@ -116,5 +115,5 @@
 
 .bottom-bar-close {
 	transform: rotate(-45deg);
-	background-color: $charcoal;
+
 }
