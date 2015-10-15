@@ -85,14 +85,13 @@
 			content: '';
 			position: absolute;
 			right: -15px;
-			top: 17px;
+			top: 0px;
 			opacity: 0;
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 5.165px 0 5.165px 8.9px;
-			border-color: transparent transparent transparent $charcoal;
-			transition: all .2s ease;
+            width: 100px;
+            height: 40px;
+            background-color: $yellow;
+			transition: transform .8s $bezierAltTwo, opacity .1s;
+            z-index: -1000;
 		}
     }
 
@@ -138,7 +137,25 @@ li.nav-item-loaded {
 
 		&:after {
 			opacity: 1;
+            transform: translate(20px,3px);
+
 		}
 	}
 
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: $coral;
+    opacity: .75;
+    transition: all .2s ease-in, opacity .1s linear .2s;
+}
+
+.loader-finished {
+    width: 100%;
+    opacity: 0;
 }

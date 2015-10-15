@@ -28,6 +28,7 @@ $(document).ready(function() {
 	$('.intro > h1').addClass("intro-loaded");
 	$('.intro > p').addClass("intro-loaded");
 	$('.button-intro').addClass("intro-loaded");
+	$('.loader').addClass("loader-finished");
 
 
 	// setInterval(function() {
