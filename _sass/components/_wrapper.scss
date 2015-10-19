@@ -1,7 +1,8 @@
 .wrapper-site {
+	@extend %clearfix;
 	position: relative;
 	width: 85%;
-	margin: 0 auto $extraLarge auto;
+	margin: 0 auto;
 
 	@media (max-width: 696px) {
 		width: 100%;

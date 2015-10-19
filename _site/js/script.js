@@ -12,15 +12,7 @@ $(document).ready(function() {
 	menuItem = $(".menu-item")
 	headerTitle = $(".header-title > h2")
 
-	// receding header
-	// var didScroll;
-	// var lastScrollTop = 0;
-	// var delta = 5;
-	// var navbarHeight = $('header').outerHeight();
 
-	// $(window).scroll(function(event){
-	//     didScroll = true;
-	// });
 
 	headerTitle.addClass("header-title-loaded");
 	headerTitle.addClass("header-title-loaded");
@@ -29,36 +21,69 @@ $(document).ready(function() {
 	$('.intro > p').addClass("intro-loaded");
 	$('.button-intro').addClass("intro-loaded");
 	$('.loader').addClass("loader-finished");
+	$('.work-splash-intro').addClass("work-splash-intro-loaded");
+	// receding footer
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navHeight = $('.project-nav').outerHeight();
 
-
-	// setInterval(function() {
-	//     if (didScroll) {
-	//         hasScrolled();
-	//         didScroll = false;
-	//     }
-	// }, 250);
-
-	// function hasScrolled() {
-	//     var st = $(this).scrollTop();
-	//
-	//     // Make sure they scroll more than delta
-	//     if(Math.abs(lastScrollTop - st) <= delta)
-	//         return;
-	//
-	//     // If they scrolled down and are past the navbar, add class .nav-up.
-	//     // This is necessary so you never see what is "behind" the navbar.
-	//     if (st > lastScrollTop && st > navbarHeight){
-	//         // Scroll Down
-	//         $('header').removeClass('nav-down').addClass('nav-up');
-	//     } else {
-	//         // Scroll Up
-	//         if(st + $(window).height() < $(document).height()) {
-	//             $('header').removeClass('nav-up').addClass('nav-down');
-	//         }
-	//     }
-	//
-	//     lastScrollTop = st;
+	// function loop() {
+	//     $('.work-splash-arrow').animate({'transform': 'translateY(-20px)'}, {
+	//         duration: 500,
+	//         complete: function() {
+	//             $('.work-splash-arrow').animate({'transform': 'translateY(0px)'}, {
+	//                 duration: 1000,
+	//                 complete: loop});
+	//         }});
 	// }
+	// loop();
+
+
+	$(window).scroll(function(event){
+	    didScroll = true;
+	});
+
+	setInterval(function() {
+	    if (didScroll) {
+	        hasScrolled();
+	        didScroll = false;
+	    }
+	}, 250);
+
+	var footer = $("footer")
+	var nav = $(".project-nav");
+
+	function hasScrolled() {
+
+		var posFooter = footer.offset().top;
+		console.log(posFooter + "footer");
+
+		var posNav = nav.offset().top + 44;
+		console.log(posNav + "nav");
+
+		var st = $(this).scrollTop();
+		// console.log(st);
+	    // Make sure they scroll more than delta
+	    if(Math.abs(lastScrollTop - st) <= delta)
+	        return;
+
+	    // If they scrolled down and are past the navbar height, add class .nav-up.
+	    if (st > lastScrollTop && st > navHeight){
+	        // Scroll Down
+	        $('.project-nav').addClass('nav-up');
+			$('.work-splash-arrow').addClass('work-splash-arrow-hidden');
+	    } else if (st < 44) {
+			$('.project-nav').removeClass('nav-up');
+		}
+
+		if (posNav > posFooter) {
+	        $('.project-nav').removeClass('nav-up');
+	    } else if (posNav < posFooter && st > navHeight) {
+			$('.project-nav').addClass('nav-up');
+		}
+	    lastScrollTop = st;
+	}
 
 
 	// work item tile load-in
@@ -77,6 +102,12 @@ $(document).ready(function() {
 		}, i*100);
 	});
 
+	$(".content-description").each(function(i, el) {
+	var $this = $(this);
+	setTimeout(function() {
+			$this.addClass('work-item-loaded');
+		}, i*100);
+	});
 
 	$(".nav-items-link").click(function (e) {
 
@@ -166,7 +197,7 @@ $(document).ready(function() {
 		$(".menu-middle-bar").toggleClass("middle-bar-close");
 		$(".menu-bottom-bar").toggleClass("bottom-bar-close");
 
-		body.toggleClass("no-scroll");
+		// body.toggleClass("no-scroll");
 
 
 		// menuSelector.toggleClass("open");

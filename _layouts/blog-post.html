@@ -4,11 +4,19 @@
 	<body>
 		{% include header-title.html %}
 		<div class="wrapper-site">
+			<div class="blog-splash">
+                <div class="blog-splash-intro">
+                    <h2>{{ page.title }}</h2>
+                    <img src="{{ page.thumbnail }}" alt="">
+                </div>
+                <!-- <div class="work-splash-arrow"></div> -->
+            </div>
 			<div class="content">
                 {{ content }}
             </div>
 			{% include project-nav-blog.html %}
 		</div>
+		{% include footer.html %}
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="../../../../../js/script.js"></script>
         <script>

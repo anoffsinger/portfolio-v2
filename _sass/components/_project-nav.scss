@@ -1,11 +1,20 @@
+.nav-down {
+    bottom: -44px !important;
+}
+
+.nav-up {
+    bottom: 0px !important;
+}
+
 .project-nav {
     position: fixed;
-    bottom: 0;
+    bottom: -44px;
     left: 0;
     width: 100%;
     background-color: $darkGrey;
     height: 44px;
     padding: 11px 7.5% 0 7.5%;
+    transition: all $duration ease;
 
     > div {
         @extend %clearfix;

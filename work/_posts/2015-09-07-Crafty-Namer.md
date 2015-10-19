@@ -5,18 +5,9 @@ category: Work
 skills: Design, Development
 thumbnail: ../images/crafty-thumbnail.png
 link: http://thecraftynamer.com/
+description: Whether from being in a new place, or simply feeling as though you’re not being social enough, there are times when all of us feel like we need to meet new people. That’s why I cofounded Cue, a new kind of social app that introduces you to people within 150 feet of your location that share your interests.
 ---
-
-
 <div><img class="project-image" alt="My Pic" src="http://localhost:4000/images/crafty-full.png"></div>
-
-Who doesn’t like craft beer?
-
-That was our thinking behind The Crafty Namer, which was developed as an entry in a week-long competition to design, build, and market a webpage - with the ultimate goal of garnering the most page views.
-
-With the click of a button, The Crafty Namer serves up a random (and potentially hilarious) name for your next batch of home-brew. Although the webpage didn’t end up taking first in the competition, it did garner attention from well-known craft beer brands like Odell Brewing and the Boulder Beer Company. With generated names like “Heisenberg’s Hefeweissen” and “Freudian Sip,” how could it not?
-
-I was the sole designer on this project, and wrote all HTML and CSS.
 
 <div class="project-image-small-container">
 	<img src="http://localhost:4000/images/crafty-logo.png" class="project-image-half-left"></img>

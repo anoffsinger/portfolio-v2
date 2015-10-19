@@ -1,5 +1,6 @@
 .no-scroll {
-    overflow: hidden;
+    // is causing weird 3 px shift right
+    // overflow: hidden;
 }
 
 #menu {
@@ -10,10 +11,14 @@
     width: 100%;
     background-color: $white;
     opacity: 0;
-    padding: 0 13.875% 0 13.875%;
+    padding: 0 18.875%;
     z-index: 1;
     transition: all $duration;
     pointer-events: none;
+}
+
+.menu-splash {
+	padding: 0 13.875% !important;
 }
 
 .menu-visible {
@@ -78,14 +83,14 @@
         font-family: $mainType;
         color: $charcoal;
 		display: block;
-		transition: all .2s ease;
+		transition: all .5s $bezierAltTwo;
         z-index: 3000;
 
 		&:after {
 			content: '';
 			position: absolute;
 			right: -15px;
-			top: 0px;
+			top: -1px;
 			opacity: 0;
             width: 100px;
             height: 40px;
@@ -130,18 +135,18 @@ li.nav-item-loaded {
     opacity: 1;
     transform: translateX(0px);
 
-
-        // transform: translateX(10px);
 	> a:hover {
-		transform: translateX(10px);
+        transform: translateX(10px);
 
 		&:after {
 			opacity: 1;
-            transform: translate(20px,3px);
-
+            transform: translate(20px);
 		}
-	}
 
+        &:before {
+            transform: rotate(-10deg);
+        }
+	}
 }
 
 .loader {

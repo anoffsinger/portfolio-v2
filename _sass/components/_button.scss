@@ -9,7 +9,7 @@
     opacity: 0;
 
     span {
-        transition: all $duration $bezier;
+        transition: all .5s $bezierAltTwo;
         display: inline-block;
     }
 
@@ -17,27 +17,28 @@
         content: '';
         position: absolute;
         right: 0;
-        top: 39%;
+        top: 9px;
         opacity: 0;
         width: 0;
         height: 0;
         border-style: solid;
         border-width: 5.165px 0 5.165px 8.9px;
-        border-color: transparent transparent transparent $yellow;
-        -webkit-transition: all $duration $bezier;
+        border-color: transparent transparent transparent $charcoal;
+        -webkit-transition: all .8s $bezierAltTwo;
     }
 
     &:before {
         content: '';
         position: absolute;
-        bottom: -3px;
+        bottom: -7px;
         left: 0;
         height: 3px;
         width: 100%;
         background-color: $charcoal;
-        -webkit-transition: all $duration $bezier;
-        -webkit-transform-origin: 50% 0%;
+        transition: transform .8s $bezierAltTwo, height .4s $bezierAltTwo, width .4s $bezierAltTwo;
+        // -webkit-transform-origin: 50% 0%;
         z-index: -1;
+
     }
 
     &:hover {
@@ -48,19 +49,82 @@
         }
 
         &:before {
-            transform: translateY(7px) translateX(-30px);
+            transform: translate(20px);
             background-color: $yellow;
-            height: 45px;
-            width: 145px;
+            height: 40px;
+            width: 100px;
         }
 
         &:after {
             opacity: 1;
-            transform: translateX(7px);
-            border-color: transparent transparent transparent $charcoal;
+            transform: translateX(8px);
+
         }
     }
 }
+// .button-intro {
+//     position: relative;
+//     font-size: $mediumFont;
+//     display: block;
+//     margin: 0 auto;
+//     width: 92px;
+//     transform: translateY(10px);
+//     transition: all $duration ease .3s;
+//     opacity: 0;
+//
+//     span {
+//         transition: all $duration $bezier;
+//         display: inline-block;
+//     }
+//
+//     &:after {
+//         content: '';
+//         position: absolute;
+//         right: 0;
+//         top: 39%;
+//         opacity: 0;
+//         width: 0;
+//         height: 0;
+//         border-style: solid;
+//         border-width: 5.165px 0 5.165px 8.9px;
+//         border-color: transparent transparent transparent $yellow;
+//         -webkit-transition: all $duration $bezier;
+//     }
+//
+//     &:before {
+//         content: '';
+//         position: absolute;
+//         bottom: -3px;
+//         left: 0;
+//         height: 3px;
+//         width: 100%;
+//         background-color: $charcoal;
+//         -webkit-transition: all $duration $bezier;
+//         -webkit-transform-origin: 50% 0%;
+//         z-index: -1;
+//     }
+//
+//     &:hover {
+//
+//         span {
+//             transform: translateX(-15px);
+//             /* text-shadow: -20px -5px 0px #f4f4f4; */
+//         }
+//
+//         &:before {
+//             transform: translateY(7px) translateX(-30px);
+//             background-color: $yellow;
+//             height: 45px;
+//             width: 145px;
+//         }
+//
+//         &:after {
+//             opacity: 1;
+//             transform: translateX(7px);
+//             border-color: transparent transparent transparent $charcoal;
+//         }
+//     }
+// }
 
 .button-secondary {
     font-family: $mainType, 'serif';

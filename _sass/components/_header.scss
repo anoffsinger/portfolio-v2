@@ -1,6 +1,6 @@
-header {
-	transition: top 0.7s ease-in-out;
-}
+// header {
+// 	transition: top 0.7s ease-in-out;
+// }
 
 .header-no-title {
 	padding: 0 13.875% 0 13.875%;
@@ -27,18 +27,19 @@ header {
 }
 
 .header-title {
-	padding: 0 13.875% 0 13.875%;
-
-	width: 100%;
-	left: 0;
+	position: absolute;
 	top: 0;
+	display: flex;
+	padding: 0 13.875% 0 13.875%;
+	width: 100%;
 	height: 7em;
 	z-index: 2;
-	display: flex;
 	align-items: center;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+
+
 
 	button {
 		z-index: 3
@@ -80,13 +81,13 @@ header {
 	height: 7em;
 }
 
-.nav-down {
-	top: 0;
-}
-
-.nav-up {
-	top: -100%;
-}
+// .nav-down {
+// 	top: 0;
+// }
+//
+// .nav-up {
+// 	top: -100%;
+// }
 
 .header-menu {
 	z-index: 1000;

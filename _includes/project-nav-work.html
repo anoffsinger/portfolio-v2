@@ -1,9 +1,9 @@
 <div class="project-nav">
 	<div>
-		<!-- <div class="project-nav-back">
+		<div class="project-nav-back">
 			<a href="http://localhost:4000/work/">Back To All Work</a>
-		</div> -->
-		<div class="project-nav-switcher">
+		</div>
+		<!-- <div class="project-nav-switcher">
 			{% if page.previous and page.previous.category contains "Work" %}
 				<a class="project-nav-back" href="{{page.previous.url}}" title=""><span class="icon-previous"></span></a>
 			{% else %}
@@ -18,7 +18,7 @@
 				<span class="project-nav-previous-project">Previous: "{{"page.previous.title}}"</span>
 				<span class="project-nav-next-project">Next: "{{page.next.title}}"</span>
 			</div>
-		</div>
+		</div> -->
 		<div class="project-nav-options">
 			{% if page.materials != null %}
 				<a class="project-nav-get" href="{{ page.materials }}" title="Download Documentation">

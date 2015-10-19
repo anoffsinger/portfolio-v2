@@ -1,7 +1,9 @@
 .content {
+	@extend %clearfix;
+
 	position: relative;
 	width: 85%;
-	margin: 0 auto $extraLarge auto;
+	margin: 0 auto;
 	/* padding-top: 112px; */
 
 	> p {
@@ -24,11 +26,34 @@
 } */
 }
 
-// this can probably be removed
-/* .main {
-	transition: transform .5s ease;
-	margin: 2.25em auto $extraLarge auto;
-} */
+.content-description {
+	margin: 150px auto 200px auto;
+	transform: translateY(20px);
+	opacity: 0;
+	transition: all $duration ease;
+
+	// width: 75%;
+	> h1 {
+		font-family: $brandonTextBold;
+		width: 80%;
+		font-size: 28px;
+		color: $charcoal;
+		margin: 0 auto 32px auto;
+
+	}
+
+	> p {
+		font-family: $secondaryType;
+		font-size: 18px;
+		margin: 0 auto 32px auto;
+		line-height: 145%;
+		width: 80%;
+	}
+
+	> p:last-of-type {
+		margin-bottom: 50px;
+	}
+}
 
 .content-overlay {
 	position: fixed;

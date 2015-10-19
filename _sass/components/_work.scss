@@ -1,8 +1,11 @@
 .work {
 	@extend %clearfix;
 
-	margin-bottom: $large;
+	margin: 7em auto $large auto;
 }
+
+
+
 
 .work-item {
     overflow: hidden;
@@ -17,8 +20,8 @@
 }
 
 .work-item-loaded {
-	transform: translateY(0px);
-	opacity: 1;
+	transform: translateY(0px) !important;
+	opacity: 1 !important;
 }
 
 .work-img {

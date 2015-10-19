@@ -6,9 +6,11 @@
 	</button>
 	{% include menu.html %}
 	<h2>
-		<span>{{ page.title }}</span>
-		{% if page.category == "Work" or page.category == "Blog" page.category == "Experiments" %}
-			<span> &VerticalSeparator; {{ page.category }}</span>
+
+		{% if page.category == "Work" or page.category == "Blog" or page.category == "Experiments" %}
+			<span>  {{ page.category }}</span>
+		{% else %}
+			<span>{{ page.title }}</span>
 		{% endif %}
 	</h2>
 </header>
