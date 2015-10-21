@@ -17,7 +17,7 @@
 
 	h2 {
 		color: $charcoal;
-		font-size: 36px;
+		font-size: 28px;
 		font-family: $brandonTextBold;
 		margin-bottom: 20px;
 		display: inline-block;
@@ -27,7 +27,7 @@
 			content: '';
 			position: absolute;
 			left: -30px;
-			top: 4px;
+			top: -1px;
 			opacity: 0;
 			width: 150px;
 			height: 40px;
@@ -41,8 +41,10 @@
 	p {
 		color: $charcoal;
 		font-size: 18px;
+		line-height: 144.444%;
 		font-family: $secondaryType;
 		margin-bottom: 18px;
+
 	}
 }
 

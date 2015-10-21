@@ -22,6 +22,7 @@ $(document).ready(function() {
 	$('.button-intro').addClass("intro-loaded");
 	$('.loader').addClass("loader-finished");
 	$('.work-splash-intro').addClass("work-splash-intro-loaded");
+	$('.blog-splash-intro').addClass("blog-splash-intro-loaded");
 	$('.dope-header').addClass("dope-header-loaded");
 	// receding footer
 	var didScroll;

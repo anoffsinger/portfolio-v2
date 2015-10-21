@@ -26,7 +26,7 @@
 
 	h1 {
 		font-family: $brandonTextRegular;
-		font-size: $mediumFont;
+		font-size: 19px;
 		color: $charcoal;
 		text-align: center;
 		margin-bottom: 1.75em;
@@ -36,18 +36,14 @@
 	}
 
 	p {
-		font-size: $mediumFont;
+		font-size: 19px;
 		color: $lightGrey;
 		text-align: center;
 		margin-bottom: 1.75em;
-		line-height: 155%;
+		line-height: 147.368%;
 		transform: translateY(10px);
 		transition: all $duration ease .2s;
 		opacity: 0;
-
-		// @media (max-width: 696px) {
-		// 	font-size: 1.3em;
-		// }
 	}
 }
 

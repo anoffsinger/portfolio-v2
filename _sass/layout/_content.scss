@@ -7,10 +7,10 @@
 	/* padding-top: 112px; */
 
 	> p {
-		font-family: $secondaryType;
+		font-family: $brandonTextLight;
 		font-size: 18px;
 		margin: 0 auto 32px auto;
-		line-height: 145%;
+		line-height: 144.444%;
 		width: 80%;
 	}
 
@@ -81,4 +81,10 @@
 	position: relative;
 	width: 80%;
 	margin: 0 auto;
+}
+
+.blog-post-date {
+	font-family: $brandonTextRegular;
+	font-size: 14px;
+	color: $lightGrey;
 }

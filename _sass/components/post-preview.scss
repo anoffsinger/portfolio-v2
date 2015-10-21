@@ -11,6 +11,7 @@
 	background-color: $lightestGrey;
 
 	h2 {
+		font-family: $brandonTextBold;
 		font-size: 28px;
 		color: $charcoal;
 		line-height: 1.2em;
@@ -18,8 +19,8 @@
 	}
 
 	> span {
-		font-size: 13px;
-		color: $charcoal;
+		font-size: 14px;
+		color: $lightGrey;
 		margin-bottom: 42px;
 		display: block;
 	}
@@ -29,9 +30,9 @@
 		margin-bottom: 42px;
 
 		p {
-			font-size: 16px;
-			color: $charcoal;
-			line-height: 150%;
+			font-family: $brandonTextLight;
+			font-size: 18px;
+			line-height: 144.444%;
 		}
 	}
 }
