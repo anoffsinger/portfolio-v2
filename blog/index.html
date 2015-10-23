@@ -1,5 +1,6 @@
 ---
 title: Blog
+showTitle: true
 category: Blog-Overview
 ---
 <!doctype html>
@@ -8,18 +9,16 @@ category: Blog-Overview
 	<body>
 		{% include header-title.html %}
 		<div class="wrapper-site">
-			<div class="content">
-				{% for post in site.posts limit: 10 %}
-					{% if post.categories contains 'blog' %}
-						<div class="blog-post-preview">
-							<h2>{{ post.title }}</h2>
-							<span>{{ post.date | date: "%D" }}</span>
-							<div>{{ post.excerpt }}</div>
-							<a class="button-secondary" href="{{ post.url }}">Read More</a>
-						</div>
-					{% endif %}
-				{% endfor %}
-			</div>
+			{% for post in site.posts limit: 10 %}
+				{% if post.categories contains 'blog' %}
+					<div class="blog-post-preview">
+						<h2>{{ post.title }}</h2>
+						<span>{{ post.date | date: "%D" }}</span>
+						<div>{{ post.excerpt }}</div>
+						<a class="button-secondary" href="{{ post.url }}">Read More</a>
+					</div>
+				{% endif %}
+			{% endfor %}
 		</div>
 		{% include footer.html %}
 		{% include scripts.html %}

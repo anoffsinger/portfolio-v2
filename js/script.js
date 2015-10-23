@@ -22,7 +22,7 @@ $(document).ready(function() {
 	$('.button-intro').addClass("intro-loaded");
 	$('.loader').addClass("loader-finished");
 	$('.work-splash-intro').addClass("work-splash-intro-loaded");
-	$('.blog-splash-intro').addClass("blog-splash-intro-loaded");
+	$('.blog-post-intro-desc').addClass("blog-post-intro-loaded");
 	$('.dope-header').addClass("dope-header-loaded");
 	// receding footer
 	var didScroll;
@@ -74,7 +74,7 @@ $(document).ready(function() {
 	    if (st > lastScrollTop && st > navHeight){
 	        // Scroll Down
 	        $('.project-nav').addClass('nav-up');
-			$('.work-splash-arrow').addClass('work-splash-arrow-hidden');
+			$('.post-intro-arrow').addClass('post-intro-arrow-hidden');
 	    } else if (st < 44) {
 			$('.project-nav').removeClass('nav-up');
 		}

@@ -1,5 +1,17 @@
 // Images that appear across all project pages
 
+.image-post {
+    display: block;
+    vertical-align: middle;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 100px auto 100px auto;
+}
+
 .project-image {
     display: block;
     vertical-align: middle;

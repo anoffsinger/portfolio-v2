@@ -6,11 +6,8 @@
 	</button>
 	{% include menu.html %}
 	<h2>
-
-		{% if page.category == "Work" or page.category == "Blog" or page.category == "Experiments" %}
+		{% if page.showCategory == true %}
 			<span>  {{ page.category }}</span>
-		{% else %}
-			<span>{{ page.title }}</span>
 		{% endif %}
 	</h2>
 </header>

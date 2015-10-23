@@ -1,5 +1,6 @@
 ---
 title: Work
+showTitle: true
 category: Work-Overview
 ---
 <!DOCTYPE html>
@@ -8,25 +9,23 @@ category: Work-Overview
     <body>
         {% include header-title.html %}
         <div class="wrapper-site">
-        	<div class="content">
-                <ol class="work column-grid">
-                    {% for post in site.posts limit: 10 %}
-                        {% if post.categories contains 'work' %}
-                            <li class="one-third col work-item">
-                                <a href="{{ post.url }}">
-                                    <img src="{{ post.thumbnail }}" class="work-img" alt="">
-                                    <div class="work-desc">
-                                        <div class="work-desc-items">
-                                            <span>{{ post.title }}</span>
-                                            <span>{{ post.skills }}</span>
-                                        </div>
+            <ol class="work column-grid">
+                {% for post in site.posts limit: 10 %}
+                    {% if post.categories contains 'work' %}
+                        <li class="one-third col work-item">
+                            <a href="{{ post.url }}">
+                                <img src="{{ post.thumbnail }}" class="work-img" alt="">
+                                <div class="work-desc">
+                                    <div class="work-desc-items">
+                                        <span>{{ post.title }}</span>
+                                        <span>{{ post.skills }}</span>
                                     </div>
-                                </a>
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                </ol>
-            </div>
+                                </div>
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
         </div>
         {% include footer.html %}
         {% include scripts.html %}

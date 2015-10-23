@@ -1,15 +1,18 @@
+---
+showCategory: true
+---
 <!doctype html>
 <html lang="en">
 	{% include post-head.html %}
 	<body>
 		{% include header-title.html %}
 		<div class="wrapper-site">
-			<div class="blog-splash">
-                <div class="blog-splash-intro">
+			<div class="blog-post-intro">
+                <div class="blog-post-intro-desc">
                     <h2>{{ page.title }}</h2>
-                    <img src="{{ page.thumbnail }}" alt="">
+                    <img src="{{ page.thumbnail }}" alt="{{ page.thumbnailDesc }}">
                 </div>
-                <div class="work-splash-arrow"></div>
+                <div class="post-intro-arrow"></div>
             </div>
 			<div class="content">
                 {{ content }}
