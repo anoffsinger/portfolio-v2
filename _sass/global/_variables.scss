@@ -1,19 +1,24 @@
-// .background--light {
-// 	background-color: black !important;
-// 	-webkit-transition: background-color 1s ease;
-// }
-
 // type
 $brandonTextLight: 'brandon_text_light', Helvetica, 'sans serif';
 $brandonTextRegular: 'brandon_text_regular', Helvetica, 'sans serif';
 $brandonTextBold: 'brandon_text_medium', Helvetica, 'sans serif';
 $mediumFont: 1.2em;
 
+//spacing
+$blockSpace: 1.6%;
+$headerSpace: 65px;
+
 // animations
+//used on project nav, work intro and blog intro
 $duration: .4s;
+
 $bezier: cubic-bezier(1,0,.25,1);
+
 $bezierAlt: cubic-bezier(1,0,0,1);
+
 $bezierAltTwo: cubic-bezier(0,.46,.24,1);
+
+// a simple ease should be used for items loading in, alttwo should be used for high leverage animations, like button transitions
 
 
 // colors

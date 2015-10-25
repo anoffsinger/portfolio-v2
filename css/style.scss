@@ -34,13 +34,15 @@
 @import "components/menu";
 @import "components/canvas";
 @import "components/post";
-@import "components/grid";
 @import "components/work";
 @import "components/header";
 @import "components/wrapper";
 @import "components/menu-selector";
 @import "components/footer";
-@import "components/work-splash";
+@import "components/work-post-intro";
 @import "components/blog-post-intro";
+@import "components/intro-arrow";
+@import "components/loader";
 
 @import "layout/content";
+@import "layout/grid";

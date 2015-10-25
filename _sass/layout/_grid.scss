@@ -1,22 +1,4 @@
-/* three column setup */
-
-.col {
-	display: block;
-	float:left;
-	margin: 0 0 1.6% 1.6%;
-}
-
-.col:first-child {
-	margin-left: 0;
-}
-
-.column-grid > li:nth-child(3n+4) {
-	margin-left: 0;
-}
-
-
 /* column widths */
-
 .span_12_of_12 {
 	width: 100%;
 }
@@ -64,8 +46,22 @@
   	width: 6.866%;
 }
 
-/* 2 column breakpoint */
+/* 3 column layout */
+.col {
+	display: block;
+	float:left;
+	margin: 0 0 1.6% 1.6%;
+}
 
+.col:first-child {
+	margin-left: 0;
+}
+
+.column-grid > li:nth-child(3n+4) {
+	margin-left: 0;
+}
+
+/* 2 column layout */
 @media (max-width: 1200px) {
 	.col {
 		margin: 0 0 1.6% 1.6% !important;
@@ -80,8 +76,7 @@
 	}
 }
 
-/* 1 column breakpoint */
-
+/* 1 column layout */
 @media (max-width: 900px) {
 	.col {
 		margin: 1.6% 0 1.6% 0% !important;

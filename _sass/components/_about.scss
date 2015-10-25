@@ -12,8 +12,8 @@
 	h2 {
 		width: 90%;
 		margin: 0 0 36px 0;
-		font-size: 28px;
-		// text-align: center;
+		transform: translateY(10px);
+		transition: all $duration ease;
 	}
 
 	p {
@@ -21,43 +21,41 @@
 		font-size: 18px;
 		margin: 0 auto 22px auto;
 		line-height: 144.444%;
+		transform: translateY(10px);
+		transition: all $duration ease .1s;
+		opacity: 0;
+		color: $charcoal;
 
 		a {
 			color: inherit;
-			text-decoration: underline;
+			// text-decoration: underline;
 			transition: all .1s ease;
+			font-family: $brandonTextBold;
 
 			&:hover {
 				color: $lightGrey;
 			}
 		}
 	}
-
-	ul {
-		width: 260px;
-		margin: 0 auto;
-
-		li {
-			margin-right: 14px;
-		}
-
-		li:last-of-type {
-			margin-right: 0;
-		}
-	}
 }
 
-.dope-header {
+.about-loaded {
+	transform: translateY(0px) !important;
+	opacity: 1 !important;
+}
+
+.header-main {
 	color: $charcoal;
-	font-size: 24px;
+	font-size: 28px;
 	font-family: $brandonTextBold;
 	position: relative;
+	opacity: 0;
 
 	&:after {
 		content: '';
 		position: absolute;
-		left: -10px;
-		top: -4px;
+		left: -30px;
+		top: -1px;
 		opacity: 0;
 		width: 150px;
 		height: 40px;
@@ -67,7 +65,7 @@
 		z-index: -1000;
 	}
 }
-.dope-header-loaded {
+.header-main-loaded {
 	&:after {
 		width: 75%;
 		opacity: 1;

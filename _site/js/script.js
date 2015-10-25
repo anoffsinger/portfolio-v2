@@ -3,8 +3,6 @@ $(document).ready(function() {
 	// Common Variables
 	menuSelector = $(".menu-selector");
 	overlay = $(".content-overlay");
-	// nav = $("nav")
-	// canvas = $("canvas")
 	content = $(".content")
 	headerItems = $(".header-items")
 	main = $(".main")
@@ -13,17 +11,23 @@ $(document).ready(function() {
 	headerTitle = $(".header-title > h2")
 
 
+	$('.loader').addClass("loader-finished");
 
 	headerTitle.addClass("header-title-loaded");
 	headerTitle.addClass("header-title-loaded");
+
 	$('.intro > img').addClass("intro-loaded");
 	$('.intro > h1').addClass("intro-loaded");
 	$('.intro > p').addClass("intro-loaded");
 	$('.button-intro').addClass("intro-loaded");
-	$('.loader').addClass("loader-finished");
-	$('.work-splash-intro').addClass("work-splash-intro-loaded");
+
+	$('.about > h2').addClass("about-loaded");
+	$('.about > p').addClass("about-loaded");
+
+	$('.work-post-intro-desc').addClass("work-post-intro-loaded");
 	$('.blog-post-intro-desc').addClass("blog-post-intro-loaded");
-	$('.dope-header').addClass("dope-header-loaded");
+
+	$('.header-main').addClass("header-main-loaded");
 	// receding footer
 	var didScroll;
 	var lastScrollTop = 0;
@@ -61,6 +65,7 @@ $(document).ready(function() {
 		var posFooter = footer.offset().top;
 		console.log(posFooter + "footer");
 
+		//this is causing error
 		var posNav = nav.offset().top + 44;
 		console.log(posNav + "nav");
 
@@ -74,7 +79,7 @@ $(document).ready(function() {
 	    if (st > lastScrollTop && st > navHeight){
 	        // Scroll Down
 	        $('.project-nav').addClass('nav-up');
-			$('.post-intro-arrow').addClass('post-intro-arrow-hidden');
+			$('.intro-arrow').addClass('intro-arrow-hidden');
 	    } else if (st < 44) {
 			$('.project-nav').removeClass('nav-up');
 		}

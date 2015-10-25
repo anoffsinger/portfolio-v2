@@ -1,13 +1,11 @@
 .blog-post-preview {
-	// @extend %clearfix;
 
 	opacity: 0;
 	transition: all $duration ease;
 	transform: translateY(20px);
-
 	padding: 42px;
 	height: auto;
-	margin: 0 auto 2em auto;
+	margin: $blockSpace auto $blockSpace auto;
 	background-color: $lightestGrey;
 
 	h2 {
@@ -42,5 +40,5 @@
 }
 
 .blog-post-preview:last-of-type {
-	margin-bottom: 4.25em;
+	margin-bottom: 0;
 }

@@ -1,12 +1,13 @@
 ---
-title: Work
-showTitle: true
-category: Work-Overview
+title: All Work
+showCategory: true
+category: Work
 ---
 <!DOCTYPE html>
-<html class="no-js">
+<html>
     {% include head.html %}
     <body>
+        <div class="loader"></div>
         {% include header-title.html %}
         <div class="wrapper-site">
             <ol class="work column-grid">
@@ -14,9 +15,9 @@ category: Work-Overview
                     {% if post.categories contains 'work' %}
                         <li class="one-third col work-item">
                             <a href="{{ post.url }}">
-                                <img src="{{ post.thumbnail }}" class="work-img" alt="">
-                                <div class="work-desc">
-                                    <div class="work-desc-items">
+                                <img src="{{ post.thumbnail }}" class="work-item-img" alt="{{ post.thumbnailDesc }}">
+                                <div class="work-item-desc">
+                                    <div class="work-item-desc-content">
                                         <span>{{ post.title }}</span>
                                         <span>{{ post.skills }}</span>
                                     </div>

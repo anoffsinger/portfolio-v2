@@ -3,22 +3,6 @@
 		<div class="project-nav-back">
 			<a href="http://localhost:4000/work/">All Work</a>
 		</div>
-		<!-- <div class="project-nav-switcher">
-			{% if page.previous and page.previous.category contains "Work" %}
-				<a class="project-nav-back" href="{{page.previous.url}}" title=""><span class="icon-previous"></span></a>
-			{% else %}
-				<a class="project-nav-inactive" href="#" title=""><span class="icon-previous"></span></a>
-			{% endif %}
-			{% if page.next and page.next.category contains "Work" %}
-				<a class="project-nav-next" href="{{page.next.url}}" title=""><span class="icon-next"></span></a>
-			{% else %}
-				<a class="project-nav-inactive" href="#" title=""><span class="icon-next"></span></a>
-			{% endif %}
-			<div class="project-nav-switcher-titles">
-				<span class="project-nav-previous-project">Previous: "{{"page.previous.title}}"</span>
-				<span class="project-nav-next-project">Next: "{{page.next.title}}"</span>
-			</div>
-		</div> -->
 		<div class="project-nav-options">
 			{% if page.materials != null %}
 				<a class="project-nav-get" href="{{ page.materials }}" title="Download Documentation">

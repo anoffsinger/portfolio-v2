@@ -1,11 +1,10 @@
 .work {
 	@extend %clearfix;
 
-	margin: 7em auto $large auto;
+	margin: 7em auto 0 auto;
 }
 
 .work-item {
-    overflow: hidden;
 	position: relative;
 	opacity: 0;
 	transform: translateY(20px);
@@ -21,13 +20,13 @@
 	opacity: 1 !important;
 }
 
-.work-img {
+.work-item-img {
 	display: block;
 	width: 100%;
 	transition: all .2s ease;
 }
 
-.work-desc {
+.work-item-desc {
 	width: 100%;
 	display: block;
 	margin: auto;
@@ -41,7 +40,7 @@
 	transition: all $duration ease;
 }
 
-.work-desc-items {
+.work-item-desc-content {
 	height: 100px;
 	width: 80%;
 	margin: 0 auto;
@@ -71,7 +70,7 @@
 }
 
 .work-item:hover {
-	.work-desc {
+	.work-item-desc {
 		opacity: 1;
 
 		span {
@@ -80,7 +79,7 @@
 		}
 	}
 
-	.work-img {
+	.work-item-img {
 		-webkit-filter: brightness(30%) grayscale(50%);
 		opacity: .8;
 		-webkit-transform: translate3d(0, 0, 0);

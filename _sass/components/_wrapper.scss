@@ -3,7 +3,7 @@
 
 	position: relative;
 	width: 72.25%;
-	margin: 0 auto;
+	margin: 0 auto $headerSpace auto;
 
 	@media (max-width: 696px) {
 		width: 100%;

@@ -17,17 +17,10 @@
     transition: all $duration ease;
 
     > div {
-        @extend %clearfix;
-
         width: 85%;
         margin: 0 auto;
     }
 }
-//
-// .project-nav-hidden {
-//     /* transform: translateY(44px); */
-//     opacity: 0;
-// }
 
 .project-nav-switcher {
     float: left;

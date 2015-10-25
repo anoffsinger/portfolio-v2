@@ -1,0 +1,15 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: $coral;
+    opacity: .75;
+    transition: all .2s ease-in, opacity .1s linear .2s;
+}
+
+.loader-finished {
+    width: 100%;
+    opacity: 0;
+}
