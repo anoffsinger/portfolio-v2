@@ -12,3 +12,31 @@ h3 {
     font-family: $bodyFont;
     font-size: $headerAltFontSize;
 }
+
+.header-main {
+	color: $charcoal;
+	font-size: 28px;
+	font-family: $brandonTextBold;
+	position: relative;
+	opacity: 0;
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: -30px;
+		top: -1px;
+		opacity: 0;
+		width: 150px;
+		height: 40px;
+		background-color: $yellow;
+		transition: all .8s $bezierAltTwo, opacity .1s;
+		transform-origin: left center;
+		z-index: -1000;
+	}
+}
+.header-main-loaded {
+	&:after {
+		width: 75%;
+		opacity: 1;
+	}
+}

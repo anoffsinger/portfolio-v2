@@ -102,34 +102,6 @@ h3 {
   font-family: "aperculight";
   font-size: 1.5em; }
 
-.about {
-  width: 45%;
-  margin: 0 auto; }
-  .about h2 {
-    width: 90%;
-    margin: 0 0 36px 0;
-    transform: translateY(10px);
-    transition: all 0.4s ease; }
-  .about p {
-    font-family: "brandon_text_light", Helvetica, "sans serif";
-    font-size: 18px;
-    margin: 0 auto 22px auto;
-    line-height: 144.444%;
-    transform: translateY(10px);
-    transition: all 0.4s ease 0.1s;
-    opacity: 0;
-    color: #6A6A6A; }
-    .about p a {
-      color: inherit;
-      transition: all .1s ease;
-      font-family: "brandon_text_medium", Helvetica, "sans serif"; }
-      .about p a:hover {
-        color: #D7D7D7; }
-
-.about-loaded {
-  transform: translateY(0px) !important;
-  opacity: 1 !important; }
-
 .header-main {
   color: #6A6A6A;
   font-size: 28px;
@@ -152,6 +124,43 @@ h3 {
 .header-main-loaded:after {
   width: 75%;
   opacity: 1; }
+
+.about {
+  width: 45%;
+  margin: 0 auto; }
+  @media (max-width: 1174px) {
+    .about {
+      width: 55%; } }
+  @media (max-width: 696px) {
+    .about {
+      width: 73%;
+      margin: 177px auto 130px auto; } }
+  .about h2 {
+    width: 90%;
+    margin: 0 0 36px 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease; }
+  .about p {
+    font-family: "brandon_text_light", Helvetica, "sans serif";
+    font-size: 18px;
+    margin: 0 auto 22px auto;
+    line-height: 144.444%;
+    transform: translateY(10px);
+    transition: all 0.4s ease 0.1s;
+    opacity: 0;
+    color: #6A6A6A; }
+    .about p a {
+      color: inherit;
+      transition: all .1s ease;
+      font-family: "brandon_text_medium", Helvetica, "sans serif"; }
+      .about p a:hover {
+        color: #D7D7D7; }
+  .about p:last-of-type {
+    margin-bottom: 0; }
+
+.about-loaded {
+  transform: translateY(0px) !important;
+  opacity: 1 !important; }
 
 .project-list {
   width: 64.4375em;
@@ -1665,6 +1674,17 @@ li.nav-item-loaded {
   display: flex;
   align-items: center;
   margin: 0 auto; }
+
+.wrapper-about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto; }
+  @media (max-width: 696px) {
+    .wrapper-about {
+      height: auto;
+      justify-content: center; } }
 
 .menu-selector {
   display: block;
