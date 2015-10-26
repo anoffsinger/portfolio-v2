@@ -7,19 +7,20 @@ $mediumFont: 1.2em;
 //spacing
 $blockSpace: 1.6%;
 $headerSpace: 65px;
+$headingBottom: 35px;
+
+// breakpoints
+$breakpointLarge: 1174px;
+$breakpointMedium: 944px;
+$breakpointSmall: 696px;
 
 // animations
 //used on project nav, work intro and blog intro
 $duration: .4s;
-
 $bezier: cubic-bezier(1,0,.25,1);
-
 $bezierAlt: cubic-bezier(1,0,0,1);
-
 $bezierAltTwo: cubic-bezier(0,.46,.24,1);
-
 // a simple ease should be used for items loading in, alttwo should be used for high leverage animations, like button transitions
-
 
 // colors
 $charcoal: #6A6A6A;

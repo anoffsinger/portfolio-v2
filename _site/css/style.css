@@ -111,7 +111,7 @@ h3 {
   .header-main:after {
     content: '';
     position: absolute;
-    left: -30px;
+    left: -8px;
     top: -1px;
     opacity: 0;
     width: 150px;
@@ -121,9 +121,11 @@ h3 {
     transform-origin: left center;
     z-index: -1000; }
 
-.header-main-loaded:after {
-  width: 75%;
+.header-main-loaded {
   opacity: 1; }
+  .header-main-loaded:after {
+    width: 75%;
+    opacity: 1; }
 
 .about {
   width: 45%;
@@ -1795,24 +1797,7 @@ li.nav-item-loaded {
   transform: translateY(20px);
   transition: all 0.4s ease; }
   .work-post-intro-desc h2 {
-    color: #6A6A6A;
-    font-size: 28px;
-    font-family: "brandon_text_medium", Helvetica, "sans serif";
-    margin-bottom: 20px;
-    display: inline-block;
-    position: relative; }
-    .work-post-intro-desc h2:after {
-      content: '';
-      position: absolute;
-      left: -30px;
-      top: -1px;
-      opacity: 0;
-      width: 150px;
-      height: 40px;
-      background-color: #FCF100;
-      transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1), opacity 0.1s;
-      transform-origin: left center;
-      z-index: -1000; }
+    margin-bottom: 35px; }
   .work-post-intro-desc p {
     color: #6A6A6A;
     font-size: 18px;
@@ -1841,27 +1826,16 @@ li.nav-item-loaded {
   transform: translateY(20px);
   transition: all 0.4s ease; }
   .blog-post-intro-desc h2 {
-    color: #6A6A6A;
     width: 280px;
-    font-size: 28px;
-    margin: 0 auto 20px auto;
-    display: block;
-    position: relative;
-    text-align: center; }
-    .blog-post-intro-desc h2:after {
-      content: '';
-      position: absolute;
-      left: -30px;
-      top: -1px;
-      opacity: 0;
-      width: 150px;
-      height: 40px;
-      background-color: #FCF100;
-      transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1), opacity 0.1s;
-      transform-origin: left center;
-      z-index: -1000; }
+    margin: 0 auto 35px auto; }
   .blog-post-intro-desc img {
     width: 100%; }
+  @media (max-width: 1174px) {
+    .blog-post-intro-desc {
+      width: 70%; } }
+  @media (max-width: 944px) {
+    .blog-post-intro-desc {
+      width: 75%; } }
 
 .blog-post-intro-loaded {
   transform: translateY(0px);
@@ -2041,3 +2015,5 @@ li.nav-item-loaded {
 
   .column-grid > li:nth-of-type(1) {
     margin-top: 0 !important; } }
+.no-scroll {
+  overflow: hidden; }

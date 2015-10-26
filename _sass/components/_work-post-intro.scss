@@ -16,26 +16,7 @@
 	transition: all $duration ease;
 
 	h2 {
-		color: $charcoal;
-		font-size: 28px;
-		font-family: $brandonTextBold;
-		margin-bottom: 20px;
-		display: inline-block;
-		position: relative;
-
-		&:after {
-			content: '';
-			position: absolute;
-			left: -30px;
-			top: -1px;
-			opacity: 0;
-			width: 150px;
-			height: 40px;
-			background-color: $yellow;
-			transition: all .8s $bezierAltTwo, opacity .1s;
-			transform-origin: left center;
-			z-index: -1000;
-		}
+		margin-bottom: $headingBottom;
 	}
 
 	p {
@@ -44,7 +25,6 @@
 		line-height: 144.444%;
 		font-family: $secondaryType;
 		margin-bottom: 18px;
-
 	}
 }
 

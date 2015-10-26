@@ -204,7 +204,7 @@ $(document).ready(function() {
 		$(".menu-middle-bar").toggleClass("middle-bar-close");
 		$(".menu-bottom-bar").toggleClass("bottom-bar-close");
 
-		// body.toggleClass("no-scroll");
+		body.toggleClass("no-scroll");
 
 
 		// menuSelector.toggleClass("open");
