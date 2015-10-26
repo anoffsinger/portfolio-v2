@@ -9,6 +9,8 @@ $blockSpace: 1.6%;
 $headerSpace: 65px;
 $headingBottom: 35px;
 
+$medium: 3.5625em;
+
 // breakpoints
 $breakpointLarge: 1174px;
 $breakpointMedium: 944px;
@@ -16,7 +18,11 @@ $breakpointSmall: 696px;
 
 // animations
 //used on project nav, work intro and blog intro
+//transition: all $duration ease; should be used for loading movement
+//transition: all $highlightDuration $bezierAltTwo; should be used for highlighting
+
 $duration: .4s;
+$highlightDuration: .8s;
 $bezier: cubic-bezier(1,0,.25,1);
 $bezierAlt: cubic-bezier(1,0,0,1);
 $bezierAltTwo: cubic-bezier(0,.46,.24,1);
@@ -30,6 +36,7 @@ $cream: #FFF8C6;
 $lightGrey: #D7D7D7;
 $canvasGrey: #E8E8E8;
 $darkGrey: #3b3b3b;
+$invisibleGrey: #525252;
 
 // spacing
 
@@ -39,7 +46,7 @@ $darkGrey: #3b3b3b;
 $mainType: 'brandon_text_regular';
 $secondaryType: 'brandon_text_light';
 
-$mediumSpace: 36px;
+
 
 
 
@@ -86,7 +93,7 @@ $subtextSize: .875em;
 // Standardized sizes
 $extraLarge: 7em;
 $large: 4.25em;
-$medium: 3.5625em;
+
 $small: 1em;
 $panelHeight: 100vh;
 $calloutWidth: 36.875em;

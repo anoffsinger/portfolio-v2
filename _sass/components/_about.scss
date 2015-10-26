@@ -2,35 +2,29 @@
 	width: 45%;
 	margin: 0 auto;
 
-	@media (max-width: 1174px) {
+	@media (max-width: $breakpointLarge) {
 		width: 55%;
 	}
 
-	// @media (max-width: 944px) {
-	// 	width: 39%;
-	// }
-
-	@media (max-width: 696px) {
+	@media (max-width: $breakpointSmall) {
 		width: 73%;
-		margin: 112px+$headerSpace auto $headerSpace+65px auto;
+		margin: 11.0625em auto 8.125em auto;
 	}
 
 	h2 {
 		width: 90%;
-		margin: 0 0 36px 0;
-		transform: translateY(10px);
-		transition: all $duration ease;
+		margin: 0 0 1.25em 0;
 	}
 
 	p {
 		font-family: $brandonTextLight;
 		font-size: 18px;
-		margin: 0 auto 22px auto;
+		color: $charcoal;
+		margin: 0 auto 1.2222222222em auto;
 		line-height: 144.444%;
 		transform: translateY(10px);
 		transition: all $duration ease .1s;
 		opacity: 0;
-		color: $charcoal;
 
 		a {
 			color: inherit;
@@ -46,9 +40,4 @@
 	p:last-of-type {
 		margin-bottom: 0;
 	}
-}
-
-.about-loaded {
-	transform: translateY(0px) !important;
-	opacity: 1 !important;
 }

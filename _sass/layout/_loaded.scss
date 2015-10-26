@@ -1,0 +1,13 @@
+.loaded {
+	transform: translateY(0px) !important;
+	opacity: 1 !important;
+}
+
+.header-main-loaded {
+    opacity: 1;
+    transform: translateY(0px);
+
+	&:after {
+		width: 75%;
+	}
+}

@@ -10,6 +10,8 @@ $(document).ready(function() {
 	menuItem = $(".menu-item")
 	headerTitle = $(".header-title > h2")
 
+	loadDelay = 150
+
 
 	$('.loader').addClass("loader-finished");
 
@@ -21,8 +23,8 @@ $(document).ready(function() {
 	$('.intro > p').addClass("intro-loaded");
 	$('.button-intro').addClass("intro-loaded");
 
-	$('.about > h2').addClass("about-loaded");
-	$('.about > p').addClass("about-loaded");
+
+	// $('.about > p').addClass("loaded");
 
 	$('.work-post-intro-desc').addClass("work-post-intro-loaded");
 	$('.blog-post-intro-desc').addClass("blog-post-intro-loaded");
@@ -98,7 +100,14 @@ $(document).ready(function() {
     var $this = $(this);
     setTimeout(function() {
             $this.addClass('work-item-loaded');
-        }, i*150);
+        }, i*loadDelay);
+	});
+
+	$(".about p").each(function(i, el) {
+    var $this = $(this);
+    setTimeout(function() {
+            $this.addClass('loaded');
+        }, i*loadDelay);
 	});
 
 	// post item load-in
@@ -106,14 +115,14 @@ $(document).ready(function() {
 	var $this = $(this);
 	setTimeout(function() {
 			$this.addClass('work-item-loaded');
-		}, i*100);
+		}, i*loadDelay);
 	});
 
 	$(".content-description").each(function(i, el) {
 	var $this = $(this);
 	setTimeout(function() {
 			$this.addClass('work-item-loaded');
-		}, i*100);
+		}, i*loadDelay);
 	});
 
 	$(".nav-items-link").click(function (e) {

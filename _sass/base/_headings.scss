@@ -1,44 +1,22 @@
-// Type treatments
-
-h2 {
-/*     font-family: $headerFont;
-font-size: $headerFontSize;
-text-transform: uppercase;
-color: $salmon;
-letter-spacing: .25em; */
-}
-
-h3 {
-    font-family: $bodyFont;
-    font-size: $headerAltFontSize;
-}
-
 .header-main {
 	color: $charcoal;
-	font-size: 28px;
+	font-size: 1.75em;
 	font-family: $brandonTextBold;
 	position: relative;
 	opacity: 0;
+    transform: translateY(10px);
+	transition: all $duration ease;
 
 	&:after {
 		content: '';
 		position: absolute;
 		left: -8px;
 		top: -1px;
-		opacity: 0;
-		width: 150px;
-		height: 40px;
+		width: 5.3571428571em;
+		height: 1.4285714286em;
 		background-color: $yellow;
-		transition: all .8s $bezierAltTwo, opacity .1s;
+		transition: all $highlightDuration $bezierAltTwo;
 		transform-origin: left center;
 		z-index: -1000;
-	}
-}
-.header-main-loaded {
-    opacity: 1;
-    
-	&:after {
-		width: 75%;
-		opacity: 1;
 	}
 }
