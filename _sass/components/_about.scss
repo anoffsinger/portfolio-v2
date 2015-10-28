@@ -22,8 +22,8 @@
 		color: $charcoal;
 		margin: 0 auto 1.2222222222em auto;
 		line-height: 144.444%;
-		transform: translateY(10px);
-		transition: all $duration ease .1s;
+		transform: translateY($loadedDistance);
+		transition: all $duration ease $loadedStagger;
 		opacity: 0;
 
 		a {

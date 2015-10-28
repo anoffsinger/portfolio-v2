@@ -3,42 +3,31 @@
 	width: 100%;
 	position: relative;
 	display: flex;
-	align-items: center
+	align-items: center;
 }
 
 .blog-post-intro-desc {
 	display: block;
 	width: 60%;
 	margin: 0 auto;
-	transform: translateY(20px);
-	transition: all $duration ease;
 
 	h2 {
-		width: 280px;
+		width: 10em;
 		margin: 0 auto $headingBottom auto;
 	}
 
 	img {
 		width: 100%;
+		transform: translateY($loadedDistance);
+		transition: all $duration ease $loadedStagger;
+		opacity: 0;
 	}
 
-	@media (max-width: 1174px) {
+	@media (max-width: $breakpointLarge) {
 		width: 70%;
 	}
 
-	@media (max-width: 944px) {
+	@media (max-width: $breakpointMedium) {
 		width: 75%;
-	}
-}
-
-.blog-post-intro-loaded {
-	transform: translateY(0px);
-	opacity: 1;
-
-	h2 {
-		&:after {
-			width: 200px;
-			opacity: 1;
-		}
 	}
 }

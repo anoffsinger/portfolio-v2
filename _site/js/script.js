@@ -27,7 +27,7 @@ $(document).ready(function() {
 	// $('.about > p').addClass("loaded");
 
 	$('.work-post-intro-desc').addClass("work-post-intro-loaded");
-	$('.blog-post-intro-desc').addClass("blog-post-intro-loaded");
+	$('.blog-post-intro-desc > img').addClass("loaded");
 
 	$('.header-main').addClass("header-main-loaded");
 	// receding footer

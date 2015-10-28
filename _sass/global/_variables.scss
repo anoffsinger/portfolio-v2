@@ -21,6 +21,9 @@ $breakpointSmall: 696px;
 //transition: all $duration ease; should be used for loading movement
 //transition: all $highlightDuration $bezierAltTwo; should be used for highlighting
 
+$loadedDistance: 10px;
+$loadedStagger: .1s;
+$highlightDuration: .8s;
 $duration: .4s;
 $highlightDuration: .8s;
 $bezier: cubic-bezier(1,0,.25,1);

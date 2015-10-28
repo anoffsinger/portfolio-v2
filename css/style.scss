@@ -4,12 +4,7 @@
 @import "global/variables";
 @import "global/extends/clearfix";
 @import "global/extends/visually-hidden";
-@import "global/extends/grid";
-@import "global/mixins/transition";
-@import "global/mixins/perspective";
-@import "global/mixins/transition-time";
-@import "global/mixins/transform-style";
-@import "global/mixins/backface-visibility";
+
 @import "global/mixins/transform";
 
 @import "base/elements";
@@ -17,28 +12,17 @@
 @import "base/headings";
 
 @import "components/about";
-@import "components/project-list";
-@import "components/logo";
-@import "components/badge";
 @import "components/button";
-@import "components/link";
-@import "components/project-description";
-@import "components/icon";
 @import "components/project-nav";
 @import "components/cue-demo";
 @import "components/project-image";
-@import "components/text-logo";
-@import "components/main-nav";
 @import "components/post-preview";
 @import "components/intro";
 @import "components/menu";
-@import "components/canvas";
-@import "components/post";
 @import "components/work";
 @import "components/header";
 @import "components/wrapper";
 @import "components/menu-selector";
-@import "components/footer";
 @import "components/work-post-intro";
 @import "components/blog-post-intro";
 @import "components/intro-arrow";
