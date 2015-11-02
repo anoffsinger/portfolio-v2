@@ -1,4 +1,4 @@
-@-webkit-keyframes arrowFloat {
+@keyframes arrowFloat {
   0%   { transform: translateY(0px); }
   50%   { transform: translateY(10px); }
   100%   { transform: translateY(0px); }
@@ -6,19 +6,18 @@
 
 .intro-arrow {
 	position: absolute;
-	margin: 0 auto 0 -5px;
-	bottom: 50px;
+	margin: 0 auto 0 -0.3125em;
+	bottom: 3.125em;
 	left: 50%;
 	width: 0;
 	height: 0;
 	border-style: solid;
 	border-width: 10px 7px 0 7px;
 	border-color: $canvasGrey transparent transparent transparent;
-	transition: opacity .2s ease;
-
-	-webkit-animation: arrowFloat 2s infinite;
+	transition: opacity .3s ease;
+	animation: arrowFloat 2s infinite;
 }
 
 .intro-arrow-hidden {
-	opacity: 0 !important;
+	opacity: 0;
 }

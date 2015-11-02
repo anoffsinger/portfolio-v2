@@ -4,18 +4,18 @@
 	font-family: $brandonTextBold;
 	position: relative;
 	opacity: 0;
-    transform: translateY(10px);
-	transition: all $duration ease;
+    transform: translateY($loadedDistance);
+	transition: all $shortDuration ease;
 
 	&:after {
 		content: '';
 		position: absolute;
 		left: -8px;
 		top: -1px;
-		width: 5.3571428571em;
+		width: 2em;
 		height: 1.4285714286em;
 		background-color: $yellow;
-		transition: all $highlightDuration $bezierAltTwo;
+		transition: all $longDuration $bezierAltTwo;
 		transform-origin: left center;
 		z-index: -1000;
 	}

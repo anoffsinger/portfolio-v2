@@ -2,15 +2,15 @@
 	margin: 0 auto;
 	width: 23.8%;
 
-	@media (max-width: 1174px) {
+	@media (max-width: $breakpointLarge) {
 		width: 30%;
 	}
 
-	@media (max-width: 944px) {
+	@media (max-width: $breakpointMedium) {
 		width: 39%;
 	}
 
-	@media (max-width: 696px) {
+	@media (max-width: $breakpointSmall) {
 		width: 64%;
 	}
 
@@ -19,35 +19,30 @@
 		height: 2.75em;
 		width: .8125em;
 		margin: 0 auto 1.75em auto;
-		transform: translateY(10px);
-		transition: all $duration ease;
+		transform: translateY($loadedDistance);
+		transition: all $shortDuration ease;
 		opacity: 0;
 	}
 
 	h1 {
 		font-family: $brandonTextRegular;
-		font-size: 19px;
+		font-size: 1.1875em;
 		color: $charcoal;
 		text-align: center;
 		margin-bottom: 1.75em;
 		transform: translateY(10px);
-		transition: all $duration ease .1s;
+		transition: all $shortDuration ease $loadedStagger;
 		opacity: 0;
 	}
 
 	p {
-		font-size: 19px;
+		font-size: 1.1875em;
 		color: $lightGrey;
 		text-align: center;
 		margin-bottom: 1.75em;
 		line-height: 147.368%;
 		transform: translateY(10px);
-		transition: all $duration ease .2s;
+		transition: all $shortDuration ease $loadedStagger*2;
 		opacity: 0;
 	}
-}
-
-.intro-loaded {
-	transform: translateY(0px) !important;
-	opacity: 1 !important;
 }

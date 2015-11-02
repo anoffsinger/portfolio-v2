@@ -19,7 +19,7 @@
 	img {
 		width: 100%;
 		transform: translateY($loadedDistance);
-		transition: all $duration ease $loadedStagger;
+		transition: all $shortDuration ease $loadedStagger;
 		opacity: 0;
 	}
 

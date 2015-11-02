@@ -11,9 +11,10 @@ body {
 }
 
 footer {
-	padding: $medium 0;
+	padding: $headerSpace 0;
 	width: 100%;
 	background-color: $darkGrey;
+	opacity: 0;
 
 	span {
 		font-family: $brandonTextBold;
@@ -40,6 +41,6 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'brandon_text_medium';
+	font-family: $brandonTextBold;
 	font-weight: normal;
 }

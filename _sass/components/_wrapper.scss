@@ -5,7 +5,7 @@
 	width: 72.25%;
 	margin: 0 auto $headerSpace auto;
 
-	@media (max-width: 696px) {
+	@media (max-width: $breakpointSmall) {
 		width: 100%;
 	}
 }
@@ -16,8 +16,6 @@
 	display: flex;
 	align-items: center;
 	margin: 0 auto;
-
-
 }
 
 .wrapper-about {
@@ -27,11 +25,8 @@
 	align-items: center;
 	margin: 0 auto;
 
-	@media (max-width: 696px) {
+	@media (max-width: $breakpointSmall) {
 		height: auto;
-		// min-height: 100vh;
-
 		justify-content: center;
 	}
-
 }

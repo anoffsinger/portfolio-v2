@@ -2,14 +2,11 @@
 $brandonTextLight: 'brandon_text_light', Helvetica, 'sans serif';
 $brandonTextRegular: 'brandon_text_regular', Helvetica, 'sans serif';
 $brandonTextBold: 'brandon_text_medium', Helvetica, 'sans serif';
-$mediumFont: 1.2em;
 
 //spacing
 $blockSpace: 1.6%;
 $headerSpace: 65px;
 $headingBottom: 35px;
-
-$medium: 3.5625em;
 
 // breakpoints
 $breakpointLarge: 1174px;
@@ -18,90 +15,33 @@ $breakpointSmall: 696px;
 
 // animations
 //used on project nav, work intro and blog intro
-//transition: all $duration ease; should be used for loading movement
-//transition: all $highlightDuration $bezierAltTwo; should be used for highlighting
+//transition: all $shortDuration ease; should be used for loading movement
+//transition: all $longDuration $bezierAltTwo; should be used for highlighting
 
 $loadedDistance: 10px;
 $loadedStagger: .1s;
-$highlightDuration: .8s;
-$duration: .4s;
-$highlightDuration: .8s;
-$bezier: cubic-bezier(1,0,.25,1);
-$bezierAlt: cubic-bezier(1,0,0,1);
+$longDuration: .8s;
+$shortDuration: .4s;
+
+// menu selector bezier
+$bezier: cubic-bezier(0,.4,.5,1);
+
+// everything else bezier
 $bezierAltTwo: cubic-bezier(0,.46,.24,1);
 // a simple ease should be used for items loading in, alttwo should be used for high leverage animations, like button transitions
 
 // colors
 $charcoal: #6A6A6A;
+$white: #FFFFFF;
+$black: #000000;
 $coral: #FF8969;
 $yellow: #FCF100;
 $cream: #FFF8C6;
+
 $lightGrey: #D7D7D7;
 $canvasGrey: #E8E8E8;
 $darkGrey: #3b3b3b;
 $invisibleGrey: #525252;
-
-// spacing
-
-
-
-
-$mainType: 'brandon_text_regular';
-$secondaryType: 'brandon_text_light';
-
-
-
-
-
-
-$accent: #F6EE92;
-$highlight: #303D41;
-$mainGrey: #D4D4D4;
 $lightestGrey: #F9F9F9;
 
-
-// Colors
-
-$longformCopy: #3E3E3E;
-
-$salmon: #F6EE92;
-$darkBlue: #303d41;
-$lightBlue: #586b6d;
-$silver: #f0efed;
-$white: #FFFFFF;
-$black: #000000;
-$landingGrey: #C6C6C6;
-$buttonColor: #FFCA1C;
-$midGrey: #EFEFEF;
-
-// Font family
-
-$mediumWeight: 'apercumedium';
-
-
-$headerFont: 'apercubold';
-$bodyFont: 'aperculight';
-$subtextFont: 'aperculight_italic';
-$workTitleFont: 'apercuregular';
-
-// Font size
-$headerFontSize: 1em;
-$headerAltFontSize: 1.5em;
-$blockFontSize: 1.7em;
-$footerFontSize: 2em;
-$bodyFontSize: 1em;
-$subtextSize: .875em;
-
-
-// Standardized sizes
-$extraLarge: 7em;
-$large: 4.25em;
-
-$small: 1em;
-$panelHeight: 100vh;
-$calloutWidth: 36.875em;
-
-// Blog variables
-
-$paragraphBottom: 2em;
-$blogPostBody: 18px;
+// spacing

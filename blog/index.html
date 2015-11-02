@@ -7,9 +7,9 @@ category: Blog
 <html>
 	{% include head.html %}
 	<body>
-		<div class="loader"></div>
-		{% include header-title.html %}
+		{% include header.html %}
 		<div class="wrapper-site">
+		{% if site.categories.blog | size > 0 %}
 			{% for post in site.posts limit: 10 %}
 				{% if post.categories contains 'blog' %}
 					<div class="blog-post-preview">
@@ -20,6 +20,17 @@ category: Blog
 					</div>
 				{% endif %}
 			{% endfor %}
+		{% else %}
+			<div class="blog-post-preview-empty">
+				<p>Coming soon.</p>
+			</div>
+			<div class="blog-post-preview-empty">
+				<p>Like, very soon.</p>
+			</div>
+			<div class="blog-post-preview-empty">
+				<p>Seriously, I promise.</p>
+			</div>
+		{% endif %}
 		</div>
 		{% include footer.html %}
 		{% include scripts.html %}

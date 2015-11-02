@@ -5,7 +5,7 @@
     margin: 0 auto;
     width: 4.8421052632em;
     transform: translateY($loadedDistance);
-    transition: all $duration ease $loadedStagger*3;
+    transition: all $shortDuration ease $loadedStagger*3;
     opacity: 0;
 
     span {
@@ -24,7 +24,7 @@
         border-style: solid;
         border-width: 5.165px 0 5.165px 8.9px;
         border-color: transparent transparent transparent $charcoal;
-        transition: all $highlightDuration $bezierAltTwo;
+        transition: all $longDuration $bezierAltTwo;
     }
 
     &:before {

@@ -1,4 +1,4 @@
-.header-title {
+.header {
 	position: absolute;
 	top: 0;
 	display: flex;
@@ -15,75 +15,15 @@
 		z-index: 3
 	}
 
-	nav {
-		z-index: 2
-	}
-
 	h2 {
 		display: block;
 		font-size: 1em;
-		color: $coral;
-		transition: all 600ms ease;
-		transform: translateX(1.875em);
+		transition: all .6s ease;
+		transform: translateX(30px);
 		opacity: 0;
 
-		> span:nth-of-type(1) {
+		> span {
 			color: $charcoal;
 		}
-
-		> span:nth-of-type(2) {
-			color: $lightGrey;
-		}
 	}
-}
-
-.header-title-loaded {
-	opacity: 1 !important;
-	transform: translateX(0) !important;
-}
-
-.header {
-	position: fixed;
-	padding: 2.875em 0 0 0;
-	width: 100%;
-	left: 0;
-	height: 7em;
-}
-
-.header-menu {
-	z-index: 1000;
-	background-color: transparent;
-}
-
-.header-items {
-	width: 85%;
-	margin: 0 auto;
-	transition: transform .5s ease;
-
-	> h2 {
-		font-size: .875em;
-		color: $landingGrey;
-		text-align: right;
-		position: relative;
-		float: right;
-		width: 94%;
-		padding-bottom: .3125em;
-	}
-}
-
-.header-back {
-	font-family: $workTitleFont;
-	font-size: .875em;
-	color: $landingGrey;
-	margin-left: 6.25em;
-	transition: color .2s ease;
-}
-
-.header-back:hover {
-	color: $darkBlue;
-}
-
-@-webkit-keyframes grow {
-    from { width: 0%; }
-    to { width: 100%; }
 }

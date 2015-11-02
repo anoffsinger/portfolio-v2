@@ -7,8 +7,7 @@ category: Work
 <html>
     {% include head.html %}
     <body>
-        <div class="loader"></div>
-        {% include header-title.html %}
+        {% include header.html %}
         <div class="wrapper-site">
             <ol class="work column-grid">
                 {% for post in site.posts limit: 10 %}

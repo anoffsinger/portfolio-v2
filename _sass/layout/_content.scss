@@ -1,8 +1,9 @@
 .content {
+
 	> p {
 		font-family: $brandonTextLight;
-		font-size: 18px;
-		margin: 0 auto 32px auto;
+		font-size: 1.125em;
+		margin: 0 auto 1.7777777778em auto;
 		line-height: 144.444%;
 		width: 80%;
 	}
@@ -15,78 +16,19 @@
 		.project-image:last-of-type {
 			margin-bottom: 0;
 		}
-
-
 	}
-	@media (max-width: 696px) {
+
+	@media (max-width: $breakpointSmall) {
 		width: 100%;
 	}
 
 	.project-image-small-container:last-of-type {
 		margin-bottom: 0;
 	}
-
-}
-
-.content-description {
-	margin: 150px auto 200px auto;
-	transform: translateY(20px);
-	opacity: 0;
-	transition: all $duration ease;
-
-	// width: 75%;
-	> h1 {
-		font-family: $brandonTextBold;
-		width: 80%;
-		font-size: 28px;
-		color: $charcoal;
-		margin: 0 auto 32px auto;
-
-	}
-
-	> p {
-		font-family: $secondaryType;
-		font-size: 18px;
-		margin: 0 auto 32px auto;
-		line-height: 145%;
-		width: 80%;
-	}
-
-	> p:last-of-type {
-		margin-bottom: 50px;
-	}
-}
-
-.content-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100%;
-	background-color: white;
-	opacity: 0;
-	z-index: 999;
-	display: none;
-	/* pointer-events: none; */
-
-	transition: transform .5s ease;
-}
-
-.content-splash {
-	height: 100vh;
-	padding-top: 0;
-  	display: flex;
-  	align-items: center;
-}
-
-.content-post {
-	position: relative;
-	width: 80%;
-	margin: 0 auto;
 }
 
 .blog-post-date {
 	font-family: $brandonTextRegular;
-	font-size: 14px;
+	font-size: 0.875em;
 	color: $lightGrey;
 }
