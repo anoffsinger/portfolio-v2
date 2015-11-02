@@ -10,4 +10,4 @@ markdown: rdiscount
 permalink: pretty
 highlight: pigments
 
-permalink: pretty
+permalink: none
