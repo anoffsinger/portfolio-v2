@@ -9,3 +9,5 @@ paginate: 10
 markdown: rdiscount
 permalink: pretty
 highlight: pigments
+
+permalink: /:categories/:year/:month/:day/:title/
