@@ -10,4 +10,4 @@ markdown: rdiscount
 permalink: pretty
 highlight: pigments
 
-permalink: /portfolio_v2/:categories/:year/:month/:day/:title/
+permalink: pretty
