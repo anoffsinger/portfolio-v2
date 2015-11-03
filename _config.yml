@@ -2,7 +2,7 @@ name: "Adam's Portfolio"
 description: "I’m a Product Designer and prototyper at Uber in San Francisco."
 
 # this should eventually be set to my domain
-url: "http://anoffsinger.github.io/portfolio_v2/"
+url: "http://noff.me/"
 
 paginate: 10
 
