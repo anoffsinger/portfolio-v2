@@ -8,6 +8,7 @@ body {
 	font-size: 100%;
 	font-family: $brandonTextRegular;
 	background-color: $white;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 footer {
