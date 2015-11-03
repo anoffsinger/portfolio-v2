@@ -2,12 +2,12 @@
 title: Skoop Website
 layout: work-post
 category: Work
-skills: Design, UX, Dev
+skills: Visuals, UX, Dev
 thumbnail: ../images/skoop-thumbnail.png
-thumbnailDesc: Shot from the Cue App
+thumbnailDesc: Skoop homepage
 link: https://healthyskoop.com/
 materials: ../../../../../docs/skoop-documentation.pdf
-description: Whether from being in a new place, or simply feeling as though you’re not being social enough, there are times when all of us feel like we need to meet new people. That’s why I cofounded Cue, a new kind of social app that introduces you to people within 150 feet of your location that share your interests.
+description: While working with the <a href="http://humandesign.agency/">Human Design</a> team we created a new website and seller portal for a health shake called Skoop. The Boulder-based company, founded by Alex Bogusky, makes a shake mix sold by individual resellers around the nation.<p>After working with the design team on the site, I then joined the front-end development team to build it.
 ---
 <div><img class="project-image" alt="Skoop homepage" src="/images/skoop-homepage.png"></div>
 

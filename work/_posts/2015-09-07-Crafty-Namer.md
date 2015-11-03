@@ -2,11 +2,11 @@
 title: The Crafty Namer
 layout: work-post
 category: Work
-skills: Design, Development
+skills: Visuals, Dev
 thumbnail: ../images/crafty-thumbnail.png
-thumbnailDesc: Shot from the Cue App
+thumbnailDesc: Crafty Namer homepage
 link: http://thecraftynamer.com/
-description: Whether from being in a new place, or simply feeling as though you’re not being social enough, there are times when all of us feel like we need to meet new people. That’s why I cofounded Cue, a new kind of social app that introduces you to people within 150 feet of your location that share your interests.
+description: This site was designed and built in two days in response to a random challenge during graduate school. The challenge? Page views. <p>My team's solution for maximizing page views manifested itself as a craft beer name generator that we aggressively marketed to local and national brewery social media outlets to modest success.
 ---
 <div><img class="project-image" alt="My Pic" src="/images/crafty-full.png"></div>
 

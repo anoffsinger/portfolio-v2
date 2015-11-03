@@ -4,8 +4,8 @@ layout: work-post
 category: Work
 skills: Visuals
 thumbnail: ../images/dr-book-thumbnail.jpg
-thumbnailDesc: Shot from the Cue App
-description: Whether from being in a new place, or simply feeling as though you’re not being social enough, there are times when all of us feel like we need to meet new people. That’s why I cofounded Cue, a new kind of social app that introduces you to people within 150 feet of your location that share your interests.
+thumbnailDesc: Book cover
+description: I designed this simple book covering the infamous designer's "10 Principles For Good Design" while in graduate school.<p>I used a simple grid system based on the dimensions of the Braun T3 Pocket Radio - the product known for influencing the design of Apple’s iPod. The products showcased in the book span Dieter’s work for both Braun and Vitsoe.
 ---
 <div><img class="project-image" alt="Cue homepage" src="/images/dr-cover.jpg"></div>
 <div><img class="project-image" alt="Cue homepage" src="/images/dr-spread-3.jpg"></div>

@@ -25,5 +25,15 @@
 		transform: translateY($loadedDistance);
 		transition: all $shortDuration ease .1s;
 		opacity: 0;
+
+		a {
+			color: inherit;
+			transition: all .1s ease;
+			font-family: $brandonTextBold;
+
+			&:hover {
+				color: $lightGrey;
+			}
+		}
 	}
 }

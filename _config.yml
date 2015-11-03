@@ -7,7 +7,5 @@ url: "http://noff.me/"
 paginate: 10
 
 markdown: rdiscount
-permalink: pretty
+permalink: none
 highlight: pigments
-
-permalink: date
