@@ -1,4 +1,13 @@
 .no-scroll {
+	overflow: hidden;
 
-	position: fixed;
+	@media (max-width: $breakpointMedium) {
+		overflow: visible;
+		position: fixed;
+	}
+
+	@media (max-width: $breakpointSmall) {
+		overflow: visible;
+		position: fixed;
+	}
 }

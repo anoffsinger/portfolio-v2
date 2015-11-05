@@ -860,7 +860,15 @@ li.menu-item-loaded {
   .column-grid > li:nth-of-type(1) {
     margin-top: 0 !important; } }
 .no-scroll {
-  position: fixed; }
+  overflow: hidden; }
+  @media (max-width: 944px) {
+    .no-scroll {
+      overflow: visible;
+      position: fixed; } }
+  @media (max-width: 696px) {
+    .no-scroll {
+      overflow: visible;
+      position: fixed; } }
 
 .loaded {
   transform: translateY(0px) !important;
