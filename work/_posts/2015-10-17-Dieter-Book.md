@@ -3,7 +3,7 @@ title: Dieter Rams Book
 layout: work-post
 category: Work
 skills: Visuals
-thumbnail: ../images/dr-book-thumbnail.jpg
+thumbnail: ../images/dr-book-thumbnail.png
 thumbnailDesc: Book cover
 description: I designed this simple book covering the infamous designer's "10 Principles For Good Design" while in graduate school.<p>I used a simple grid system based on the dimensions of the Braun T3 Pocket Radio - the product known for influencing the design of Apple’s iPod. The products showcased in the book span Dieter’s work for both Braun and Vitsoe.
 ---
