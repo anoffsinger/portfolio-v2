@@ -17,6 +17,6 @@
     transform: translateY(0px);
 
 	&:after {
-		width: 75%;
+		width: calc(100% + 30px);
 	}
 }

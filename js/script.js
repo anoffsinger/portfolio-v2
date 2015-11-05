@@ -5,17 +5,17 @@ $(document).ready(function() {
 
 	// DOM variables
 	menuSelector = $(".menu-selector");
-	body = $("body")
-	headerTitle = $(".header > h2")
-	footer = $("footer")
-	menu = $("#menu")
+	body = $("body");
+	headerTitle = $(".header > h2");
+	footer = $("footer");
+	menu = $("#menu");
+	headerMain = $('.header-main');
 
-
-	// site-wide
+	// site wide
 	headerTitle.addClass("loaded-x");
-	$('.header-main').addClass("header-main-loaded");
+	headerMain.addClass("header-main-loaded");
 
-	// intro-page
+	// intro page
 	$('.intro > img').addClass("loaded");
 	$('.intro > h1').addClass("loaded");
 	$('.intro > p').addClass("loaded");
@@ -29,6 +29,9 @@ $(document).ready(function() {
 
 	// blog post overview
 	$('.blog-post-preview-empty').addClass("loaded");
+
+	// about page
+	$('.about p').addClass("loaded");
 
 
 	$(function (){
@@ -87,12 +90,12 @@ $(document).ready(function() {
         }, i*loadDelay);
 	});
 
-	$(".about p").each(function(i, el) {
-    var $this = $(this);
-    setTimeout(function() {
-            $this.addClass('loaded');
-        }, i*loadDelay);
-	});
+	// $(".about p").each(function(i, el) {
+    // var $this = $(this);
+    // setTimeout(function() {
+    //         $this.addClass('loaded');
+    //     }, i*loadDelay);
+	// });
 
 	// post item load-in
 	$(".blog-post-preview").each(function(i, el) {

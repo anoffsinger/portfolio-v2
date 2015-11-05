@@ -105,13 +105,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   opacity: 0;
   transform: translateY(10px);
-  transition: all 0.4s ease; }
+  transition: all 0.4s ease;
+  display: inline-block; }
   .header-main:after {
     content: '';
     position: absolute;
-    left: -8px;
+    left: -15px;
     top: -1px;
-    width: 2em;
+    width: 75%;
     height: 1.4285714286em;
     background-color: #FCF100;
     transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1);
@@ -119,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1000; }
 
 .about {
-  width: 45%;
+  width: 43.35%;
   margin: 0 auto; }
   @media (max-width: 1174px) {
     .about {
@@ -129,7 +130,6 @@ h1, h2, h3, h4, h5, h6 {
       width: 73%;
       margin: 11.0625em auto 8.125em auto; } }
   .about h2 {
-    width: 90%;
     margin: 0 0 1.25em 0; }
   .about p {
     font-family: "brandon_text_light", Helvetica, "sans serif";
@@ -877,4 +877,4 @@ li.menu-item-loaded {
   opacity: 1;
   transform: translateY(0px); }
   .header-main-loaded:after {
-    width: 75%; }
+    width: calc(100% + 30px); }
