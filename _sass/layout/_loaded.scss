@@ -1,22 +1,27 @@
 .loaded {
 	transform: translateY(0px) !important;
 	opacity: 1 !important;
+	transform: translate3d(0, 0, 0);
 }
 
 .loaded-x {
 	transform: translateX(0px) !important;
 	opacity: 1 !important;
+	transform: translate3d(0, 0, 0);
 }
 
 .loaded-o {
 	opacity: 1;
+	transform: translate3d(0, 0, 0);
 }
 
 .header-main-loaded {
     opacity: 1;
     transform: translateY(0px);
+	transform: translate3d(0, 0, 0);
 
 	&:after {
 		width: calc(100% + 30px);
+		transform: translate3d(0, 0, 0);
 	}
 }
