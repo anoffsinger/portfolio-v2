@@ -16,7 +16,7 @@ footer {
 	width: 100%;
 	background-color: $darkGrey;
 	opacity: 0;
-	transition: opacity .01s linear 2s; 
+	transition: opacity .01s linear .5s; 
 
 	span {
 		font-family: $brandonTextBold;

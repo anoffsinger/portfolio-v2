@@ -20,7 +20,7 @@ footer {
   width: 100%;
   background-color: #3b3b3b;
   opacity: 0;
-  transition: opacity .01s linear 2s; }
+  transition: opacity .01s linear .5s; }
   footer span {
     font-family: "brandon_text_medium", Helvetica, "sans serif";
     color: #525252;
