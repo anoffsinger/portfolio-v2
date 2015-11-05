@@ -1,102 +1,85 @@
 $(document).ready(function() {
 
-	// Common Variables
-	menuSelector = $(".menu-selector");
-	content = $(".content")
-	headerItems = $(".header-items")
-	main = $(".main")
-	body = $("body")
-	menuItem = $(".menu-item")
-	headerTitle = $(".header > h2")
-
+	// non-DOM variables
 	loadDelay = 150
 
+	// DOM variables
+	menuSelector = $(".menu-selector");
+	body = $("body")
+	headerTitle = $(".header > h2")
+	footer = $("footer")
 
-	$('.loader').addClass("loader-finished");
 
+	// site-wide
 	headerTitle.addClass("loaded-x");
+	$('.header-main').addClass("header-main-loaded");
 
+	// intro-page
 	$('.intro > img').addClass("loaded");
 	$('.intro > h1').addClass("loaded");
 	$('.intro > p').addClass("loaded");
 	$('.button-intro').addClass("loaded");
 
-
-	// $('.about > p').addClass("loaded");
-
+	// work post
 	$('.work-post-intro-desc > p').addClass("loaded");
+
+	// blog post
 	$('.blog-post-intro-desc > img').addClass("loaded");
+
+	// blog post overview
 	$('.blog-post-preview-empty').addClass("loaded");
 
-	$('.header-main').addClass("header-main-loaded");
-	// receding footer
-	var didScroll;
-	var lastScrollTop = 0;
-	var delta = 5;
-	var navHeight = $('.project-nav').outerHeight();
 
-	// function loop() {
-	//     $('.work-splash-arrow').animate({'transform': 'translateY(-20px)'}, {
-	//         duration: 500,
-	//         complete: function() {
-	//             $('.work-splash-arrow').animate({'transform': 'translateY(0px)'}, {
-	//                 duration: 1000,
-	//                 complete: loop});
-	//         }});
-	// }
-	// loop();
+	$(function (){
+	    if ($('body.has-footer-nav').length > 0){
 
+			var didScroll;
+			lastScrollTop = 0;
+			delta = 5;
+			projectNav = $('.project-nav');
+			introArrow = $('.intro-arrow');
+			navHeight = projectNav.outerHeight();
 
-	$(window).scroll(function(event){
-	    didScroll = true;
+			$(window).scroll(function(event){
+				didScroll = true;
+			});
+
+			setInterval(function() {
+				if (didScroll) {
+					hasScrolled();
+					didScroll = false;
+				}
+			}, 250);
+
+			function hasScrolled() {
+
+				var posFooter = footer.offset().top; // find the current position of the top of the footer
+				var posNav = projectNav.offset().top + 44; // find the bottom of the project nav
+				var currentScrollTop = $(this).scrollTop(); // find the current top of vertical scrollbar
+
+				if(Math.abs(lastScrollTop - currentScrollTop) <= delta) // minus last scroll position with current scroll position and make sure it's <= to delta
+					return;
+
+				if (currentScrollTop > lastScrollTop && currentScrollTop > navHeight){
+					projectNav.addClass('project-nav-up');
+					introArrow.addClass('intro-arrow-hidden');
+				} else if (currentScrollTop < 44) {
+					projectNav.removeClass('project-nav-up');
+					introArrow.removeClass('intro-arrow-hidden');
+				}
+
+				if (posNav > posFooter) {
+					projectNav.removeClass('project-nav-up');
+				} else if (posNav < posFooter && currentScrollTop > navHeight) {
+					projectNav.addClass('project-nav-up');
+				}
+				lastScrollTop = currentScrollTop;
+			}
+	    }
 	});
 
-	setInterval(function() {
-	    if (didScroll) {
-	        hasScrolled();
-	        didScroll = false;
-	    }
-	}, 250);
-
-	var footer = $("footer")
-	var nav = $(".project-nav");
-
-	function hasScrolled() {
-
-		var posFooter = footer.offset().top;
-		console.log(posFooter + "footer");
-
-		//this is causing error
-		var posNav = nav.offset().top + 44;
-		console.log(posNav + "nav");
-
-		var st = $(this).scrollTop();
-		// console.log(st);
-	    // Make sure they scroll more than delta
-	    if(Math.abs(lastScrollTop - st) <= delta)
-	        return;
-
-	    // If they scrolled down and are past the navbar height, add class .project-nav-up.
-	    if (st > lastScrollTop && st > navHeight){
-	        // Scroll Down
-	        $('.project-nav').addClass('project-nav-up');
-			$('.intro-arrow').addClass('intro-arrow-hidden');
-	    } else if (st < 44) {
-			$('.project-nav').removeClass('project-nav-up');
-			$('.intro-arrow').removeClass('intro-arrow-hidden');
-		}
-
-		if (posNav > posFooter) {
-	        $('.project-nav').removeClass('project-nav-up');
-	    } else if (posNav < posFooter && st > navHeight) {
-			$('.project-nav').addClass('project-nav-up');
-		}
-	    lastScrollTop = st;
-	}
-
-
 	// work item tile load-in
-	$("li.work-item").each(function(i, el) {
+	$(".work-item").each(function(i, el) {
     var $this = $(this);
     setTimeout(function() {
             $this.addClass('loaded');
@@ -117,8 +100,6 @@ $(document).ready(function() {
 			$this.addClass('loaded');
 		}, i*loadDelay);
 	});
-
-
 
 	$(".menu-items-link").click(function (e) {
 
