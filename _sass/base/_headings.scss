@@ -4,7 +4,7 @@
 	font-family: $brandonTextBold;
 	position: relative;
 	opacity: 0;
-    transform: translateY(15px);
+    transform: translateY($loadedDistance);
 	transition: all $shortDuration ease;
 	display: inline-block;
 

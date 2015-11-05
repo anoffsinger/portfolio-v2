@@ -1,0 +1,51 @@
+.notification {
+	width: 100%;
+	min-height: 46px;
+	background-color: $coral;
+	position: absolute;
+	top: 7em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	transform: translateY($loadedDistance);
+	transition: all $longDuration ease;
+	opacity: 0;
+
+	padding: 20px;
+	border-radius: 2px;
+
+	p {
+		color: $white;
+	}
+
+	button {
+		@extend %clearfix;
+
+		display: block;
+		width: 19.8194px;
+	    height: 22.8194px;
+		cursor: pointer;
+		border: none;
+		background-color: transparent;
+
+		div {
+			position: absolute;
+			display: block;
+			width: 1.6363636364em;
+			height: 0.2727272727em;
+			background-color: $white;
+			float: left;
+		}
+
+		div:nth-last-of-type(1) {
+			transform: rotate(45deg);
+			transform-origin: 50% 50%;
+		}
+
+		div:nth-last-of-type(2) {
+			transform: rotate(-45deg);
+			transform-origin: 50% 50%;
+		}
+	}
+}

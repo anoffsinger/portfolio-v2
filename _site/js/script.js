@@ -33,6 +33,14 @@ $(document).ready(function() {
 	// about page
 	$('.about p').addClass("loaded");
 
+	$('.notification').addClass("loaded");
+
+
+	$(".close").click(function(){
+
+		$('.notification').removeClass("loaded");
+	});
+
 
 	$(function (){
 	    if ($('body.has-footer-nav').length > 0){
