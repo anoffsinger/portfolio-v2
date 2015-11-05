@@ -860,7 +860,7 @@ li.menu-item-loaded {
   .column-grid > li:nth-of-type(1) {
     margin-top: 0 !important; } }
 .no-scroll {
-  overflow: hidden; }
+  position: fixed; }
 
 .loaded {
   transform: translateY(0px) !important;
