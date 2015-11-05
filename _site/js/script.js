@@ -8,6 +8,7 @@ $(document).ready(function() {
 	body = $("body")
 	headerTitle = $(".header > h2")
 	footer = $("footer")
+	menu = $("#menu")
 
 
 	// site-wide
@@ -118,21 +119,18 @@ $(document).ready(function() {
 
 	menuSelector.click(function() {
 
-		$("#menu").toggleClass("menu-visible");
+		body.toggleClass("no-scroll");
+
+		menu.toggleClass("menu-visible");
 		$(".menu-items li:nth-of-type(1)").toggleClass("menu-item-loaded");
 		$(".menu-items li:nth-of-type(2)").toggleClass("menu-item-loaded");
 		$(".menu-items li:nth-of-type(3)").toggleClass("menu-item-loaded");
 		$(".menu-items li:nth-of-type(4)").toggleClass("menu-item-loaded");
 
-		$(menuSelector).toggleClass("menu-selector-open");
+		menuSelector.toggleClass("menu-selector-open");
 		$(".menu-top-bar").toggleClass("top-bar-close");
 		$(".menu-middle-bar").toggleClass("middle-bar-close");
 		$(".menu-bottom-bar").toggleClass("bottom-bar-close");
-
-		body.toggleClass("no-scroll");
-
-
-
 	});
 
 
