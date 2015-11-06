@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: -15px;
     top: -1px;
-    width: 75%;
+    width: 3em;
     height: 1.4285714286em;
     background-color: #FCF100;
     transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1);
@@ -936,7 +936,9 @@ li.menu-item-loaded {
 .header-main-loaded {
   opacity: 1;
   transform: translateY(0px);
-  transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000; }
   .header-main-loaded:after {
-    width: 100%;
+    width: 10em;
     transform: translate3d(0, 0, 0); }
