@@ -16,7 +16,7 @@
 		width: 10%;
 		height: 1.4285714286em;
 		background-color: $yellow;
-		transition: all $longDuration $bezierAltTwo;
+		transition: all $longDuration ease;
 
 		z-index: -1000;
 	}
