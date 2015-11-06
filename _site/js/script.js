@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	// non-DOM variables
-	loadDelay = 150
+	loadDelay = 100
 
 	// DOM variables
 	menuSelector = $(".menu-selector");
