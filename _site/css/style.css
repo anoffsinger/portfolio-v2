@@ -113,6 +113,17 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(20px);
   transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1);
   display: inline-block; }
+  .header-main:after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: -1px;
+    width: 75%;
+    height: 1.4285714286em;
+    background-color: #FCF100;
+    transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1);
+    transform-origin: left center;
+    z-index: -1000; }
 
 .about {
   width: 43.35%;
@@ -928,5 +939,5 @@ li.menu-item-loaded {
   transform: translateY(0px);
   transform: translate3d(0, 0, 0); }
   .header-main-loaded:after {
-    width: calc(100% + 30px);
+    width: 100%;
     transform: translate3d(0, 0, 0); }

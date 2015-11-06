@@ -8,16 +8,16 @@
 	transition: all $longDuration $bezierAltTwo;
 	display: inline-block;
 
-	// &:after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	left: -15px;
-	// 	top: -1px;
-	// 	width: 75%;
-	// 	height: 1.4285714286em;
-	// 	background-color: $yellow;
-	// 	transition: all $longDuration $bezierAltTwo;
-	// 	transform-origin: left center;
-	// 	z-index: -1000;
-	// }
+	&:after {
+		content: '';
+		position: absolute;
+		left: -15px;
+		top: -1px;
+		width: 75%;
+		height: 1.4285714286em;
+		background-color: $yellow;
+		transition: all $longDuration $bezierAltTwo;
+		transform-origin: left center;
+		z-index: -1000;
+	}
 }
