@@ -18,9 +18,9 @@
 .header-main-loaded {
     opacity: 1;
     transform: translateY(0px);
-	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000;
 
 	&:after {
 		width: 100%;
