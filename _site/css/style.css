@@ -9,6 +9,12 @@
   margin: 0;
   padding: 0; }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
 body {
   font-size: 100%;
   font-family: "brandon_text_regular", Helvetica, "sans serif";
@@ -700,8 +706,7 @@ li.menu-item-loaded {
   width: 60%;
   margin: 0 auto; }
   .work-post-intro-desc h2 {
-    margin-bottom: 35px;
-    display: inline-block; }
+    margin-bottom: 35px; }
   .work-post-intro-desc p {
     color: #6A6A6A;
     font-size: 1.125em;

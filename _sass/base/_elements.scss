@@ -4,6 +4,13 @@
 	padding: 0;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 body {
 	font-size: 100%;
 	font-family: $brandonTextRegular;
@@ -16,7 +23,7 @@ footer {
 	width: 100%;
 	background-color: $darkGrey;
 	opacity: 0;
-	transition: opacity .01s linear .5s; 
+	transition: opacity .01s linear .5s;
 
 	span {
 		font-family: $brandonTextBold;

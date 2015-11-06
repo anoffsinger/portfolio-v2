@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
 	// non-DOM variables
 	loadDelay = 100
 
@@ -14,6 +16,7 @@ $(document).ready(function() {
 	// site wide
 	headerTitle.addClass("loaded-x");
 	headerMain.addClass("header-main-loaded");
+	body.removeClass("preload");
 
 	// intro page
 	$('.intro > img').addClass("loaded");
