@@ -16,7 +16,7 @@ $(document).ready(function() {
 	// site wide
 	headerTitle.addClass("loaded-x");
 	headerMain.addClass("header-main-loaded");
-	body.removeClass("preload");
+	// body.removeClass("preload");
 
 	// intro page
 	$('.intro > img').addClass("loaded");
