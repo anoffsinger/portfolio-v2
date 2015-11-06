@@ -23,7 +23,7 @@
 		font-family: $brandonTextLight;
 		margin-bottom: 1.125em;
 		transform: translateY($loadedDistance);
-		transition: all $shortDuration ease .1s;
+		transition: transform $longDuration $bezierAltTwo $loadedStagger, opacity $longDuration ease $loadedStagger;
 		opacity: 0;
 
 		a {

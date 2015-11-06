@@ -22,7 +22,7 @@
 		margin: 0 auto 1.2222222222em auto;
 		line-height: 144.444%;
 		transform: translateY($loadedDistance);
-		transition: all $shortDuration ease $loadedStagger;
+		transition: transform $longDuration $bezierAltTwo $loadedStagger, opacity $longDuration ease $loadedStagger;
 		opacity: 0;
 
 		a {

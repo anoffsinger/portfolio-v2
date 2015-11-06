@@ -5,7 +5,7 @@
 	position: relative;
 	opacity: 0;
     transform: translateY($loadedDistance);
-	transition: all $shortDuration ease;
+	transition: all $longDuration $bezierAltTwo;
 	display: inline-block;
 
 	&:after {

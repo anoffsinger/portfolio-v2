@@ -5,7 +5,7 @@
     margin: 0 auto;
     width: 4.8421052632em;
     transform: translateY($loadedDistance);
-    transition: all $shortDuration ease $loadedStagger*3;
+    transition: all $longDuration $bezierAltTwo $loadedStagger*3;
     opacity: 0;
 
     span {

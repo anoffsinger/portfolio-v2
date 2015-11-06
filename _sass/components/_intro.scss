@@ -20,7 +20,7 @@
 		width: .8125em;
 		margin: 0 auto 1.75em auto;
 		transform: translateY($loadedDistance);
-		transition: all $shortDuration ease;
+		transition: all $longDuration $bezierAltTwo;
 		opacity: 0;
 	}
 
@@ -30,8 +30,8 @@
 		color: $charcoal;
 		text-align: center;
 		margin-bottom: 1.75em;
-		transform: translateY(10px);
-		transition: all $shortDuration ease $loadedStagger;
+		transform: translateY($loadedDistance);
+		transition: all $longDuration $bezierAltTwo $loadedStagger;
 		opacity: 0;
 	}
 
@@ -41,8 +41,8 @@
 		text-align: center;
 		margin-bottom: 1.75em;
 		line-height: 147.368%;
-		transform: translateY(10px);
-		transition: all $shortDuration ease $loadedStagger*2;
+		transform: translateY($loadedDistance);
+		transition: all $longDuration $bezierAltTwo $loadedStagger*2;
 		opacity: 0;
 	}
 }

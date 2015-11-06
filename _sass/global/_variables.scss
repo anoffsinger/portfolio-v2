@@ -18,7 +18,7 @@ $breakpointSmall: 696px;
 //transition: all $shortDuration ease; should be used for loading movement
 //transition: all $longDuration $bezierAltTwo; should be used for highlighting
 
-$loadedDistance: 10px;
+$loadedDistance: 20px;
 $loadedStagger: .1s;
 $longDuration: .8s;
 $shortDuration: .4s;
@@ -36,8 +36,6 @@ $white: #FFFFFF;
 $black: #000000;
 $coral: #FF8969;
 $yellow: #FCF100;
-$cream: #FFF8C6;
-
 $lightGrey: #D7D7D7;
 $canvasGrey: #E8E8E8;
 $darkGrey: #3b3b3b;

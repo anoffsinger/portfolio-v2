@@ -11,7 +11,7 @@
 	position: relative;
 	opacity: 0;
 	transform: translateY($loadedDistance);
-	transition: all $shortDuration ease;
+	transition: transform $longDuration $bezierAltTwo, opacity $longDuration ease;
 
 	> a {
 		display: block;

@@ -1,6 +1,6 @@
 .blog-post-preview {
 	opacity: 0;
-	transition: all $shortDuration ease;
+	transition: transform $longDuration $bezierAltTwo, opacity $longDuration ease;
 	transform: translateY($loadedDistance);
 	padding: 2.625em;
 	height: auto;

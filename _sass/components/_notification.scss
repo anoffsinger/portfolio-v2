@@ -8,12 +8,12 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	transform: translateY($loadedDistance);
-	transition: all $longDuration ease;
+	transform: translateY(-20px);
+	transition: all $shortDuration $bezierAltTwo;
 	opacity: 0;
 
 	padding: 20px;
-	border-radius: 2px;
+	border-radius: 4px;
 
 	p {
 		color: $white;
@@ -23,19 +23,28 @@
 		@extend %clearfix;
 
 		display: block;
-		width: 19.8194px;
-	    height: 22.8194px;
 		cursor: pointer;
 		border: none;
+		width: 1.6363636364em;
+		height: 1.3636363636em;
+		position: relative;
 		background-color: transparent;
 
+		&:hover {
+			div {
+				background-color: $lightestGrey;
+			}
+		}
 		div {
 			position: absolute;
 			display: block;
 			width: 1.6363636364em;
 			height: 0.2727272727em;
 			background-color: $white;
-			float: left;
+			top: 6px;
+			left: 0;
+
+
 		}
 
 		div:nth-last-of-type(1) {

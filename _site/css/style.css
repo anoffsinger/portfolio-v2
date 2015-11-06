@@ -104,8 +104,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "brandon_text_medium", Helvetica, "sans serif";
   position: relative;
   opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.4s ease;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1);
   display: inline-block; }
   .header-main:after {
     content: '';
@@ -137,8 +137,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #6A6A6A;
     margin: 0 auto 1.2222222222em auto;
     line-height: 144.444%;
-    transform: translateY(10px);
-    transition: all 0.4s ease 0.1s;
+    transform: translateY(20px);
+    transition: transform 0.8s cubic-bezier(0, 0.46, 0.24, 1) 0.1s, opacity 0.8s ease 0.1s;
     opacity: 0; }
     .about p a {
       color: inherit;
@@ -155,8 +155,8 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: 0 auto;
   width: 4.8421052632em;
-  transform: translateY(10px);
-  transition: all 0.4s ease 0.3s;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1) 0.3s;
   opacity: 0; }
   .button-intro span {
     transition: all 0.5s cubic-bezier(0, 0.46, 0.24, 1);
@@ -272,14 +272,14 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   width: 5.3125em;
   height: 1.875em;
-  background-color: #FCF100;
-  border-radius: 5em;
+  background-color: #FF8969;
+  border-radius: 100px;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s cubic-bezier(0, 0.4, 0.5, 1); }
+  transition: transform 0.4s cubic-bezier(0, 0.46, 0.24, 1), opacity 0.4s ease; }
   .project-nav-options-get-tip span, .project-nav-options-link-tip span {
     font-size: 0.8125em;
-    color: #6A6A6A;
+    color: #FFFFFF;
     margin: 0 auto; }
 
 .project-nav-options-get-tip:after, .project-nav-options-link-tip:after {
@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 0;
   border-style: solid;
   border-width: 8px 6px 0 6px;
-  border-color: #FCF100 transparent transparent transparent; }
+  border-color: #FF8969 transparent transparent transparent; }
 
 .project-nav-options-inactive {
   display: none;
@@ -327,8 +327,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-post-preview {
   opacity: 0;
-  transition: all 0.4s ease;
-  transform: translateY(10px);
+  transition: transform 0.8s cubic-bezier(0, 0.46, 0.24, 1), opacity 0.8s ease;
+  transform: translateY(20px);
   padding: 2.625em;
   height: auto;
   margin: 1.6% auto 1.6% auto;
@@ -360,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post-preview-empty {
   opacity: 0;
   transition: all 0.4s ease;
-  transform: translateY(10px);
+  transform: translateY(20px);
   padding: 2.625em;
   height: 20.171875em;
   margin: 1.6% auto 1.6% auto;
@@ -397,8 +397,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 2.75em;
     width: .8125em;
     margin: 0 auto 1.75em auto;
-    transform: translateY(10px);
-    transition: all 0.4s ease;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1);
     opacity: 0; }
   .intro h1 {
     font-family: "brandon_text_regular", Helvetica, "sans serif";
@@ -406,8 +406,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #6A6A6A;
     text-align: center;
     margin-bottom: 1.75em;
-    transform: translateY(10px);
-    transition: all 0.4s ease 0.1s;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1) 0.1s;
     opacity: 0; }
   .intro p {
     font-size: 1.1875em;
@@ -415,8 +415,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 1.75em;
     line-height: 147.368%;
-    transform: translateY(10px);
-    transition: all 0.4s ease 0.2s;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1) 0.2s;
     opacity: 0; }
 
 #menu {
@@ -513,8 +513,8 @@ li.menu-item-loaded {
 .work-item {
   position: relative;
   opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.4s ease; }
+  transform: translateY(20px);
+  transition: transform 0.8s cubic-bezier(0, 0.46, 0.24, 1), opacity 0.8s ease; }
   .work-item > a {
     display: block; }
 
@@ -585,7 +585,7 @@ li.menu-item-loaded {
   .header h2 {
     display: block;
     font-size: 1em;
-    transition: all .6s ease;
+    transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1);
     transform: translateX(30px);
     opacity: 0; }
     .header h2 > span {
@@ -708,8 +708,8 @@ li.menu-item-loaded {
     line-height: 144.444%;
     font-family: "brandon_text_light", Helvetica, "sans serif";
     margin-bottom: 1.125em;
-    transform: translateY(10px);
-    transition: all 0.4s ease 0.1s;
+    transform: translateY(20px);
+    transition: transform 0.8s cubic-bezier(0, 0.46, 0.24, 1) 0.1s, opacity 0.8s ease 0.1s;
     opacity: 0; }
     .work-post-intro-desc p a {
       color: inherit;
@@ -734,8 +734,8 @@ li.menu-item-loaded {
     margin: 0 auto 35px auto; }
   .blog-post-intro-desc img {
     width: 100%;
-    transform: translateY(10px);
-    transition: all 0.4s ease 0.1s;
+    transform: translateY(20px);
+    transition: transform 0.8s cubic-bezier(0, 0.46, 0.24, 1) 0.1s, opacity 0.8s ease 0.1s;
     opacity: 0; }
   @media (max-width: 1174px) {
     .blog-post-intro-desc {
@@ -782,27 +782,31 @@ li.menu-item-loaded {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  transform: translateY(10px);
-  transition: all 0.8s ease;
+  transform: translateY(-20px);
+  transition: all 0.4s cubic-bezier(0, 0.46, 0.24, 1);
   opacity: 0;
   padding: 20px;
-  border-radius: 2px; }
+  border-radius: 4px; }
   .notification p {
     color: #FFFFFF; }
   .notification button {
     display: block;
-    width: 19.8194px;
-    height: 22.8194px;
     cursor: pointer;
     border: none;
+    width: 1.6363636364em;
+    height: 1.3636363636em;
+    position: relative;
     background-color: transparent; }
+    .notification button:hover div {
+      background-color: #F9F9F9; }
     .notification button div {
       position: absolute;
       display: block;
       width: 1.6363636364em;
       height: 0.2727272727em;
       background-color: #FFFFFF;
-      float: left; }
+      top: 6px;
+      left: 0; }
     .notification button div:nth-last-of-type(1) {
       transform: rotate(45deg);
       transform-origin: 50% 50%; }

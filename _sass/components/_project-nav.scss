@@ -96,15 +96,15 @@
     align-items: center;
     width: 5.3125em;
     height: 1.875em;
-    background-color: $yellow;
-    border-radius: 5em;
+    background-color: $coral;
+    border-radius: 100px;
     opacity: 0;
     pointer-events: none;
-    transition: all .3s $bezier;
+    transition: transform $shortDuration $bezierAltTwo, opacity $shortDuration ease;
 
     span {
         font-size: 0.8125em;
-        color: $charcoal;
+        color: $white;
         margin: 0 auto;
     }
 }
@@ -118,7 +118,7 @@
     height: 0;
     border-style: solid;
     border-width: 8px 6px 0 6px;
-    border-color: $yellow transparent transparent transparent;
+    border-color: $coral transparent transparent transparent;
 }
 
 .project-nav-options-inactive {
