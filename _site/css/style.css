@@ -17,7 +17,7 @@
 
 body {
   font-size: 100%;
-  font-family: "brandon_text_regular", Helvetica, "sans serif";
+  font-family: Helvetica, "sans serif";
   background-color: #FFFFFF;
   -webkit-font-smoothing: subpixel-antialiased; }
 
@@ -28,7 +28,7 @@ footer {
   opacity: 0;
   transition: opacity .01s linear .5s; }
   footer span {
-    font-family: "brandon_text_medium", Helvetica, "sans serif";
+    font-family: Helvetica, "sans serif";
     color: #525252;
     margin: 0 auto;
     text-align: center;
@@ -45,7 +45,7 @@ button:focus {
   outline: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "brandon_text_medium", Helvetica, "sans serif";
+  font-family: Helvetica, "sans serif";
   font-weight: normal; }
 
 @font-face {
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-main {
   color: #6A6A6A;
   font-size: 1.75em;
-  font-family: "brandon_text_medium", Helvetica, "sans serif";
+  font-family: Helvetica, "sans serif";
   position: relative;
   opacity: 0;
   transform: translateY(20px);
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
   .header-main:after {
     content: '';
     position: absolute;
-    left: -40px;
+    left: -30px;
     top: -1px;
     width: calc(100% + 20px);
     height: 1.4285714286em;
@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
   .about h2 {
     margin: 0 0 1.25em 0; }
   .about p {
-    font-family: "brandon_text_light", Helvetica, "sans serif";
+    font-family: Helvetica, "sans serif";
     font-size: 18px;
     color: #6A6A6A;
     margin: 0 auto 1.2222222222em auto;
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
     .about p a {
       color: inherit;
       transition: all .1s ease;
-      font-family: "brandon_text_medium", Helvetica, "sans serif"; }
+      font-family: Helvetica, "sans serif"; }
       .about p a:hover {
         color: #D7D7D7; }
   .about p:last-of-type {
@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(8px); }
 
 .button-secondary {
-  font-family: "brandon_text_regular", Helvetica, "sans serif";
+  font-family: Helvetica, "sans serif";
   color: #6A6A6A;
   display: inline-block;
   border-bottom: 3px solid #6A6A6A;
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.875em; }
 
 .project-nav-options-get-tip, .project-nav-options-link-tip {
-  font-family: "brandon_text_medium", Helvetica, "sans serif";
+  font-family: Helvetica, "sans serif";
   position: absolute;
   top: -3.9375em;
   left: -2.375em;
@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.6% auto 1.6% auto;
   background-color: #F9F9F9; }
   .blog-post-preview h2 {
-    font-family: "brandon_text_medium", Helvetica, "sans serif";
+    font-family: Helvetica, "sans serif";
     font-size: 1.75em;
     color: #6A6A6A;
     line-height: 1.2em;
@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
   .blog-post-preview div {
     margin-bottom: 2.625em; }
     .blog-post-preview div p {
-      font-family: "brandon_text_light", Helvetica, "sans serif";
+      font-family: Helvetica, "sans serif";
       font-size: 1.125em;
       line-height: 144.444%; }
 
@@ -374,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   position: relative; }
   .blog-post-preview-empty p {
-    font-family: "brandon_text_regular", Helvetica, "sans serif";
+    font-family: Helvetica, "sans serif";
     font-size: 1em;
     color: #D7D7D7;
     width: 100%;
@@ -406,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.8s cubic-bezier(0, 0.46, 0.24, 1);
     opacity: 0; }
   .intro h1 {
-    font-family: "brandon_text_regular", Helvetica, "sans serif";
+    font-family: Helvetica, "sans serif";
     font-size: 1.1875em;
     color: #6A6A6A;
     text-align: center;
@@ -559,7 +559,7 @@ li.menu-item-loaded {
     opacity: 0;
     top: 0.6428571429em;
     transition: all 0.4s ease;
-    font-family: "brandon_text_medium", Helvetica, "sans serif";
+    font-family: Helvetica, "sans serif";
     font-size: 1.75em; }
   .work-item-desc-content > span:nth-of-type(2) {
     opacity: 0;
@@ -714,7 +714,7 @@ li.menu-item-loaded {
     color: #6A6A6A;
     font-size: 1.125em;
     line-height: 144.444%;
-    font-family: "brandon_text_light", Helvetica, "sans serif";
+    font-family: Helvetica, "sans serif";
     margin-bottom: 1.125em;
     transform: translateY(20px);
     transition: transform 0.8s cubic-bezier(0, 0.46, 0.24, 1) 0.1s, opacity 0.8s ease 0.1s;
@@ -722,7 +722,7 @@ li.menu-item-loaded {
     .work-post-intro-desc p a {
       color: inherit;
       transition: all .1s ease;
-      font-family: "brandon_text_medium", Helvetica, "sans serif"; }
+      font-family: Helvetica, "sans serif"; }
       .work-post-intro-desc p a:hover {
         color: #D7D7D7; }
 
@@ -761,16 +761,17 @@ li.menu-item-loaded {
     transform: translateY(0px); } }
 .intro-arrow {
   position: absolute;
-  margin: 0 auto 0 -0.3125em;
+  margin: 0 auto 0 -0.40625em;
   bottom: 3.125em;
   left: 50%;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 10px 7px 0 7px;
+  border-width: 13px 9px 0 9px;
   border-color: #E8E8E8 transparent transparent transparent;
   transition: opacity .3s ease;
-  animation: arrowFloat 2s infinite; }
+  animation: arrowFloat 2s infinite;
+  transform: scale(2); }
 
 .intro-arrow-hidden {
   opacity: 0; }
@@ -823,7 +824,7 @@ li.menu-item-loaded {
       transform-origin: 50% 50%; }
 
 .content > p {
-  font-family: "brandon_text_light", Helvetica, "sans serif";
+  font-family: Helvetica, "sans serif";
   font-size: 1.125em;
   margin: 0 auto 1.7777777778em auto;
   line-height: 144.444%;
@@ -839,7 +840,7 @@ li.menu-item-loaded {
   margin-bottom: 0; }
 
 .blog-post-date {
-  font-family: "brandon_text_regular", Helvetica, "sans serif";
+  font-family: Helvetica, "sans serif";
   font-size: 0.875em;
   color: #D7D7D7; }
 
@@ -941,4 +942,4 @@ li.menu-item-loaded {
   opacity: 1;
   transform: translateY(0px); }
   .header-main-loaded:after {
-    transform: translateX(30px); }
+    transform: translateX(20px); }
