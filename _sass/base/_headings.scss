@@ -11,12 +11,14 @@
 	&:after {
 		content: '';
 		position: absolute;
-		left: -10px;
+		left: -40px;
+		// left: -10px;
 		top: -1px;
-		width: 10%;
+		// width: 10%;
+		width: calc(100% + 20px);
 		height: 1.4285714286em;
 		background-color: $yellow;
-		transition: all $longDuration $bezierAltTwo;
+		transition: all $longDuration $bezierAltTwo $loadedStagger*2;
 
 		z-index: -1000;
 	}

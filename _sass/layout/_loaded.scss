@@ -17,13 +17,15 @@
 
 .header-main-loaded {
     opacity: 1;
+
     transform: translateY(0px);
-	transform: translate3d(0, 0, 0);
-	backface-visibility: hidden;
-	perspective: 1000;
+	// transform: translate3d(0, 0, 0);
+	// backface-visibility: hidden;
+	// perspective: 1000;
 
 	&:after {
-		width: calc(100% + 20px);
-		transform: translate3d(0, 0, 0);
+		// width: calc(100% + 20px);
+		// transform: translate3d(0, 0, 0);
+		transform: translateX(30px);
 	}
 }

@@ -31,7 +31,6 @@
 		display: block;
 		transition: all .5s $bezierAltTwo;
 
-
 		&:after {
 			content: '';
 			position: absolute;
@@ -70,7 +69,15 @@
 
 .menu-active {
     color: $lightGrey !important;
-    pointer-events: none;
+    // pointer-events: none;
+
+	&:hover {
+		transform: translateX(0px) !important;
+		&:after {
+			opacity: 0 !important;
+            transform: translate(0px) !important;
+		}
+	}
 
     &:before {
         content: '';
