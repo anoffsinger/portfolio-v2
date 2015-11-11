@@ -6,7 +6,7 @@ skills: Visuals, Dev
 thumbnail: ../images/crafty-thumbnail.png
 thumbnailDesc: Crafty Namer homepage
 link: http://thecraftynamer.com/
-description: This site was designed and built in two days in response to a random challenge during graduate school. The challenge? Page views. <p>My team's solution for maximizing page views manifested itself as a craft beer name generator that we aggressively marketed to local and national brewery social media outlets to modest success.
+description: This site was designed and built in a day in response to a random challenge at BDW. The challenge? Page views.<p>My team's solution for maximizing page views took the shape of a craft beer name generator that we aggressively marketed to local and national brewery social media outlets. It worked.
 ---
 <div><img class="project-image" alt="My Pic" src="/images/crafty-full.png"></div>
 

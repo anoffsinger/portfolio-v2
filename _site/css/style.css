@@ -761,17 +761,16 @@ li.menu-item-loaded {
     transform: translateY(0px); } }
 .intro-arrow {
   position: absolute;
-  margin: 0 auto 0 -0.40625em;
+  margin: 0 auto 0 -0.3125em;
   bottom: 3.125em;
   left: 50%;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 13px 9px 0 9px;
+  border-width: 10px 7px 0 7px;
   border-color: #E8E8E8 transparent transparent transparent;
   transition: opacity .3s ease;
-  animation: arrowFloat 2s infinite;
-  transform: scale(2); }
+  animation: arrowFloat 2s infinite; }
 
 .intro-arrow-hidden {
   opacity: 0; }
