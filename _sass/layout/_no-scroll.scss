@@ -4,10 +4,12 @@
 	@media (max-width: $breakpointMedium) {
 		overflow: visible;
 		position: fixed;
+		width: 100%;
 	}
 
 	@media (max-width: $breakpointSmall) {
 		overflow: visible;
 		position: fixed;
+		width: 100%;
 	}
 }

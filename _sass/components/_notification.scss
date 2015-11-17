@@ -1,6 +1,6 @@
 .notification {
 	width: 100%;
-	min-height: 46px;
+	min-height: 2.875em;
 	background-color: $coral;
 	position: absolute;
 	top: 7em;
@@ -11,12 +11,17 @@
 	transform: translateY(-20px);
 	transition: all $shortDuration $bezierAltTwo;
 	opacity: 0;
-
-	padding: 20px;
+	padding: 1.25em;
 	border-radius: 4px;
+
+
+	@media (max-width: $breakpointSmall) {
+		border-radius: 0;
+	}
 
 	p {
 		color: $white;
+		width: 90%;
 	}
 
 	button {
@@ -25,8 +30,8 @@
 		display: block;
 		cursor: pointer;
 		border: none;
-		width: 1.6363636364em;
-		height: 1.3636363636em;
+		width: 18px;
+		height: 18px;
 		position: relative;
 		background-color: transparent;
 
@@ -35,26 +40,31 @@
 				background-color: $lightestGrey;
 			}
 		}
+
 		div {
-			position: absolute;
-			display: block;
+			position: relative;
+		    display: block;
 			width: 1.6363636364em;
 			height: 0.2727272727em;
 			background-color: $white;
-			top: 6px;
-			left: 0;
-
-
+			margin-bottom: 0.2727272727em;
+			overflow: hidden;
 		}
 
-		div:nth-last-of-type(1) {
+		div:nth-of-type(1) {
 			transform: rotate(45deg);
-			transform-origin: 50% 50%;
+			transform-origin: top left;
+			transform: rotate(45deg);
 		}
 
-		div:nth-last-of-type(2) {
+		div:nth-of-type(2) {
+			opacity: 0;
+		}
+
+		div:nth-of-type(3) {
 			transform: rotate(-45deg);
-			transform-origin: 50% 50%;
+			transform-origin: bottom left;
+			transform: rotate(-45deg);
 		}
 	}
 }
