@@ -66,20 +66,21 @@
 		font-size: 0.875em;
 	}
 }
-
-.work-item:hover {
-	.work-item-desc {
-		opacity: 1;
-
-		span {
-			transform: translateY(-5px);
+@media (min-width: $breakpointSmall) {
+	.work-item:hover {
+		.work-item-desc {
 			opacity: 1;
-		}
-	}
 
-	.work-item-img {
-		-webkit-filter: brightness(30%) grayscale(50%);
-		filter: brightness(30%) grayscale(50%);
-		opacity: .8;
+			span {
+				transform: translateY(-5px);
+				opacity: 1;
+			}
+		}
+
+		.work-item-img {
+			-webkit-filter: brightness(30%) grayscale(50%);
+			filter: brightness(30%) grayscale(50%);
+			opacity: .8;
+		}
 	}
 }

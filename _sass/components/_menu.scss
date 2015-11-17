@@ -107,12 +107,14 @@ li.menu-item-loaded {
     opacity: 1;
     transform: translateX(0px);
 
-	> a:hover {
-        transform: translateX(10px);
+	@media (min-width: $breakpointSmall) {
+		> a:hover {
+	        transform: translateX(10px);
 
-		&:after {
-			opacity: 1;
-            transform: translate(20px);
+			&:after {
+				opacity: 1;
+	            transform: translate(20px);
+			}
 		}
 	}
 }

@@ -38,23 +38,24 @@
         transition: transform .8s $bezierAltTwo, height .4s $bezierAltTwo, width .4s $bezierAltTwo;
         z-index: -1;
     }
+    @media (min-width: $breakpointSmall) {
+        &:hover {
 
-    &:hover {
+            span {
+                transform: translateX(-15px);
+            }
 
-        span {
-            transform: translateX(-15px);
-        }
+            &:before {
+                transform: translateX(20px);
+                background-color: $yellow;
+                height: 2.1052631579em;
+                width: 5.2631578947em;
+            }
 
-        &:before {
-            transform: translateX(20px);
-            background-color: $yellow;
-            height: 2.1052631579em;
-            width: 5.2631578947em;
-        }
-
-        &:after {
-            opacity: 1;
-            transform: translateX(8px);
+            &:after {
+                opacity: 1;
+                transform: translateX(8px);
+            }
         }
     }
 }

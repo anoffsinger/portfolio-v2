@@ -27,11 +27,13 @@
         margin-left: 1.4285714286em;
         transition: all .2s ease;
 
-        &:hover {
-            color: $lightGrey;
+        @media (min-width: $breakpointSmall) {
+            &:hover {
+                color: $lightGrey;
 
-            &:before {
-                border-color: transparent transparent transparent $lightGrey;
+                &:before {
+                    border-color: transparent transparent transparent $lightGrey;
+                }
             }
         }
 
@@ -66,16 +68,18 @@
         color: $white;
         transition: all .2s ease;
     }
+    
+    @media (min-width: $breakpointSmall) {
+        &:hover {
+            > span {
+                color: $lightGrey;
+            }
 
-    &:hover {
-        > span {
-            color: $lightGrey;
-        }
-
-        div {
-            opacity: 1;
-            transform: translateY(10px);
-            pointer-events: auto;
+            div {
+                opacity: 1;
+                transform: translateY(10px);
+                pointer-events: auto;
+            }
         }
     }
 }

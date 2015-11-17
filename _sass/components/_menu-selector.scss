@@ -13,17 +13,20 @@
     overflow: visible;
 }
 
-.menu-selector:hover {
-    .menu-top-bar:after {
-        transform: translateX(1.6363636364em);
-    }
-    .menu-middle-bar:after {
-        transform: translateX(1.6363636364em);
-    }
-    .menu-bottom-bar:after {
-        transform: translateX(1.6363636364em);
-    }
+@media (min-width: $breakpointSmall) {
+	.menu-selector:hover {
+	    .menu-top-bar:after {
+	        transform: translateX(1.6363636364em);
+	    }
+	    .menu-middle-bar:after {
+	        transform: translateX(1.6363636364em);
+	    }
+	    .menu-bottom-bar:after {
+	        transform: translateX(1.6363636364em);
+	    }
+	}
 }
+
 
 .menu-top-bar,
 .menu-middle-bar,
