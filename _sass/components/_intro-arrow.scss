@@ -17,8 +17,9 @@
 	transition: opacity .3s ease;
 	animation: arrowFloat 2s infinite;
 
-    // margin: 0 auto 0 -0.40625em;
-    // border-width: 13px 9px 0 9px;
+    @media (max-width: $breakpointSmall) {
+        opacity: 0;
+    }
 }
 
 .intro-arrow-hidden {

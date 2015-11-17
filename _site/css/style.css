@@ -703,7 +703,7 @@ li.menu-item-loaded {
   position: relative;
   display: flex;
   align-items: center; }
-  @media (max-width: 375px) {
+  @media (max-width: 696px) {
     .work-post-intro {
       height: auto;
       margin: 9em auto; } }
@@ -775,6 +775,9 @@ li.menu-item-loaded {
   border-color: #E8E8E8 transparent transparent transparent;
   transition: opacity .3s ease;
   animation: arrowFloat 2s infinite; }
+  @media (max-width: 696px) {
+    .intro-arrow {
+      opacity: 0; } }
 
 .intro-arrow-hidden {
   opacity: 0; }
