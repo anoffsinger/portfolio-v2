@@ -3,7 +3,12 @@
 	width: 100%;
 	position: relative;
 	display: flex;
-	align-items: center
+	align-items: center;
+
+	@media (max-width: 375px) {
+		height: auto;
+		margin: 9em auto;
+	}
 }
 
 .work-post-intro-desc {
