@@ -20,9 +20,6 @@ body {
   font-family: "brandon_text_regular", Helvetica, "sans serif";
   background-color: #FFFFFF;
   -webkit-font-smoothing: subpixel-antialiased; }
-  @media (max-width: 696px) {
-    body {
-      font-size: 120%; } }
 
 footer {
   padding: 65px 0;
