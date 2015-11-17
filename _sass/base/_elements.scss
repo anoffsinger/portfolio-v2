@@ -16,6 +16,10 @@ body {
 	font-family: $brandonTextRegular;
 	background-color: $white;
 	-webkit-font-smoothing: subpixel-antialiased;
+
+	@media (max-width: $breakpointSmall) {
+		font-size: 120%;
+	}
 }
 
 footer {
