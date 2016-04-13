@@ -1,48 +1,81 @@
 .intro {
-	margin: 0 auto;
-	width: 23.8%;
 
-	@media (max-width: $breakpointLarge) {
-		width: 30%;
-	}
+	width: 40%;
+	// height: 100vh;
 
-	@media (max-width: $breakpointMedium) {
-		width: 39%;
-	}
 
-	@media (max-width: $breakpointSmall) {
-		width: 64%;
-	}
+	// @media (max-width: $breakpointLarge) {
+	// 	width: 30%;
+	// }
+	//
+	// @media (max-width: $breakpointMedium) {
+	// 	width: 39%;
+	// }
+	//
+	// @media (max-width: $breakpointSmall) {
+	// 	width: 64%;
+	// }
 
-	img {
-		display: block;
-		height: 2.75em;
-		width: .8125em;
-		margin: 0 auto 1.75em auto;
-		transform: translateY($loadedDistance);
-		transition: all $longDuration $bezierAltTwo;
-		opacity: 0;
-	}
+	// img {
+	// 	display: block;
+	// 	height: 2.75em;
+	// 	width: .8125em;
+	// 	margin: 0 auto 1.75em auto;
+	// 	transform: translateY($loadedDistance);
+	// 	transition: all $longDuration $bezierAltTwo;
+	// 	opacity: 0;
+	// }
 
-	h1 {
-		font-family: $brandonTextRegular;
-		font-size: 1.1875em;
-		color: $charcoal;
-		text-align: center;
-		margin-bottom: 1.75em;
-		transform: translateY($loadedDistance);
-		transition: all $longDuration $bezierAltTwo $loadedStagger;
-		opacity: 0;
-	}
+	// h1 {
+	// 	font-family: $brandonTextRegular;
+	// 	font-size: 1.1875em;
+	// 	color: $charcoal;
+	// 	text-align: center;
+	// 	margin-bottom: 1.75em;
+	// 	transform: translateY($loadedDistance);
+	// 	transition: all $longDuration $bezierAltTwo $loadedStagger;
+	// 	opacity: 0;
+	// }
 
 	p {
-		font-size: 1.1875em;
-		color: $lightGrey;
-		text-align: center;
-		margin-bottom: 1.75em;
-		line-height: 147.368%;
-		transform: translateY($loadedDistance);
-		transition: all $longDuration $bezierAltTwo $loadedStagger*2;
-		opacity: 0;
+		font: $headlineType;
+		color: $lightGreyType;
+		// position: relative;
+		// top: 50%;
+		// transform: translateY(-50%);
+
+		> a {
+			color: $darkGreyType;
+		}
+	}
+}
+
+.twitter-getter {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font: $tweetType;
+	color: $lightGreyType;
+	width: 50%;
+	height: 9.875em;
+
+	> ul {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+	}
+}
+
+.tweet {
+
+	// position: relative;
+	// top: 50%;
+	// transform: translateY(-50%);
+	> a {
+		color: $lightGreyType;
+		text-decoration: underline;
+	}
+	> img {
+		max-height: 18px;
 	}
 }

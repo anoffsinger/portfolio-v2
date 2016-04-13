@@ -40,3 +40,62 @@
 		margin-bottom: 0;
 	}
 }
+
+.about-photo {
+	width: 100%;
+	margin-bottom: 3.875em;
+	margin-top: 9.875em;
+}
+
+.about-bio {
+
+	@extend %clearfix;
+	width: 100%;
+	margin-bottom: 3.875em;
+	> div {
+		> h3 {
+			font: $labelType;
+			text-transform: uppercase;
+			color: $darkGreyType;
+			letter-spacing: 2px;
+			margin-bottom: 1.6666666667em;
+		}
+
+		> p {
+			font: $bodyType;
+			color: #CECECE;
+			margin-bottom: .75em;
+		}
+
+		> p:last-of-type {
+			font: $bodyType;
+			color: #CECECE;
+			margin-bottom: 0;
+		}
+
+		> ul {
+			li {
+				font: $bodyType;
+				color: #CECECE;
+				margin-bottom: .05em;
+			}
+		}
+	}
+
+	> div:nth-of-type(1) {
+		width: 50%;
+		float: left;
+		padding-right: 3em;
+	}
+
+	> div:nth-of-type(2) {
+		width: 25%;
+		float: left;
+		padding-right: 3em;
+	}
+
+	> div:nth-of-type(3) {
+		width: 25%;
+		float: left;
+	}
+}

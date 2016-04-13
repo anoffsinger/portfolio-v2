@@ -147,4 +147,10 @@ $(document).ready(function() {
 
 
 	footer.addClass('loaded-o');
+
+	$(".header-logo").hover(function() {
+		$(".header-logo-square").toggleClass("header-logo-square-hovered");
+		$(".header-logo-triangle").toggleClass("header-logo-triangle-hovered");
+
+	});
 });

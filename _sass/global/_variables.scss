@@ -1,7 +1,15 @@
-// type
+// old type
 $brandonTextLight: 'brandon_text_light', Helvetica, 'sans serif';
 $brandonTextRegular: 'brandon_text_regular', Helvetica, 'sans serif';
 $brandonTextBold: 'brandon_text_medium', Helvetica, 'sans serif';
+
+// new type
+
+$bodyType: 300 0.875em/180% 'Lato', Helvetica;
+$navType: 700 1.125em 'Lato', Helvetica;
+$labelType: 700 .75em 'Lato', Helvetica;
+$headlineType: 700 2em/163% 'Lato', Helvetica;
+$tweetType: 300 1.125em/163% 'Lato', Helvetica;
 
 //spacing
 $blockSpace: 1.6%;
@@ -30,7 +38,7 @@ $bezier: cubic-bezier(0,.4,.5,1);
 $bezierAltTwo: cubic-bezier(0,.46,.24,1);
 // a simple ease should be used for items loading in, alttwo should be used for high leverage animations, like button transitions
 
-// colors
+// old colors
 $charcoal: #6A6A6A;
 $white: #FFFFFF;
 $black: #000000;
@@ -42,4 +50,11 @@ $darkGrey: #3b3b3b;
 $invisibleGrey: #525252;
 $lightestGrey: #F9F9F9;
 
-// spacing
+
+// new colors
+$circleColor: #FF746F;
+$squareColor: #FFFB6F;
+$triangleColor: #FBEDBC;
+
+$lightGreyType: #E9E9E9;
+$darkGreyType: #b4b4b4;
