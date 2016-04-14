@@ -6,11 +6,12 @@ showCategory: true
     {% include post-head.html %}
     <body class="has-footer-nav">
         <div class="loader"></div>
-        {% include header.html %}
-        <div class="wrapper-site">
+
+        <div class="wrapper-about">
+            {% include header.html %}
             <div class="work-post-intro">
                 <div class="work-post-intro-desc">
-                    <h2 class="header-main">{{ page.title }}</h2>
+                    <h2>{{ page.title }}</h2>
                     <p>{{ page.description}}</p>
                 </div>
                 <div class="intro-arrow"></div>
@@ -19,8 +20,9 @@ showCategory: true
                 {{ content }}
             </div>
             {% include project-nav-work.html %}
+            {% include footer.html %}
         </div>
-        {% include footer.html %}
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <!-- <script src="../js/jquery.min.js"></script> -->
 		<script src="../../../../../js/script.js"></script>

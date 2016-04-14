@@ -2,13 +2,15 @@
 	@extend %clearfix;
 
 	display: block;
-	margin: 7em auto 0 auto;
+	margin: 0 auto;
+	padding-top: 9.875em;
 
 }
 
 .work-item {
 
 	position: relative;
+	// opacity: 1;
 	opacity: 0;
 	transform: translateY($loadedDistance);
 	transition: transform $longDuration $bezierAltTwo, opacity $longDuration ease;

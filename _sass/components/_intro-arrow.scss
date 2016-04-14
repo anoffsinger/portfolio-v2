@@ -7,13 +7,13 @@
 .intro-arrow {
 	position: absolute;
 	margin: 0 auto 0 -0.3125em;
-	bottom: 3.125em;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 10px 7px 0 7px;
-	border-color: $canvasGrey transparent transparent transparent;
+	bottom: 4.375em;
+	left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 17px 11px 0 11px;
+    border-color: $darkGreyType transparent transparent transparent;
 	transition: opacity .3s ease;
 	animation: arrowFloat 2s infinite;
 

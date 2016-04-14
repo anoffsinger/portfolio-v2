@@ -14,21 +14,22 @@
 .work-post-intro-desc {
 	display: block;
 	width: 60%;
-	margin: 0 auto;
 
 	h2 {
+		font: $headlineType;
+		color: $greyType;
 		margin-bottom: $headingBottom;
 	}
 
 	p {
-		color: $charcoal;
-		font-size: 1.125em;
-		line-height: 144.444%;
-		font-family: $brandonTextLight;
+		color: $greyType;
+		font: $bodyType;
+
+
 		margin-bottom: 1.125em;
-		transform: translateY($loadedDistance);
-		transition: transform $longDuration $bezierAltTwo $loadedStagger, opacity $longDuration ease $loadedStagger;
-		opacity: 0;
+		// transform: translateY($loadedDistance);
+		// transition: transform $longDuration $bezierAltTwo $loadedStagger, opacity $longDuration ease $loadedStagger;
+		// opacity: 0;
 
 		a {
 			color: inherit;

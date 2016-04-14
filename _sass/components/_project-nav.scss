@@ -5,14 +5,19 @@
     width: 100%;
     background-color: $darkGrey;
     height: 2.75em;
-    padding: 0.6875em 7.5% 0 7.5%;
+    // padding: 0.6875em 7.5% 0 7.5%;
     transition: all $shortDuration $bezierAltTwo;
+    padding: 0 20px;
 
     > div {
         @extend %clearfix;
 
-        width: 85%;
+        width: $siteWidth;
         margin: 0 auto;
+        position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+
     }
 }
 
@@ -68,7 +73,7 @@
         color: $white;
         transition: all .2s ease;
     }
-    
+
     @media (min-width: $breakpointSmall) {
         &:hover {
             > span {

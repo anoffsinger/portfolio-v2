@@ -7,8 +7,9 @@ category: Work
 <html>
     {% include head.html %}
     <body>
-        {% include header.html %}
-        <div class="wrapper-site">
+
+        <div class="wrapper-about">
+            {% include header.html %}
             <ol class="work column-grid">
                 {% for post in site.posts limit: 10 %}
                     {% if post.categories contains 'work' %}
@@ -26,8 +27,9 @@ category: Work
                     {% endif %}
                 {% endfor %}
             </ol>
+            {% include footer.html %}
         </div>
-        {% include footer.html %}
+
         {% include scripts.html %}
     </body>
 </html>
