@@ -19,21 +19,21 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
 
 	padding: 1.25em;
-	box-shadow: inset $lightGreyType 0 0 0 20px;
+	box-shadow: inset $lightGreyType 0 0 0 12px;
 }
 
 footer {
 	// padding: $headerSpace 0;
 	width: 100%;
 	// background-color: $darkGrey;
-	// opacity: 0;
+	opacity: 0;
 	height: 9.875em;
 	// padding-bottom: 4.8em;
 	border-top: 1px solid $lightGreyType;
-	// transition: opacity .01s linear .5s;
+	transition: opacity .01s linear .5s;
 
 	font: $bodyType;
-	color: #cecece;
+	color: $lightGreyType;
 	margin-top: 3.875em;
 
 	span:nth-of-type(1) {

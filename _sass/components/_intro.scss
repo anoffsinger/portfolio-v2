@@ -1,6 +1,6 @@
 .intro {
 
-	width: 40%;
+	width: 45%;
 	// height: 100vh;
 
 
@@ -40,29 +40,49 @@
 	p {
 		font: $headlineType;
 		color: $lightGreyType;
+		opacity: 0;
+		// transform: translateY(40px);
+		transition: all $longDuration $bezierAltTwo;
+
 		// position: relative;
 		// top: 50%;
 		// transform: translateY(-50%);
 
 		> a {
+			transition: all $bezierAltTwo $shortDuration;
 			color: $darkGreyType;
+			&:hover {
+				color: $hoverColor;
+			}
 		}
+
+
 	}
 }
 
-.twitter-getter {
+.twitter-module {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	height: 9.875em;
+	width: 45%;
+}
+
+.twitter-getter {
+	// position: absolute;
+	// bottom: 0;
+	// left: 0;
 	font: $tweetType;
 	color: $lightGreyType;
-	width: 50%;
-	height: 9.875em;
+	width: 92%;
+	float: left;
+	// height: 9.875em;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 
 	> ul {
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
+
 	}
 }
 
@@ -72,10 +92,34 @@
 	// top: 50%;
 	// transform: translateY(-50%);
 	> a {
-		color: $lightGreyType;
+		color: $darkGreyType;
 		text-decoration: underline;
 	}
 	> img {
 		max-height: 18px;
+	}
+}
+
+.twitter-link {
+	width: 8%;
+	float: left;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+
+	> svg {
+		> path {
+			transition: fill $bezierAltTwo $shortDuration;
+		}
+	}
+}
+
+.twitter-link:hover {
+	> svg {
+		> path {
+			fill: $hoverColor;
+
+		}
 	}
 }

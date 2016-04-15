@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+	$(".header-logo-square").addClass("header-logo-square-loaded");
+	$(".header-logo-triangle").addClass("header-logo-triangle-loaded");
+	$(".header-logo-circle").addClass("header-logo-circle-loaded");
+	$(".header-logo-shim").addClass("header-logo-shim-loaded");
+
+	$(".header-logo").hover(function() {
+
+
+		// $(".header-logo-square").toggleClass("header-logo-square-loaded");
+		// $(".header-logo-triangle").toggleClass("header-logo-triangle-loaded");
+
+		// $(".header-logo-square").toggleClass("header-logo-square-hovered");
+		// $(".header-logo-triangle").toggleClass("header-logo-triangle-hovered");
+
+	});
+
 	// non-DOM variables
 	loadDelay = 100
 
@@ -16,10 +32,10 @@ $(document).ready(function() {
 	headerMain.addClass("header-main-loaded");
 
 	// intro page
-	$('.intro > img').addClass("loaded");
-	$('.intro > h1').addClass("loaded");
+	// $('.intro > img').addClass("loaded");
+	// $('.intro > h1').addClass("loaded");
 	$('.intro > p').addClass("loaded");
-	$('.button-intro').addClass("loaded");
+	// $('.button-intro').addClass("loaded");
 
 	// work post
 	$('.work-post-intro-desc > p').addClass("loaded");
@@ -148,9 +164,5 @@ $(document).ready(function() {
 
 	footer.addClass('loaded-o');
 
-	$(".header-logo").hover(function() {
-		$(".header-logo-square").toggleClass("header-logo-square-hovered");
-		$(".header-logo-triangle").toggleClass("header-logo-triangle-hovered");
 
-	});
 });

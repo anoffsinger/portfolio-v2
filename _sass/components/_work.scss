@@ -57,15 +57,14 @@
 		opacity: 0;
 		top: 0.6428571429em;
 		transition: all $shortDuration ease;
-		font-family: $brandonTextBold;
-		font-size: 1.75em;
+		font: $headlineType;
 	}
 
 	> span:nth-of-type(2) {
 		opacity: 0;
 		top: 4.2857142857em;
 		transition: all $shortDuration ease .1s;
-		font-size: 0.875em;
+		font: $tweetType;
 	}
 }
 @media (min-width: $breakpointSmall) {
