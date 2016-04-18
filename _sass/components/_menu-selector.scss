@@ -1,12 +1,21 @@
 .menu-selector {
-	display: block;
+	display: none;
 	width: 1.6363636364em;
 	cursor: pointer;
-	opacity: 1;
 	transition: transform $shortDuration $bezierAltTwo;
 	border: none;
 	background-color: transparent;
     overflow: hidden;
+
+	float: right;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+	@media (max-width: $breakpointSmall) {
+		display: block;
+	}
 }
 
 .menu-selector-open {

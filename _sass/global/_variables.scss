@@ -9,12 +9,12 @@ $bodyType: 400 1em/180% 'Lato', Helvetica;
 $navType: 500 1.125em 'Lato', Helvetica;
 $labelType: 700 0.6875em 'Lato', Helvetica;
 $headlineType: 700 2em/163% 'Lato', Helvetica;
-$tweetType: 300 1em/163% 'Lato', Helvetica;
+$tweetType: 400 1em/180% 'Lato', Helvetica;
 
 //spacing
 $blockSpace: 1.6%;
 $headerSpace: 65px;
-$headingBottom: 35px;
+$headingBottom: 24px;
 
 // breakpoints
 $breakpointLarge: 1174px;
@@ -27,7 +27,7 @@ $breakpointSmall: 696px;
 //transition: all $longDuration $bezierAltTwo; should be used for highlighting
 
 $loadedDistance: 20px;
-$loadedStagger: .1s;
+$loadedStagger: .2s;
 $longDuration: .8s;
 $shortDuration: .4s;
 

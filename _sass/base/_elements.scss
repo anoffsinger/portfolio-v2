@@ -18,8 +18,13 @@ body {
 	background-color: $white;
 	-webkit-font-smoothing: subpixel-antialiased;
 
-	padding: 1.25em;
+	padding: 12px;
 	box-shadow: inset $lightGreyType 0 0 0 12px;
+
+	@media (max-width: $breakpointSmall) {
+		box-shadow: none;
+		padding: 0
+	}
 }
 
 footer {
@@ -29,11 +34,11 @@ footer {
 	opacity: 0;
 	height: 9.875em;
 	// padding-bottom: 4.8em;
-	border-top: 1px solid $lightGreyType;
+	border-top: 1px solid $greyType;
 	transition: opacity .01s linear .5s;
 
 	font: $bodyType;
-	color: $lightGreyType;
+	color: $greyType;
 	margin-top: 3.875em;
 
 	span:nth-of-type(1) {

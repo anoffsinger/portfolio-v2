@@ -1,20 +1,15 @@
 $(document).ready(function() {
 
-	$(".header-logo-square").addClass("header-logo-square-loaded");
-	$(".header-logo-triangle").addClass("header-logo-triangle-loaded");
-	$(".header-logo-circle").addClass("header-logo-circle-loaded");
-	$(".header-logo-shim").addClass("header-logo-shim-loaded");
+	square = $(".header-logo-square");
+	circle = $(".header-logo-circle");
+	triangle = $(".header-logo-triangle");
+	shim = $(".header-logo-shim");
 
-	$(".header-logo").hover(function() {
+	square.addClass("header-logo-square-loaded");
+	triangle.addClass("header-logo-triangle-loaded");
+	circle.addClass("header-logo-circle-loaded");
+	shim.addClass("header-logo-shim-loaded");
 
-
-		// $(".header-logo-square").toggleClass("header-logo-square-loaded");
-		// $(".header-logo-triangle").toggleClass("header-logo-triangle-loaded");
-
-		// $(".header-logo-square").toggleClass("header-logo-square-hovered");
-		// $(".header-logo-triangle").toggleClass("header-logo-triangle-hovered");
-
-	});
 
 	// non-DOM variables
 	loadDelay = 100
@@ -28,26 +23,36 @@ $(document).ready(function() {
 	headerMain = $('.header-main');
 
 	// site wide
-	headerTitle.addClass("loaded-x");
-	headerMain.addClass("header-main-loaded");
+
+	$(".intro-arrow").addClass("loaded");
+	// $(".header-nav").addClass("loaded");
+	// headerTitle.addClass("loaded-x");
+	// headerMain.addClass("header-main-loaded");
 
 	// intro page
-	// $('.intro > img').addClass("loaded");
+
+	$(".intro").addClass("loaded");
+	$(".twitter-module").addClass("loaded");
+
 	// $('.intro > h1').addClass("loaded");
-	$('.intro > p').addClass("loaded");
+	// $('.intro > p').addClass("loaded");
 	// $('.button-intro').addClass("loaded");
 
 	// work post
-	$('.work-post-intro-desc > p').addClass("loaded");
+
+	$(".work-post-intro-desc").addClass("loaded");
 
 	// blog post
-	$('.blog-post-intro-desc > img').addClass("loaded");
+
+	// $('.blog-post-intro-desc > img').addClass("loaded");
 
 	// blog post overview
-	$('.blog-post-preview-empty').addClass("loaded");
+
+	// $('.blog-post-preview-empty').addClass("loaded");
 
 	// about page
-	$('.about p').addClass("loaded");
+	$('.about-photo').addClass("loaded");
+	$('.about-bio').addClass("loaded");
 
 	$('.notification').addClass("loaded");
 
@@ -129,30 +134,32 @@ $(document).ready(function() {
 		}, i*loadDelay);
 	});
 
-	$(".menu-items-link").click(function (e) {
-
-		e.preventDefault();                   // prevent default anchor behavior
-		$(menuSelector).toggleClass("menu-selector-open");
-
-		$(".menu-top-bar").toggleClass("top-bar-close");
-		$(".menu-middle-bar").toggleClass("middle-bar-close");
-		$(".menu-bottom-bar").toggleClass("bottom-bar-close");
-		var goTo = this.getAttribute("href");
-		setTimeout(function(){
-	         window.location = goTo;
-	    }, 300);
-	});
+	// $(".header-nav-link").click(function (e) {
+	// 	e.preventDefault();// prevent default anchor behavior
+	// 	square.removeClass("header-logo-square-loaded");
+	// 	triangle.removeClass("header-logo-triangle-loaded");
+	// 	circle.removeClass("header-logo-circle-loaded");
+	// 	shim.removeClass("header-logo-shim-loaded");
+	//
+	// 	// $(".menu-top-bar").toggleClass("top-bar-close");
+	// 	// $(".menu-middle-bar").toggleClass("middle-bar-close");
+	// 	// $(".menu-bottom-bar").toggleClass("bottom-bar-close");
+	// 	var goTo = this.getAttribute("href");
+	// 	setTimeout(function(){
+	//          window.location = goTo;
+	//     }, 800);
+	// });
 
 
 	menuSelector.click(function() {
 
 		body.toggleClass("no-scroll");
 
-		menu.toggleClass("menu-visible");
-		$(".menu-items li:nth-of-type(1)").toggleClass("menu-item-loaded");
-		$(".menu-items li:nth-of-type(2)").toggleClass("menu-item-loaded");
-		$(".menu-items li:nth-of-type(3)").toggleClass("menu-item-loaded");
-		$(".menu-items li:nth-of-type(4)").toggleClass("menu-item-loaded");
+		$(".header-nav-mobile").toggleClass("menu-visible");
+		// $(".menu-items li:nth-of-type(1)").toggleClass("menu-item-loaded");
+		// $(".menu-items li:nth-of-type(2)").toggleClass("menu-item-loaded");
+		// $(".menu-items li:nth-of-type(3)").toggleClass("menu-item-loaded");
+		// $(".menu-items li:nth-of-type(4)").toggleClass("menu-item-loaded");
 
 		menuSelector.toggleClass("menu-selector-open");
 		$(".menu-top-bar").toggleClass("top-bar-close");
@@ -160,9 +167,5 @@ $(document).ready(function() {
 		$(".menu-bottom-bar").toggleClass("bottom-bar-close");
 	});
 
-
-
 	footer.addClass('loaded-o');
-
-
 });

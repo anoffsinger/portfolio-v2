@@ -1,5 +1,5 @@
 <header class="header">
-	<a href="/">
+	<a class="header-logo-link" href="/">
 		<div class="header-logo">
 			<div class="header-logo-circle"></div>
 			<div class="header-logo-shim"></div>
@@ -11,18 +11,49 @@
 
 	<nav class="header-nav">
 		<ul>
+			{% if page.category contains "About" %}
+			<li><a class="header-nav-link header-nav-link-active" href="/about">About</a></li>
+			{% else %}
 			<li><a class="header-nav-link" href="/about">About</a></li>
+			{% endif %}
+
 			<li><a class="header-nav-link" target="blank" href="https://dribbble.com/anoffsinger">Dribbble</a></li>
+
+			{% if page.category contains "Work" %}
+			<li><a class="header-nav-link header-nav-link-active" href="/work">Work</a></li>
+			{% else %}
 			<li><a class="header-nav-link" href="/work">Work</a></li>
+			{% endif %}
 		</ul>
 	</nav>
-	<!-- <button class="menu-selector">
+	<button class="menu-selector">
 		<div class="menu-top-bar"></div>
 		<div class="menu-middle-bar"></div>
 		<div class="menu-bottom-bar"></div>
 	</button>
-	{% include menu.html %}
-	<h2>
+	<nav class="header-nav-mobile">
+		<div>
+
+			<ul>
+				{% if page.category contains "Work" %}
+				<li><a class="header-nav-link-mobile header-nav-link-active" href="/work">Work</a></li>
+				{% else %}
+				<li><a class="header-nav-link-mobile" href="/work">Work</a></li>
+				{% endif %}
+
+
+				<li><a class="header-nav-link-mobile" target="blank" href="https://dribbble.com/anoffsinger">Dribbble</a></li>
+
+				{% if page.category contains "About" %}
+				<li><a class="header-nav-link-mobile header-nav-link-active" href="/about">About</a></li>
+				{% else %}
+				<li><a class="header-nav-link-mobile" href="/about">About</a></li>
+				{% endif %}
+			</ul>
+		</div>
+
+	</nav>
+	<!-- <h2>
 		{% if page.showCategory == true %}
 			<span>  {{ page.category }}</span>
 		{% endif %}

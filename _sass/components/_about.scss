@@ -11,40 +11,43 @@
 	// 	margin: 11.0625em auto 8.125em auto;
 	// }
 
-	h2 {
-		margin: 0 0 1.25em 0;
-	}
+	// h2 {
+	// 	margin: 0 0 1.25em 0;
+	// }
+	//
+	// p {
+	// 	font-family: $brandonTextLight;
+	// 	font-size: 18px;
+	// 	color: $charcoal;
+	// 	margin: 0 auto 1.2222222222em auto;
+	// 	line-height: 144.444%;
+	// 	transform: translateY($loadedDistance);
+	// 	transition: transform $longDuration $bezierAltTwo $loadedStagger, opacity $longDuration ease $loadedStagger;
+	// 	opacity: 0;
+	//
+	// 	a {
+	// 		color: inherit;
+	// 		transition: all .1s ease;
+	// 		font-family: $brandonTextBold;
+	//
+	// 		&:hover {
+	// 			color: $lightGrey;
+	// 		}
+	// 	}
+	// }
 
-	p {
-		font-family: $brandonTextLight;
-		font-size: 18px;
-		color: $charcoal;
-		margin: 0 auto 1.2222222222em auto;
-		line-height: 144.444%;
-		transform: translateY($loadedDistance);
-		transition: transform $longDuration $bezierAltTwo $loadedStagger, opacity $longDuration ease $loadedStagger;
-		opacity: 0;
-
-		a {
-			color: inherit;
-			transition: all .1s ease;
-			font-family: $brandonTextBold;
-
-			&:hover {
-				color: $lightGrey;
-			}
-		}
-	}
-
-	p:last-of-type {
-		margin-bottom: 0;
-	}
+	// p:last-of-type {
+	// 	margin-bottom: 0;
+	// }
 }
 
 .about-photo {
 	width: 100%;
 	margin-bottom: 3.875em;
 	margin-top: 9.875em;
+	opacity: 0;
+	transform: translateY($loadedDistance);
+	transition: transform $longDuration $bezierAltTwo, opacity $longDuration ease;
 }
 
 .about-bio {
@@ -53,6 +56,9 @@
 
 	width: 100%;
 	margin-bottom: 3.875em;
+	opacity: 0;
+	transform: translateY($loadedDistance);
+	transition: transform $longDuration $bezierAltTwo $loadedStagger, opacity $longDuration ease $loadedStagger;
 
 	> div {
 		> h3 {
@@ -87,16 +93,65 @@
 		width: 50%;
 		float: left;
 		padding-right: 3em;
+
+		@media (max-width: $breakpointMedium) {
+			width: 100%;
+			padding-right: 0;
+			margin-bottom: 3.875em;
+		}
 	}
 
 	> div:nth-of-type(2) {
-		width: 25%;
+		width: 16.666666667%;
 		float: left;
 		padding-right: 3em;
+
+		@media (max-width: $breakpointMedium) {
+			width: 33.33%;
+		}
+
+		@media (max-width: 500px) {
+			width: 100%;
+			margin-bottom: 3.875em;
+		}
 	}
 
 	> div:nth-of-type(3) {
-		width: 25%;
+		width: 16.666666667%;
 		float: left;
+		padding-right: 3em;
+
+		@media (max-width: $breakpointMedium) {
+			width: 33.33%;
+		}
+
+		@media (max-width: 500px) {
+			width: 100%;
+			margin-bottom: 3.875em;
+		}
 	}
+	> div:nth-of-type(4) {
+		width: 16.666666667%;
+		float: left;
+
+		@media (max-width: $breakpointMedium) {
+			width: 33.33%;
+		}
+
+		@media (max-width: 500px) {
+			width: 100%;
+			
+		}
+	}
+}
+
+.about-bio-link {
+	> a {
+		color: $darkGreyType;
+
+		&:hover {
+			color: $hoverColor !important;
+		}
+	}
+
 }

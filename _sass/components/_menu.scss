@@ -63,7 +63,8 @@
 }
 
 .menu-visible {
-    opacity: 1 !important;
+	display: block;
+	opacity: 1 !important;
     pointer-events: auto !important;
 }
 

@@ -1,6 +1,9 @@
 .intro {
 
 	width: 45%;
+	opacity: 0;
+	transform: translateY($loadedDistance);
+	transition: transform $longDuration $bezierAltTwo, opacity $longDuration ease;
 	// height: 100vh;
 
 
@@ -12,9 +15,9 @@
 	// 	width: 39%;
 	// }
 	//
-	// @media (max-width: $breakpointSmall) {
-	// 	width: 64%;
-	// }
+	@media (max-width: $breakpointSmall) {
+		width: 100%;
+	}
 
 	// img {
 	// 	display: block;
@@ -40,9 +43,10 @@
 	p {
 		font: $headlineType;
 		color: $lightGreyType;
-		opacity: 0;
-		// transform: translateY(40px);
-		transition: all $longDuration $bezierAltTwo;
+
+		@media (max-width: $breakpointSmall) {
+			font-size: 1.5em;
+		}
 
 		// position: relative;
 		// top: 50%;
@@ -62,50 +66,65 @@
 
 .twitter-module {
 	position: absolute;
-	bottom: 0;
+	bottom: 50px;
 	left: 0;
-	height: 9.875em;
+	// height: 9.875em;
 	width: 45%;
+	padding-top: 10px;
+
+	opacity: 0;
+	transform: translateY($loadedDistance);
+	transition: transform $longDuration $bezierAltTwo .4s, opacity $longDuration ease .4s;
+	// border-top: 1px solid $lightGreyType;
+
+	@media (max-width: $breakpointSmall) {
+		// display: none;
+		width: 100%;
+	}
 }
 
 .twitter-getter {
 	// position: absolute;
 	// bottom: 0;
 	// left: 0;
+	// font: $tweetType;
+	// color: $lightGreyType;
+	color: $greyType;
 	font: $tweetType;
-	color: $lightGreyType;
-	width: 92%;
+	width: 100%;
 	float: left;
+	margin-bottom: 8px;
 	// height: 9.875em;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-
-	> ul {
-
-	}
+	// position: relative;
+	// top: 50%;
+	// transform: translateY(-50%);
 }
 
 .tweet {
-
 	// position: relative;
 	// top: 50%;
 	// transform: translateY(-50%);
 	> a {
 		color: $darkGreyType;
-		text-decoration: underline;
+		color: $greyType;
+		transition: all $bezierAltTwo $shortDuration;
+
+		&:hover {
+			color: $hoverColor;
+		}
 	}
 	> img {
-		max-height: 18px;
+		max-height: 14px;
+		margin: 0 4px;
 	}
 }
 
 .twitter-link {
-	width: 8%;
+	width: 100%;
 	float: left;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	// position: relative;
+	// top: 50%;
+	// transform: translateY(-50%);
 	display: block;
 
 	> svg {
@@ -115,6 +134,16 @@
 	}
 }
 
+.timePosted {
+	font: $labelType;
+	margin-top: 5px;
+	color: $lightGreyType;
+	transition: all $bezierAltTwo $shortDuration;
+
+	&:hover {
+		color: $hoverColor;
+	}
+}
 .twitter-link:hover {
 	> svg {
 		> path {

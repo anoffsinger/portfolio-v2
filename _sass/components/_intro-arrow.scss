@@ -13,9 +13,12 @@
     height: 0;
     border-style: solid;
     border-width: 17px 11px 0 11px;
-    border-color: $darkGreyType transparent transparent transparent;
-	transition: opacity .3s ease;
+    border-color: $lightGreyType transparent transparent transparent;
 	animation: arrowFloat 2s infinite;
+
+    opacity: 0;
+    transform: translateY($loadedDistance);
+    transition: transform $longDuration $bezierAltTwo, opacity $longDuration ease;
 
     @media (max-width: $breakpointSmall) {
         opacity: 0;
