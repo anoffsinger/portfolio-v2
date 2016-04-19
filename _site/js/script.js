@@ -62,54 +62,68 @@ $(document).ready(function() {
 		$('.notification').removeClass("loaded");
 	});
 
+	var mywindow = $(window);
 
-	$(function (){
-	    if ($('body.has-footer-nav').length > 0){
+	mywindow.scroll(function() {
+    	if(mywindow.scrollTop() > 0)
+    	{
+        	$('.intro-arrow').addClass("intro-arrow-hidden");
+    	}
+    	else
+    	{
+        	$('.intro-arrow').removeClass("intro-arrow-hidden");
+    	}
 
-			var didScroll;
-			lastScrollTop = 0;
-			delta = 5;
-			projectNav = $('.project-nav');
-			introArrow = $('.intro-arrow');
-			navHeight = projectNav.outerHeight();
+ 	});
 
-			$(window).scroll(function(event){
-				didScroll = true;
-			});
-
-			setInterval(function() {
-				if (didScroll) {
-					hasScrolled();
-					didScroll = false;
-				}
-			}, 250);
-
-			function hasScrolled() {
-
-				var posFooter = footer.offset().top; // find the current position of the top of the footer
-				var posNav = projectNav.offset().top + 44; // find the bottom of the project nav
-				var currentScrollTop = $(this).scrollTop(); // find the current top of vertical scrollbar
-
-				if(Math.abs(lastScrollTop - currentScrollTop) <= delta) // minus last scroll position with current scroll position and make sure it's <= to delta
-					return;
-
-				if (currentScrollTop > lastScrollTop && currentScrollTop > navHeight){
-					projectNav.addClass('project-nav-up');
-					introArrow.addClass('intro-arrow-hidden');
-				} else if (currentScrollTop < 44) {
-					projectNav.removeClass('project-nav-up');
-					introArrow.removeClass('intro-arrow-hidden');
-				}
-
-				if (posNav > posFooter) {
-					projectNav.removeClass('project-nav-up');
-				} else if (posNav < posFooter && currentScrollTop > navHeight) {
-					projectNav.addClass('project-nav-up');
-				}
-				lastScrollTop = currentScrollTop;
-			}
-	    }
-	});
+	// $(function (){
+	//     if ($('body.has-footer-nav').length > 0){
+	//
+	// 		var didScroll;
+	// 		lastScrollTop = 0;
+	// 		delta = 5;
+	// 		projectNav = $('.project-nav');
+	// 		introArrow = $('.intro-arrow');
+	// 		navHeight = projectNav.outerHeight();
+	//
+	// 		$(window).scroll(function(event){
+	// 			didScroll = true;
+	//
+	// 		});
+	//
+	// 		setInterval(function() {
+	// 			if (didScroll) {
+	// 				hasScrolled();
+	// 				didScroll = false;
+	// 			}
+	// 		}, 250);
+	//
+	// 		function hasScrolled() {
+	//
+	// 			var posFooter = footer.offset().top; // find the current position of the top of the footer
+	// 			var posNav = projectNav.offset().top + 44; // find the bottom of the project nav
+	// 			var currentScrollTop = $(this).scrollTop(); // find the current top of vertical scrollbar
+	//
+	// 			if(Math.abs(lastScrollTop - currentScrollTop) <= delta) // minus last scroll position with current scroll position and make sure it's <= to delta
+	// 				return;
+	//
+	// 			if (currentScrollTop > lastScrollTop && currentScrollTop > navHeight){
+	// 				projectNav.addClass('project-nav-up');
+	// 				introArrow.addClass('intro-arrow-hidden');
+	// 			} else if (currentScrollTop < 44) {
+	// 				projectNav.removeClass('project-nav-up');
+	// 				introArrow.removeClass('intro-arrow-hidden');
+	// 			}
+	//
+	// 			if (posNav > posFooter) {
+	// 				projectNav.removeClass('project-nav-up');
+	// 			} else if (posNav < posFooter && currentScrollTop > navHeight) {
+	// 				projectNav.addClass('project-nav-up');
+	// 			}
+	// 			lastScrollTop = currentScrollTop;
+	// 		}
+	//     }
+	// });
 
 	// work item tile load-in
 	$(".work-item").each(function(i, el) {

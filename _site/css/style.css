@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   .about-bio > div > h3 {
     font: 700 0.6875em "Lato", Helvetica;
     text-transform: uppercase;
-    color: #b4b4b4;
+    color: #7F7F7F;
     letter-spacing: 2px;
     margin-bottom: 1.6666666667em; }
   .about-bio > div > p {
@@ -215,9 +215,9 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%; } }
 
 .about-bio-link > a {
-  color: #b4b4b4; }
+  color: #7F7F7F; }
   .about-bio-link > a:hover {
-    color: #494949 !important; }
+    color: #191919 !important; }
 
 .button-intro {
   position: relative;
@@ -472,9 +472,9 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.5em; } }
     .intro p > a {
       transition: all cubic-bezier(0, 0.46, 0.24, 1) 0.4s;
-      color: #b4b4b4; }
+      color: #7F7F7F; }
       .intro p > a:hover {
-        color: #494949; }
+        color: #191919; }
 
 .twitter-module {
   position: absolute;
@@ -491,17 +491,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .twitter-getter {
   color: #cecece;
-  font: 400 1em/180% "Lato", Helvetica;
+  font: 400 1.125em/180% "Lato", Helvetica;
   width: 100%;
   float: left;
   margin-bottom: 8px; }
 
 .tweet > a {
-  color: #b4b4b4;
+  color: #7F7F7F;
   color: #cecece;
   transition: all cubic-bezier(0, 0.46, 0.24, 1) 0.4s; }
   .tweet > a:hover {
-    color: #494949; }
+    color: #191919; }
 .tweet > img {
   max-height: 14px;
   margin: 0 4px; }
@@ -514,15 +514,15 @@ h1, h2, h3, h4, h5, h6 {
     transition: fill cubic-bezier(0, 0.46, 0.24, 1) 0.4s; }
 
 .timePosted {
-  font: 700 0.6875em "Lato", Helvetica;
+  font: 400 0.75em 'Lato', Helvetica;
   margin-top: 5px;
   color: #E9E9E9;
   transition: all cubic-bezier(0, 0.46, 0.24, 1) 0.4s; }
   .timePosted:hover {
-    color: #494949; }
+    color: #191919; }
 
 .twitter-link:hover > svg > path {
-  fill: #494949; }
+  fill: #191919; }
 
 #menu {
   position: absolute;
@@ -667,7 +667,7 @@ li.menu-item-loaded {
     opacity: 0;
     top: 4.2857142857em;
     transition: all 0.4s ease 0.1s;
-    font: 400 1em/180% "Lato", Helvetica; }
+    font: 400 1.125em/180% "Lato", Helvetica; }
 
 @media (min-width: 696px) {
   .work-item:hover .work-item-desc {
@@ -779,9 +779,9 @@ li.menu-item-loaded {
       margin-left: 2.5em; }
 
 .header-nav-link {
-  font: 500 1.125em "Lato", Helvetica;
+  font: 400 1.125em "Lato", Helvetica;
   letter-spacing: 1px;
-  color: #b4b4b4;
+  color: #7F7F7F;
   float: right;
   display: block;
   transition: all cubic-bezier(0, 0.46, 0.24, 1) 0.4s; }
@@ -794,12 +794,12 @@ li.menu-item-loaded {
     transition: all 0.4s cubic-bezier(0, 0.46, 0.24, 1); }
 
 .header-nav-link-active {
-  color: #494949 !important; }
+  color: #191919 !important; }
   .header-nav-link-active:after {
     width: 100% !important; }
 
 .header-nav-link:hover {
-  color: #494949; }
+  color: #191919; }
   .header-nav-link:hover:after {
     width: 100%; }
 
@@ -824,13 +824,13 @@ li.menu-item-loaded {
       display: block; } }
 
 .header-nav-link-mobile {
-  font: 500 1.125em "Lato", Helvetica;
+  font: 400 1.125em "Lato", Helvetica;
   letter-spacing: 1px;
-  color: #b4b4b4;
+  color: #7F7F7F;
   display: inline-block;
   transition: all cubic-bezier(0, 0.46, 0.24, 1) 0.4s;
   font-size: 28px;
-  color: #b4b4b4;
+  color: #7F7F7F;
   margin-bottom: 18px; }
   .header-nav-link-mobile:after {
     content: '';
@@ -962,11 +962,11 @@ li.menu-item-loaded {
     font: 400 1em/180% "Lato", Helvetica;
     margin-bottom: 1.125em; }
     .work-post-intro-desc p a {
-      color: #b4b4b4;
+      color: #7F7F7F;
       transition: all .1s ease;
       font-family: "brandon_text_medium", Helvetica, "sans serif"; }
       .work-post-intro-desc p a:hover {
-        color: #494949; }
+        color: #191919; }
 
 .blog-post-intro {
   height: 100vh;
@@ -1020,7 +1020,7 @@ li.menu-item-loaded {
       opacity: 0; } }
 
 .intro-arrow-hidden {
-  opacity: 0; }
+  opacity: 0 !important; }
 
 .post-image {
   display: block;
@@ -1204,7 +1204,7 @@ li.menu-item-loaded {
 
 .loaded {
   transform: translateY(0px) !important;
-  opacity: 1 !important;
+  opacity: 1;
   transform: translate3d(0, 0, 0); }
 
 .loaded-x {
