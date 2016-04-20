@@ -4,41 +4,10 @@
 	opacity: 0;
 	transform: translateY($loadedDistance);
 	transition: transform $longDuration $bezierAltTwo, opacity $longDuration ease;
-	// height: 100vh;
 
-
-	// @media (max-width: $breakpointLarge) {
-	// 	width: 30%;
-	// }
-	//
-	// @media (max-width: $breakpointMedium) {
-	// 	width: 39%;
-	// }
-	//
 	@media (max-width: $breakpointSmall) {
 		width: 100%;
 	}
-
-	// img {
-	// 	display: block;
-	// 	height: 2.75em;
-	// 	width: .8125em;
-	// 	margin: 0 auto 1.75em auto;
-	// 	transform: translateY($loadedDistance);
-	// 	transition: all $longDuration $bezierAltTwo;
-	// 	opacity: 0;
-	// }
-
-	// h1 {
-	// 	font-family: $brandonTextRegular;
-	// 	font-size: 1.1875em;
-	// 	color: $charcoal;
-	// 	text-align: center;
-	// 	margin-bottom: 1.75em;
-	// 	transform: translateY($loadedDistance);
-	// 	transition: all $longDuration $bezierAltTwo $loadedStagger;
-	// 	opacity: 0;
-	// }
 
 	p {
 		font: $headlineType;
@@ -48,64 +17,41 @@
 			font-size: 1.5em;
 		}
 
-		// position: relative;
-		// top: 50%;
-		// transform: translateY(-50%);
-
 		> a {
 			transition: all $bezierAltTwo $shortDuration;
 			color: $darkGreyType;
+
 			&:hover {
 				color: $hoverColor;
 			}
 		}
-
-
 	}
 }
 
 .twitter-module {
 	position: absolute;
-	bottom: 50px;
+	bottom: 4.125em;
 	left: 0;
-	// height: 9.875em;
 	width: 45%;
-	padding-top: 10px;
-
 	opacity: 0;
 	transform: translateY($loadedDistance);
-	transition: transform $longDuration $bezierAltTwo .4s, opacity $longDuration ease .4s;
-	// border-top: 1px solid $lightGreyType;
+	transition: transform $longDuration $bezierAltTwo .2s, opacity $longDuration ease .2s;
 
 	@media (max-width: $breakpointSmall) {
-		// display: none;
 		width: 100%;
 	}
 }
 
 .twitter-getter {
-	// position: absolute;
-	// bottom: 0;
-	// left: 0;
-	// font: $tweetType;
-	// color: $lightGreyType;
 	color: $greyType;
 	font: $tweetType;
 	width: 100%;
 	float: left;
-	margin-bottom: 8px;
-	// height: 9.875em;
-	// position: relative;
-	// top: 50%;
-	// transform: translateY(-50%);
 }
 
 .tweet {
-	// position: relative;
-	// top: 50%;
-	// transform: translateY(-50%);
+
 	> a {
-		color: $darkGreyType;
 		color: $greyType;
 		transition: all $bezierAltTwo $shortDuration;
 
@@ -113,42 +59,20 @@
 			color: $hoverColor;
 		}
 	}
+
 	> img {
-		max-height: 14px;
-		margin: 0 4px;
-	}
-}
-
-.twitter-link {
-	width: 100%;
-	float: left;
-	// position: relative;
-	// top: 50%;
-	// transform: translateY(-50%);
-	display: block;
-
-	> svg {
-		> path {
-			transition: fill $bezierAltTwo $shortDuration;
-		}
+		max-height: 0.7777777778em;
+		margin: 0 0.2222222222em;
 	}
 }
 
 .timePosted {
 	font: 400 0.75em 'Lato', Helvetica;
-	margin-top: 5px;
+	margin-top: 0.4166666667em;
 	color: $lightGreyType;
 	transition: all $bezierAltTwo $shortDuration;
 
 	&:hover {
 		color: $hoverColor;
-	}
-}
-.twitter-link:hover {
-	> svg {
-		> path {
-			fill: $hoverColor;
-
-		}
 	}
 }

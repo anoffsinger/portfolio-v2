@@ -6,9 +6,7 @@
 	border: none;
 	background-color: transparent;
     overflow: hidden;
-
 	float: right;
-
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -23,6 +21,7 @@
 }
 
 @media (min-width: $breakpointSmall) {
+
 	.menu-selector:hover {
 	    .menu-top-bar:after {
 	        transform: translateX(1.6363636364em);
@@ -44,7 +43,7 @@
     display: block;
 	width: 1.6363636364em;
 	height: 0.2727272727em;
-	background-color: $charcoal;
+	background-color: $darkGreyType;
 	margin-bottom: 0.2727272727em;
 	transition: all $shortDuration $bezierAltTwo;
 	overflow: hidden;
@@ -55,7 +54,7 @@
         display: block;
         width: 1.6363636364em;
         height: 0.2727272727em;
-        background-color: $lightGrey;
+        background-color: $lightGreyType;
         top: 0;
 		left: -1.6363636364em;
 	}

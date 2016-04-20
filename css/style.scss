@@ -1,36 +1,22 @@
 ---
 ---
-
 @import "global/variables";
 @import "global/extends/clearfix";
 @import "global/extends/visually-hidden";
 
-@import "global/mixins/transform";
-
 @import "base/elements";
-@import "base/font-face";
-@import "base/headings";
 
 @import "components/about";
-@import "components/button";
-@import "components/project-nav";
 @import "components/cue-demo";
 @import "components/project-image";
-@import "components/blog-post-preview";
 @import "components/intro";
-@import "components/menu";
 @import "components/work";
 @import "components/header";
 @import "components/wrapper";
 @import "components/menu-selector";
 @import "components/work-post-intro";
-@import "components/blog-post-intro";
 @import "components/intro-arrow";
-@import "components/post-image";
-@import "components/notification";
-@import "components/new-index";
 
-@import "layout/content";
 @import "layout/grid";
 @import "layout/no-scroll";
 @import "layout/loaded";

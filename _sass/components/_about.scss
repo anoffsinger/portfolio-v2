@@ -1,46 +1,3 @@
-.about {
-	width: 43.35%;
-	margin: 0 auto;
-
-	// @media (max-width: $breakpointLarge) {
-	// 	width: 55%;
-	// }
-	//
-	// @media (max-width: $breakpointSmall) {
-	// 	width: 73%;
-	// 	margin: 11.0625em auto 8.125em auto;
-	// }
-
-	// h2 {
-	// 	margin: 0 0 1.25em 0;
-	// }
-	//
-	// p {
-	// 	font-family: $brandonTextLight;
-	// 	font-size: 18px;
-	// 	color: $charcoal;
-	// 	margin: 0 auto 1.2222222222em auto;
-	// 	line-height: 144.444%;
-	// 	transform: translateY($loadedDistance);
-	// 	transition: transform $longDuration $bezierAltTwo $loadedStagger, opacity $longDuration ease $loadedStagger;
-	// 	opacity: 0;
-	//
-	// 	a {
-	// 		color: inherit;
-	// 		transition: all .1s ease;
-	// 		font-family: $brandonTextBold;
-	//
-	// 		&:hover {
-	// 			color: $lightGrey;
-	// 		}
-	// 	}
-	// }
-
-	// p:last-of-type {
-	// 	margin-bottom: 0;
-	// }
-}
-
 .about-photo {
 	width: 100%;
 	margin-bottom: 3.875em;
@@ -51,7 +8,6 @@
 }
 
 .about-bio {
-
 	@extend %clearfix;
 
 	width: 100%;
@@ -146,12 +102,10 @@
 }
 
 .about-bio-link {
-	> a {
-		color: $darkGreyType;
 
-		&:hover {
-			color: $hoverColor !important;
-		}
+	color: $darkGreyType;
+
+	&:hover {
+		color: $hoverColor !important;
 	}
-
 }

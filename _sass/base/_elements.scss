@@ -13,11 +13,9 @@
 
 body {
 	font-size: 100%;
-	height: 100%;
-	font-family: $brandonTextRegular;
+	min-height: 100vh;
+	font-family: 'Lato', Helvetica;
 	background-color: $white;
-	-webkit-font-smoothing: subpixel-antialiased;
-
 	padding: 12px;
 	box-shadow: inset $lightGreyType 0 0 0 12px;
 
@@ -28,15 +26,11 @@ body {
 }
 
 footer {
-	// padding: $headerSpace 0;
 	width: 100%;
-	// background-color: $darkGrey;
 	opacity: 0;
 	height: 9.875em;
-	// padding-bottom: 4.8em;
 	border-top: 1px solid $greyType;
 	transition: opacity .01s linear .5s;
-
 	font: $bodyType;
 	color: $greyType;
 	margin-top: 3.875em;
@@ -62,16 +56,10 @@ li {
 
 a {
 	text-decoration: none;
-	color: $charcoal;
 }
 
 button {
 	&:focus {
 		outline: none;
 	}
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: $brandonTextBold;
-	font-weight: normal;
 }

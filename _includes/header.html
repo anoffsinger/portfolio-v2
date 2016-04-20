@@ -8,7 +8,6 @@
 		</div>
 	</a>
 
-
 	<nav class="header-nav">
 		<ul>
 			{% if page.category contains "About" %}
@@ -16,9 +15,7 @@
 			{% else %}
 			<li><a class="header-nav-link" href="/about">About</a></li>
 			{% endif %}
-
 			<li><a class="header-nav-link" target="blank" href="https://dribbble.com/anoffsinger">Dribbble</a></li>
-
 			{% if page.category contains "Work" %}
 			<li><a class="header-nav-link header-nav-link-active" href="/work">Work</a></li>
 			{% else %}
@@ -26,24 +23,22 @@
 			{% endif %}
 		</ul>
 	</nav>
+
 	<button class="menu-selector">
 		<div class="menu-top-bar"></div>
 		<div class="menu-middle-bar"></div>
 		<div class="menu-bottom-bar"></div>
 	</button>
+
 	<nav class="header-nav-mobile">
 		<div>
-
 			<ul>
 				{% if page.category contains "Work" %}
 				<li><a class="header-nav-link-mobile header-nav-link-active" href="/work">Work</a></li>
 				{% else %}
 				<li><a class="header-nav-link-mobile" href="/work">Work</a></li>
 				{% endif %}
-
-
 				<li><a class="header-nav-link-mobile" target="blank" href="https://dribbble.com/anoffsinger">Dribbble</a></li>
-
 				{% if page.category contains "About" %}
 				<li><a class="header-nav-link-mobile header-nav-link-active" href="/about">About</a></li>
 				{% else %}
@@ -51,11 +46,5 @@
 				{% endif %}
 			</ul>
 		</div>
-
 	</nav>
-	<!-- <h2>
-		{% if page.showCategory == true %}
-			<span>  {{ page.category }}</span>
-		{% endif %}
-	</h2> -->
 </header>

@@ -10,7 +10,6 @@
 .work-item {
 
 	position: relative;
-	// opacity: 1;
 	opacity: 0;
 	transform: translateY($loadedDistance);
 	transition: transform $longDuration $bezierAltTwo, opacity $longDuration ease;
@@ -64,9 +63,10 @@
 		opacity: 0;
 		top: 4.2857142857em;
 		transition: all $shortDuration ease .1s;
-		font: $tweetType;
+		font: $bodyType;
 	}
 }
+
 @media (min-width: $breakpointSmall) {
 	.work-item:hover {
 		.work-item-desc {

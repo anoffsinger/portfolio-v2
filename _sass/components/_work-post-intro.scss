@@ -4,14 +4,11 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-
-
 }
 
 .work-post-intro-desc {
 	display: block;
 	width: 60%;
-
 	opacity: 0;
 	transform: translateY($loadedDistance);
 	transition: transform $longDuration $bezierAltTwo, opacity $longDuration ease;
@@ -29,17 +26,11 @@
 	p {
 		color: $greyType;
 		font: $bodyType;
-
-
 		margin-bottom: 1.125em;
-		// transform: translateY($loadedDistance);
-		// transition: transform $longDuration $bezierAltTwo $loadedStagger, opacity $longDuration ease $loadedStagger;
-		// opacity: 0;
-
+		
 		a {
 			color: $darkGreyType;
 			transition: all .1s ease;
-			font-family: $brandonTextBold;
 
 			&:hover {
 				color: $hoverColor;
