@@ -171,7 +171,8 @@ button:focus {
   transition: transform 0.8s cubic-bezier(0, 0.46, 0.24, 1), opacity 0.8s ease; }
   @media (max-width: 696px) {
     .intro {
-      width: 100%; } }
+      width: 100%;
+      padding-top: 8.5em; } }
   .intro p {
     font: 700 2em/163% "Lato", Helvetica;
     color: #E9E9E9; }
@@ -452,7 +453,8 @@ button:focus {
   align-items: center; }
   @media (max-width: 696px) {
     .wrapper-home {
-      width: 85%; } }
+      width: 85%;
+      display: block; } }
 
 .wrapper-about {
   position: relative;
@@ -542,6 +544,11 @@ button:focus {
   position: relative;
   display: flex;
   align-items: center; }
+  @media (max-width: 696px) {
+    .work-post-intro {
+      padding-top: 8.5em;
+      height: auto;
+      display: block; } }
 
 .work-post-intro-desc {
   display: block;
@@ -551,7 +558,8 @@ button:focus {
   transition: transform 0.8s cubic-bezier(0, 0.46, 0.24, 1), opacity 0.8s ease; }
   @media (max-width: 696px) {
     .work-post-intro-desc {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 4.0625em; } }
   .work-post-intro-desc h2 {
     font: 700 2em/163% "Lato", Helvetica;
     color: #cecece;
