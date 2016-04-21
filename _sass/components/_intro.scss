@@ -14,7 +14,7 @@
 		color: $lightGreyType;
 
 		@media (max-width: $breakpointSmall) {
-			font-size: 1.5em;
+			font-size: 2em;
 		}
 
 		> a {
@@ -39,6 +39,7 @@
 
 	@media (max-width: $breakpointSmall) {
 		width: 100%;
+		display: none;
 	}
 }
 

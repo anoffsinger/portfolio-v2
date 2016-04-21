@@ -75,17 +75,25 @@ button:focus {
     color: #7F7F7F;
     letter-spacing: 2px;
     margin-bottom: 1.6666666667em; }
+    @media (max-width: 696px) {
+      .about-bio > div > h3 {
+        font-size: 0.8125em; } }
   .about-bio > div > p {
     font: 400 1em/180% "Lato", Helvetica;
     color: #cecece;
     margin-bottom: .75em; }
+    @media (max-width: 696px) {
+      .about-bio > div > p {
+        font-size: 1.125em; } }
   .about-bio > div > p:last-of-type {
-    font: 400 1em/180% "Lato", Helvetica;
     margin-bottom: 0; }
   .about-bio > div > ul li {
     font: 400 1em/180% "Lato", Helvetica;
     color: #cecece;
     margin-bottom: .05em; }
+    @media (max-width: 696px) {
+      .about-bio > div > ul li {
+        font-size: 1.125em; } }
   .about-bio > div:nth-of-type(1) {
     width: 50%;
     float: left;
@@ -169,7 +177,7 @@ button:focus {
     color: #E9E9E9; }
     @media (max-width: 696px) {
       .intro p {
-        font-size: 1.5em; } }
+        font-size: 2em; } }
     .intro p > a {
       transition: all cubic-bezier(0, 0.46, 0.24, 1) 0.4s;
       color: #7F7F7F; }
@@ -186,7 +194,8 @@ button:focus {
   transition: transform 0.8s cubic-bezier(0, 0.46, 0.24, 1) 0.2s, opacity 0.8s ease 0.2s; }
   @media (max-width: 696px) {
     .twitter-module {
-      width: 100%; } }
+      width: 100%;
+      display: none; } }
 
 .twitter-getter {
   color: #cecece;
@@ -437,15 +446,21 @@ button:focus {
 .wrapper-home {
   position: relative;
   width: 90%;
-  height: calc(100vh - 24px);
+  min-height: calc(100vh - 24px);
   margin: 0 auto;
   display: flex;
   align-items: center; }
+  @media (max-width: 696px) {
+    .wrapper-home {
+      width: 85%; } }
 
 .wrapper-about {
   position: relative;
   width: 90%;
   margin: 0 auto; }
+  @media (max-width: 696px) {
+    .wrapper-about {
+      width: 85%; } }
 
 .menu-selector {
   display: none;
@@ -545,6 +560,9 @@ button:focus {
     color: #cecece;
     font: 400 1em/180% "Lato", Helvetica;
     margin-bottom: 1.125em; }
+    @media (max-width: 696px) {
+      .work-post-intro-desc p {
+        font-size: 1.125em; } }
     .work-post-intro-desc p a {
       color: #7F7F7F;
       transition: all .1s ease; }

@@ -23,16 +23,23 @@
 			color: $darkGreyType;
 			letter-spacing: 2px;
 			margin-bottom: 1.6666666667em;
+
+			@media (max-width: $breakpointSmall) {
+				font-size: 0.8125em;
+			}
 		}
 
 		> p {
 			font: $bodyType;
 			color: $greyType;
 			margin-bottom: .75em;
+
+			@media (max-width: $breakpointSmall) {
+				font-size: 1.125em;
+			}
 		}
 
 		> p:last-of-type {
-			font: $bodyType;
 			margin-bottom: 0;
 		}
 
@@ -41,6 +48,10 @@
 				font: $bodyType;
 				color: $greyType;
 				margin-bottom: .05em;
+
+				@media (max-width: $breakpointSmall) {
+					font-size: 1.125em;
+				}
 			}
 		}
 	}

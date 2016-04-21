@@ -27,7 +27,11 @@
 		color: $greyType;
 		font: $bodyType;
 		margin-bottom: 1.125em;
-		
+
+		@media (max-width: $breakpointSmall) {
+			font-size: 1.125em;
+		}
+
 		a {
 			color: $darkGreyType;
 			transition: all .1s ease;
