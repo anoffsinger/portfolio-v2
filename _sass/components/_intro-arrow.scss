@@ -21,6 +21,7 @@
 
     @media (max-width: $breakpointSmall) {
         opacity: 0;
+        display: none;
     }
 }
 
