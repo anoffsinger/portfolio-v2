@@ -6,6 +6,5 @@ url: "http://noff.me/"
 
 paginate: 10
 
-markdown: rdiscount
 permalink: none
 highlight: pigments
