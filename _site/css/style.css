@@ -206,7 +206,7 @@ button:focus {
 .timePosted {
   font: 400 0.75em 'Lato', Helvetica;
   margin-top: 0.4166666667em;
-  color: #E9E9E9;
+  color: #7F7F7F;
   transition: all cubic-bezier(0, 0.46, 0.24, 1) 0.4s; }
   .timePosted:hover {
     color: #191919; }

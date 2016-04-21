@@ -1,10 +1,7 @@
-// old type
-$brandonTextLight: 'brandon_text_light', Helvetica, 'sans serif';
-$brandonTextRegular: 'brandon_text_regular', Helvetica, 'sans serif';
-$brandonTextBold: 'brandon_text_medium', Helvetica, 'sans serif';
+// site width
+$siteWidth: 90%;
 
 // new type
-
 $bodyType: 400 1em/180% 'Lato', Helvetica;
 $navType: 400 1.125em 'Lato', Helvetica;
 $labelType: 700 0.6875em 'Lato', Helvetica;
@@ -12,7 +9,6 @@ $headlineType: 700 2em/163% 'Lato', Helvetica;
 $tweetType: 400 1.125em/180% 'Lato', Helvetica;
 
 //spacing
-$blockSpace: 1.6%;
 $headerSpace: 65px;
 $headingBottom: 24px;
 
@@ -22,10 +18,6 @@ $breakpointMedium: 944px;
 $breakpointSmall: 696px;
 
 // animations
-//used on project nav, work intro and blog intro
-//transition: all $shortDuration ease; should be used for loading movement
-//transition: all $longDuration $bezierAltTwo; should be used for highlighting
-
 $loadedDistance: 20px;
 $loadedStagger: .2s;
 $longDuration: .8s;
@@ -36,29 +28,16 @@ $bezier: cubic-bezier(0,.4,.5,1);
 
 // everything else bezier
 $bezierAltTwo: cubic-bezier(0,.46,.24,1);
-// a simple ease should be used for items loading in, alttwo should be used for high leverage animations, like button transitions
-
-// old colors
-$charcoal: #6A6A6A;
-$white: #FFFFFF;
-$black: #000000;
-$coral: #FF8969;
-$yellow: #FCF100;
-$lightGrey: #D7D7D7;
-$canvasGrey: #E8E8E8;
-$darkGrey: #3b3b3b;
-$invisibleGrey: #525252;
-$lightestGrey: #F9F9F9;
-
 
 // new colors
 $circleColor: #FF746F;
 $squareColor: #FFFB6F;
 $triangleColor: #FFF4DE;
+$white: #FFFFFF;
+$black: #000000;
 
 $lightGreyType: #E9E9E9;
 $darkGreyType: #7F7F7F;
 $greyType: #cecece;
-$hoverColor: #191919;
 
-$siteWidth: 90%;
+$hoverColor: #191919;

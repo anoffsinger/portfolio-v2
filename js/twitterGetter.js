@@ -2,7 +2,6 @@
 *  #### Twitter Post Fetcher v15.0.1 ####
 *  Coded by Jason Mayes 2015. A present to all the developers out there.
 *  www.jasonmayes.com
-*  Please keep this disclaimer with my code if you use it. Thanks. :-)
 *  Got feedback or questions, ask here:
 *  http://www.jasonmayes.com/projects/twitterApi/
 *  Github: https://github.com/jasonmayes/Twitter-Post-Fetcher
@@ -81,10 +80,7 @@ c.push(b);d++}C(c);x=!1;0<v.length&&(L.fetch(v[0]),v.splice(0,1))}};return windo
  *     is "en" (English).
  */
 
-// ##### Simple example 1 #####
-// A simple example to get my latest tweet and write to a HTML element with
-// id "example1". Also automatically hyperlinks URLS and user mentions and
-// hashtags.
+// my config
 var config1 = {
   "id": '716777320908869632',
   "domId": 'intro-twitter-getter',
@@ -96,4 +92,5 @@ var config1 = {
   "showImages": false,
   "showTime": true,
 };
+
 twitterFetcher.fetch(config1);
